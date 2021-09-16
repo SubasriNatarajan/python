@@ -7,18 +7,18 @@ Files and exception: text files, reading and writing files, format operator; com
 [Memcode flashcards](https://www.memcode.com/courses/2280)	- 40+ flashcards to review the contents of this unit. Space repetition of the flashcards will help in retaining the content and perform better in exams."
  #  TABLE OF CONTENTS
  
- [5.1.FILES](#files)
+ [5.1.FILES](#5-1-files)
  - [What are files?](#what-are-files)
  - [File Extensions](#file-extensions)
  - [Types of Files](#types-of-files)
  - [Common extensions that are binary file formats](#common-extensions-that-are-binary-file)
  - [Common extensions that are text file formats](#common-extensions-that-are-text-file-formats)
  
- [5.2.TEXT FILE CHARACTERISTICS](#text-file-characteristics)
+ [5.2.TEXT FILE CHARACTERISTICS](#5-2-text-file-characteristics)
  - [BINARY FILE CHARACTERISTICS](#binary-file-characteristics)
  - [BASIC FILE OPERATIONS](#basic-file-operations)
  
-[5.3.READING TEXT FILES](#reading-text-files)
+[5.3.READING TEXT FILES](#5-3-reading-text-files)
  - [DEMO  CODE](#demo-code)
  - [Reading text files with size parameter](#Reading-text-files-with-size-parameter)
  - [DEMO CODE](#DEMO-CODE)
@@ -27,18 +27,18 @@ Files and exception: text files, reading and writing files, format operator; com
  - [Reading text files (List of Lines)](#Reading-text-files-List-of-Lines)
  - [DEMO CODE](#DEMO-CODE)
 
- [5.4.WRITING TEXT FILES](#WRITING-TEXT-FILES)
+ [5.4.WRITING TEXT FILES](#5-4-WRITING-TEXT-FILES)
  - [Types of File Modes](#Types-of-File-Modes)
  - [Seek in File](#Seek-in-File)
  - [DEMO CODE](#DEMO-CODE)
  
- [5.5.FORMAT OPERATOR](#FORMAT-OPERATOR)
- [5.6.COMMAND LINE ARGUMENTS](#COMMAND-LINE-ARGUMENTS)
- [5.7.ERRORS AND EXCEPTIONS](#ERRORS-AND-EXCEPTIONS)
- [5.8.HANDLING PYTHON LOGICAL ERRORS](#handling-python-logical-errors)
+ [5.5.FORMAT OPERATOR](#5-5-FORMAT-OPERATOR)
+ [5.6.COMMAND LINE ARGUMENTS](#5-6-COMMAND-LINE-ARGUMENTS)
+ [5.7.ERRORS AND EXCEPTIONS](#5-7-ERRORS-AND-EXCEPTIONS)
+ [5.8.HANDLING PYTHON LOGICAL ERRORS](#5-8-handling-python-logical-errors)
  - [BUILD IN EXCEPTIONS](#BUILD-IN-EXCEPTIONS)
 
- [5.9. MODULES](MODULES)
+ [5.9. MODULES](#5-9-MODULES)
  - [Illustrative Problems (Copy File)](#Illustrative-Problems-Copy-File)
  - [Illustrative Problems (Word Count)](#Illustrative-Problems-Word-Count)
 ### KEY TERMS
