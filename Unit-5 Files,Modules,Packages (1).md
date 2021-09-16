@@ -33,8 +33,11 @@ Files and exception: text files, reading and writing files, format operator; com
  - [DEMO CODE](#DEMO-CODE)
  
  [5.5.FORMAT OPERATOR](#5-5-FORMAT-OPERATOR)
+ 
  [5.6.COMMAND LINE ARGUMENTS](#5-6-COMMAND-LINE-ARGUMENTS)
+ 
  [5.7.ERRORS AND EXCEPTIONS](#5-7-ERRORS-AND-EXCEPTIONS)
+ 
  [5.8.HANDLING PYTHON LOGICAL ERRORS](#5-8-handling-python-logical-errors)
  - [BUILD IN EXCEPTIONS](#BUILD-IN-EXCEPTIONS)
 
