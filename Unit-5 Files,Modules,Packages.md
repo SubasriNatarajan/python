@@ -38,7 +38,7 @@ Files and exception: text files, reading and writing files, format operator; com
  
  [5.7.ERRORS AND EXCEPTIONS](#57ERRORS-AND-EXCEPTIONS)
  
- [5.8.HANDLING PYTHON LOGICAL ERRORS](#58handling-python-logical-errors)
+ [5.8.HANDLING PYTHON LOGICAL ERRORS](#58HANDLING-PYTHON-LOGICAL-ERRORS)
  - [BUILD IN EXCEPTIONS](#BUILD-IN-EXCEPTIONS)
 
  [5.9.MODULES](#59MODULES)
