@@ -84,7 +84,7 @@ Three reasons for using algorithms are efficiency, abstraction and reusability.
 		 
 		 **_4. Functions_**
 
-**_1. Instructions/ Statements_**
+**_1.Instructions/ Statements_**
 
 In computer programming, a statement is the smallest standalone element of an imperative programming language that expresses some action to be carried out. It is an instruction written in a high-level language that commands the computer to perform a specified action.
 
@@ -135,13 +135,13 @@ It is a set of statements, that used to perform a sequence of operations repeate
 ● **_while-loop_**: while NOT EOF DO begin READLN end
 >Looping a set of statements repeatedly until some condition is satisfied. We can’t predict when the condition become satisfiable. This is loop is entry controlled. Control will enter into the loop only if condition is satisfiable.>
 
-**2 State:**
+**_2.State:_**
 
 In information technology and computer science, a program is described as stateful if it is designed to remember preceding events or user interactions; the remembered information is called the state of the system.
 
 If a program gets sufficient datas processed then it moves to another state. A successful execution of program include the reaching the  final state of the program.
 
-**3 Control Flow:**
+**_3.Control Flow:_**
 
 In computer science, control flow (or flow of control) is the order in which individual statements, instructions or function calls of an imperative program are executed or evaluated.
 
@@ -196,9 +196,9 @@ In structured programming, the ordered sequencing of successive commands is cons
 
 **1.3.Functions:**
 
-module - A small component of a computer program that may contain several routines. parameter In computer programming, a parameter is a value that is passed into a function or procedure. procedure A section of computer code that performs a specific task.
+*Module - A small component of a computer program that may contain several routines. parameter In computer programming, a parameter is a value that is passed into a function or procedure. procedure A section of computer code that performs a specific task.*
 
-Functions "Encapsulate" a task (they combine many instructions into a single line of code). Most programming languages provide many built in functions that would otherwise require many steps to accomplish, for example computing the square root of a number. In general, we don't care how a function does what it does, only that it "does it"!
+- Functions "Encapsulate" a task (they combine many instructions into a single line of code). Most programming languages provide many built in functions that would otherwise require many steps to accomplish, for example computing the square root of a number. In general, we don't care how a function does what it does, only that it "does it"!
 
 When a function is "called" the program "leaves" the current section of code and begins to execute the first line inside the function. Thus the function "flow of control" is:
 
@@ -232,14 +232,13 @@ When a function is "called" the program "leaves" the current section of code and
 
 **1.4.Notation of algorithm**
 
-Algorithms are basically a set of instructions that, if correct and if followed carefully, produce some desired result. Since they are sets of instructions, they are generally presented in such a way that that the step-by-step nature of how they should be followed is readily apparent. The two most common representations are pseudocode and flowcharts.
+*Algorithms are basically a set of instructions that, if correct and if followed carefully, produce some desired result. Since they are sets of instructions, they are generally presented in such a way that that the step-by-step nature of how they should be followed is readily apparent.* 
+The two most common representations are pseudocode and flowcharts.
+- Algorithms can be thought of as the recipe for taking the general solution for a class of problem and applying it to a specific instance of a problem covered by that class. For instance, the class of problem might be to find the surface area of a sphere given its radius. Through some problem solving means - perhaps by performing the fundamental calculus computation or perhaps simply by looking up the equation in a math book - we determine that the general solution to the problem is that the area is four times pi times the square of the radius. We can then use this general solution and create an algorithm that permits use to compute the surface area of a specific sphere:
 
-Algorithms can be thought of as the recipe for taking the general solution for a class of problem and applying it to a specific instance of a problem covered by that class. For instance, the class of problem might be to find the surface area of a sphere given its radius. Through some problem solving means - perhaps by performing the fundamental calculus computation or perhaps simply by looking up the equation in a math book - we determine that the general solution to the problem is that the area is four times pi times the square of the radius. We can then use this general solution and create an algorithm that permits use to compute the surface area of a specific sphere:
-
->TASK: Compute the surface area of a sphere <br>
-GET: radius<br>
-SET: area = 4pi*radius*radius >
-<br>
+>TASK: Compute the surface area of a sphere 
+GET: radius
+SET: area = 4 pi * radius * radius 
 
 **1.5._Pseudocode_**
 
@@ -256,15 +255,15 @@ The rules of Pseudocode are reasonably straightforward. All statements showing "
 **Examples:**
 
 **_For finding the given number is odd or even:_**
-
-_Input any number_<br>
-_Compute modulo for that  number_<br>
-_If modulo value equals to zero_<br>
-_ Print “The number is Even”_<br>
-_Else_<br>
-_Print “The number is Odd”_<br>
-_End_<br>
-
+```sh
+_Input any number_ 
+_Compute modulo for that  number_ 
+_If modulo value equals to zero_ 
+_ Print “The number is Even”_ 
+_Else_ 
+_Print “The number is Odd”_ 
+_End_ 
+```
 
 #### **Documentation Keywords**
 
@@ -402,7 +401,7 @@ The above can be easily altered so as to cover all four of the first four cases.
 
 ***Pseudo Code for Sum of two numbers:***
 
-TASK : Sum of two numbers<br>
+### TASK : Sum of two numbers
 ```sh
 READ num1<br>
 READ num2<br>
@@ -416,7 +415,7 @@ End TASK<br>
 
 ***Pseudocode to find given number is odd or even***
 
-TASK: Find Odd or Even:<br>
+### TASK: Find Odd or Even
 ```sh
 READ number<br>
 Compute MODULO:<br>
@@ -430,7 +429,8 @@ End TASK<br>
 ```
 
 ***Pseudocode to find factorial of given number***
-TASK: Finding Factorial of a number <br>
+
+### TASK: Finding Factorial of a number 
 ```sh
 READ number<br>
 Initialize Fact to 0 and CurrentVal to number<br>
@@ -454,9 +454,9 @@ End TASK <br>
 
 - Furthermore, if the pseudocode is already in an electronic format that has been structured to lend itself to translation to the final language - such as the one recommended in the previous section - then doing so can be a very simply matter of copying the pseudocode to a new file, overlaying the necessary syntax associated with the language, and compiling the result. This can be a powerful advantage of pseudocode over flowcharts where the entire source code still has to be typed by hand unless you are fortunate to have a tool that can take a flowchart - typically developed using that same tool - and translating it to directly to code. Such tools do exist - and they tend to be rather expensive.
 
-Now that we have looked as some of the pros and cons of flowcharts relative to pseudo code, let's delve into flowcharting itself. The idea behind a flowchart is that it links together a series of blocks each of which perform some specific task. Each of these tasks is represented by a block and has exactly one arrow leading to it and, more importantly, one arrow exiting from it. This is key to the concept of a "structured program".
+- Now that we have looked as some of the pros and cons of flowcharts relative to pseudo code, let's delve into flowcharting itself. The idea behind a flowchart is that it links together a series of blocks each of which perform some specific task. Each of these tasks is represented by a block and has exactly one arrow leading to it and, more importantly, one arrow exiting from it. This is key to the concept of a "structured program".
 
-The shape of the block may convey additional information about what is happening. For instance, a rectangular block is frequently used to indicated that a computation is occurring while a slanted parallelogram is used to indicate some type of input or output operation. The diversity of shapes that can be used and what they mean is staggering - for instance a different shape can be used to indicated output to a tape drive versus to a hard disk or to indicate output in text format verses binary format. By using such highly specialized symbols, much of what is happening can be conveyed by the symbols themselves. But the power of using these distinctions is generally only useful to people that work with flowcharts continuously, professionally, and who are describing very large and complex systems. At our level, it is far better to restrict ourselves to a minimum number of shapes and explicitly indicate any information that otherwise might have been implied by using a different shape.
+- The shape of the block may convey additional information about what is happening. For instance, a rectangular block is frequently used to indicated that a computation is occurring while a slanted parallelogram is used to indicate some type of input or output operation. The diversity of shapes that can be used and what they mean is staggering - for instance a different shape can be used to indicated output to a tape drive versus to a hard disk or to indicate output in text format verses binary format. By using such highly specialized symbols, much of what is happening can be conveyed by the symbols themselves. But the power of using these distinctions is generally only useful to people that work with flowcharts continuously, professionally, and who are describing very large and complex systems. At our level, it is far better to restrict ourselves to a minimum number of shapes and explicitly indicate any information that otherwise might have been implied by using a different shape.
 
 
 ![flowchart symbols](https://github.com/kgisl/pythonFDP/blob/master/units/unit_i_img/flowchart_symbols.png)
