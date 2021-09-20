@@ -1,6 +1,7 @@
 ![N|Solid](https://github.com/SubasriNatarajan/python/blob/main/Unit%20-%202%20Word%20Art.png)
 
 ## **UNIT I - ALGORITHMIC PROBLEM SOLVING**
+_________________
 
 *Algorithms, building blocks of algorithms (statements, state, control flow, functions), notation (pseudo code, flow chart, programming language), algorithmic problem solving, simple strategies for developing algorithms (iteration, recursion).* 
 
@@ -8,6 +9,23 @@
 
 [Memcode flashcards](https://www.memcode.com/courses/2283)- 20+ flashcards to review the contents of this unit. Space repetition of the flashcards will help in retaining the content and perform better in exams."
 
+#  TABLE OF CONTENTS
+
+[1.1.ALGORITHMS](#https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#11algorithms)
+
+[Characteristics of Algorithm](#https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#characteristics-of-algorithm)
+
+[1.2.BUILDING BLOCKS OF ALGORITHM (INSTRUCTIONS, STATE, CONTROL FLOW, FUNCTIONS)](#https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#12building-blocks-of-algorithm-instructions-state-control-flow-functions)
+
+[1.3.Functions](#)
+
+[1.4.Notation of algorithm](#)
+
+[1.5.Pseudocode](#)
+
+[1.6.Flowcharts](#https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#16flowcharts)
+
+[1.7.Recursive Algorithm](#)
 
 ### INTRODUCTION 
 A program is a set of instructions that tells the computer how to solve a particular problem. Various program design tools like algorithms, pseudocodes and flowcharts are used to design the blueprint of the solution (or the program to be written). 
