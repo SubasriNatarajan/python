@@ -14,17 +14,31 @@
 
 - [Characteristics of Algorithm](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#characteristics-of-algorithm)
 
-[1.2.BUILDING BLOCKS OF ALGORITHM INSTRUCTIONS, STATE, CONTROL FLOW, FUNCTIONS](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#12building-blocks-of-algorithm-instructions-state-control-flow-functions)
+[1.2.BUILDING BLOCKS OF ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#12building-blocks-of-algorithm-instructions-state-control-flow-functions)
 
-[1.3.Functions](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#13functions)
+- [Statements]()
 
-[1.4.Notation of algorithm](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#14notation-of-algorithm)
+- [State]()
+ 
+- [control flow]()
 
-[1.5.Pseudocode](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#15pseudocode)
+- [Functions]()
 
-[1.6.Flowcharts](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#16flowcharts)
+[1.3.Notation of algorithm]()
 
-[1.7.Recursive Algorithm](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#17recursive-algorithm)
+- [Pseudocode]()
+
+- [Flowcharts]()
+ 
+- [programming language]()
+
+[1.4.Algorithmic problem solving]()
+
+[1.5.Simple strategies for developing algorithms]()
+
+- [Iteration]()
+
+- [Recursion]()
 
 ### INTRODUCTION 
 A program is a set of instructions that tells the computer how to solve a particular problem. Various program design tools like algorithms, pseudocodes and flowcharts are used to design the blueprint of the solution (or the program to be written). 
@@ -101,7 +115,8 @@ Three reasons for using algorithms are efficiency, abstraction and reusability.
 		 
 		 **_4. Functions_**
 
-**_1.Instructions/ Statements_**
+### Instructions/ Statements
+_________________
 
 In computer programming, a statement is the smallest standalone element of an imperative programming language that expresses some action to be carried out. It is an instruction written in a high-level language that commands the computer to perform a specified action.
 
@@ -152,13 +167,15 @@ It is a set of statements, that used to perform a sequence of operations repeate
 ● **_while-loop_**: while NOT EOF DO begin READLN end
 >Looping a set of statements repeatedly until some condition is satisfied. We can’t predict when the condition become satisfiable. This is loop is entry controlled. Control will enter into the loop only if condition is satisfiable.>
 
-**_2.State:_**
+### State
+_________________
 
 In information technology and computer science, a program is described as stateful if it is designed to remember preceding events or user interactions; the remembered information is called the state of the system.
 
 If a program gets sufficient datas processed then it moves to another state. A successful execution of program include the reaching the  final state of the program.
 
-**_3.Control Flow:_**
+### Control Flow
+_________________
 
 In computer science, control flow (or flow of control) is the order in which individual statements, instructions or function calls of an imperative program are executed or evaluated.
 
@@ -211,7 +228,8 @@ In structured programming, the ordered sequencing of successive commands is cons
 - Condition-controlled loops
 - Collection-controlled loops
 
-### 1.3.Functions
+### Functions
+_________________
 
 *Module - A small component of a computer program that may contain several routines. parameter In computer programming, a parameter is a value that is passed into a function or procedure. procedure A section of computer code that performs a specific task.*
 
@@ -247,7 +265,7 @@ When a function is "called" the program "leaves" the current section of code and
 ● **_Non-Parameterised Function_**
 - This a functions does not receive any input while calling. It may or may not return any value to the caller.
 
-### 1.4.Notation of algorithm
+### 1.3.Notation of algorithm
 
 *Algorithms are basically a set of instructions that, if correct and if followed carefully, produce some desired result. Since they are sets of instructions, they are generally presented in such a way that that the step-by-step nature of how they should be followed is readily apparent.* 
 The two most common representations are pseudocode and flowcharts.
@@ -257,7 +275,8 @@ The two most common representations are pseudocode and flowcharts.
 GET: radius
 SET: area = 4 pi * radius * radius 
 
-### 1.5._Pseudocode_
+### Pseudocode
+_________________
 
 Pseudocode is an artificial and informal language that helps programmers develop algorithms. Pseudocode is a "text-based" detail (algorithmic) design tool.
 
@@ -463,7 +482,8 @@ End
 End TASK 
 ```
 
-### 1.6.**Flowcharts**
+### Flowcharts
+_________________
 
 *Flowcharts are a graphical means of representing an algorithm, as should be expected, they have advantages and disadvantages compared to pseudocode. One of their primary advantages is that they permit the structure of a program to be easily visualized - even if all the text were to be removed. The human brain is very good at picking out these patterns and keeping them "in the back of the mind" as a reference frame for viewing the code as it develops.*
 
@@ -515,7 +535,8 @@ End TASK
 ![factorial](https://github.com/kgisl/pythonFDP/blob/master/units/unit_i_img/factorial.png)
 
 
-**programming language notation**
+### Programming language notation
+_________________
 
 - A programming language is a formal language that specifies a set of instructions that can be used to produce various kinds of output. Programming languages generally consist of instructions for a computer. Programming languages can be used to create programs that implement specific algorithms.
 
@@ -589,7 +610,51 @@ The programs different only by syntax and rules
 
 Problem solving can be achieved so many ways, If you need to done with computers then you must design algorithm and then you must implement algorithm with any of your programming language choice.
 
-**_Algorithms with iteration:_**
+### 1.4.Algorithmic problem solving
+
+- Algorithms are solutions to problems. They are not solutions themselves. They just list specific instructions that need to be performed for getting the solution. In computer science, emphasis is laid on writing a good and effective algorithm and this emphasis makes computer science distinct from other disciplines. For example, computer science is distinct from theoretical mathematics because those practitioners are typically satisfied with just proving the existence of a solution to a problem but in computer science, the problem is not solved until the algorithm is used to implement the solution. 
+- We will now discuss about the sequence of steps one must typically follow for designing an effective algorithm.
+1. Understanding the problem
+2. Determining the capabilities of the computational device
+3. Exact/approximate solution
+4. Select the appropriate data structure
+5. Algorithm design techniques
+6. Methods of specifying an algorithm
+7. Proving an algorithms correctness
+8. Analysing the performance of an algorithm
+> Understanding the problem 
+- The problem given should be clearly and completely understood. It is compared with earlier problems that have already been solved to check if it is similar to them and a known
+algorithm exists. If the algorithm is available, it is used otherwise a new one has to be developed.
+> Determining the capabilities of the computational device 
+- After understanding the problem, the capabilities of the computing device should be known. For this, the type of the architecture, speed and
+memory availability of the device are noted.
+> Exact/approximate solution 
+- The next step is to develop the algorithm. The algorithm must compute correct output for all possible and legitimate inputs. This solution can be an exact solution or an approximate solution. For example, you can only have an approximate solution in case of finding square root of number or finding the solutions of nonlinear equations.
+> Select the appropriate data structure 
+- A data type is a well-defined collection of data with a welldefined set of operations on it. A data structure is basically a group of data elements that are put together
+under one name, and which defines a particular way of storing and organizing data in a computer so that it can be used efficiently. The elementary data structures are as follows.
+
+• List: Allows fast access of data.
+
+• Sets: Treats data as elements of a set. Allows application of operations such as intersection, union, and
+equivalence.
+
+• Dictionaries: Allows data to be stored as a key-value pair.
+
+> Algorithm design techniques 
+- Developing an algorithm is an art which may never be fully automated. By mastering the design techniques, it will become easier for you to develop new and useful algorithms.
+Examples of algorithm design techniques include dynamic programming.
+> Methods of specifying an algorithm 
+- An algorithm is just a sequence of steps or instructions that can be used to implement a solution. After writing the algorithm, it is specified either using a natural language or with the help of pseudocode and flowcharts. We will read about them in the next section. 
+> Proving algorithms correctness 
+- Writing an algorithm is not just enough. You need to prove that it computes solutions for all the possible valid inputs. This process is often referred to as algorithm validation. Algorithm validation ensures that the algorithm will work correctly irrespective of the programming language in which it will be implemented.
+> Analysing the performance of algorithms 
+- When an algorithm is executed, it uses the computer’s resources like the Central Processing Unit (CPU) to perform its operation and to hold the program and data respectively. An algorithm is analysed to measure its performance in terms of CPU time and memory space required to execute that algorithm. This is a challenging task and is often used to compare different algorithms for a particular problem. The result of the comparison helps us to choose the best solution from all possible solutions. Analysis of the algorithm also helps us to determine whether the algorithm will be able to meet any efficiency constraint that exits or not. 
+
+### 1.5.Simple strategies for developing algorithms
+
+### Iteration
+_________________
 
 In computational mathematics, an iterative method is a mathematical procedure that generates a sequence of improving approximate solutions for a class of problems, in which the n-th approximation is derived from the previous ones. A specific implementation of an iterative method, including the termination criteria, is an algorithm of the iterative method. An iterative method is called convergent if the corresponding sequence converges for given initial approximations.
 
@@ -623,9 +688,8 @@ PRINT result
 End
 ```
 
-
-
-### 1.7.Recursive Algorithm
+### Recursion
+_________________
 
 - A recursive algorithm is an algorithm which calls itself with "smaller (or simpler)" input values, and which obtains the result for the current input by applying simple operations to the returned value for the smaller (or simpler) input. More generally if a problem can be solved utilizing solutions to smaller versions of the same problem, and the smaller versions reduce to easily solvable cases, then one can use a recursive algorithm to solve that problem. For example, the elements of a recursively defined set, or the value of a recursively defined function can be obtained by a recursive algorithm.
 
@@ -663,8 +727,6 @@ PRINT result
 End
 End TASK
 ```
-
-
 
 - An algorithm starts from an initial state with some input. The instructions/statements describe the processing that must be done on the input to produce the final output (the final state). Note that an instruction is a single operation which when executed converts one state to other. In the course of processing, data is read from an input device, stored in computer’s memory for further processing, and then the result of the processing is written to an output device. The data is stored in the computer’s memory in the form of variables or constants. 
 - The state of an algorithm is defined as its condition regarding current values or contents of the stored data. An algorithm is a list of precise steps and the order of steps determines the functioning of the algorithm. 
