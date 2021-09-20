@@ -420,47 +420,47 @@ The above can be easily altered so as to cover all four of the first four cases.
 
 ### TASK : Sum of two numbers
 ```sh
-READ num1<br>
-READ num2<br>
-Compute SUM:<br>
-Sum = num1 + num2<br>
-EndSUM<br>
-DISPLAY Sum<br>
-End<br>
-End TASK<br>
+READ num1
+READ num2
+Compute SUM:
+Sum = num1 + num2
+End SUM
+DISPLAY Sum
+End
+End TASK
 ```
 
 ***Pseudocode to find given number is odd or even***
 
 ### TASK: Find Odd or Even
 ```sh
-READ number<br>
-Compute MODULO:<br>
-Mod = number % 2;<br>
-End MODULO<br>
-IF Mod = 0:<br>
-PRINT “Number is Even”<br>
-ELSE:<br>
-PRINT “Number is Odd”<br>
-End TASK<br>
+READ number
+Compute MODULO:
+Mod = number % 2;
+End MODULO
+IF Mod = 0:
+PRINT “Number is Even”
+ELSE:
+PRINT “Number is Odd”
+End TASK
 ```
 
 ***Pseudocode to find factorial of given number***
 
 ### TASK: Finding Factorial of a number 
 ```sh
-READ number<br>
-Initialize Fact to 0 and CurrentVal to number<br>
-WHILE CurrentVal is not 1:<br>
-IF CurretVal >= 1:<br>
-Fact = Fact * CurrentVal<br>
-CurretVal = CurretVal - 1<br>
-EndIF<br>
-Else<br>
-Print Fact<br>
-End WHILE<br>
-End <br>
-End TASK <br>
+READ number
+Initialize Fact to 0 and CurrentVal to number
+WHILE CurrentVal is not 1:
+IF CurretVal >= 1:
+Fact = Fact * CurrentVal
+CurretVal = CurretVal - 1
+EndIF
+Else
+Print Fact
+End WHILE
+End 
+End TASK 
 ```
 
 ### 1.6.**Flowcharts**
