@@ -441,7 +441,7 @@ Now that we have looked as some of the pros and cons of flowcharts relative to p
 The shape of the block may convey additional information about what is happening. For instance, a rectangular block is frequently used to indicated that a computation is occurring while a slanted parallelogram is used to indicate some type of input or output operation. The diversity of shapes that can be used and what they mean is staggering - for instance a different shape can be used to indicated output to a tape drive versus to a hard disk or to indicate output in text format verses binary format. By using such highly specialized symbols, much of what is happening can be conveyed by the symbols themselves. But the power of using these distinctions is generally only useful to people that work with flowcharts continuously, professionally, and who are describing very large and complex systems. At our level, it is far better to restrict ourselves to a minimum number of shapes and explicitly indicate any information that otherwise might have been implied by using a different shape.
 
 
-![flowchart symbols](unit_i_img/flowchart_symbols.png)
+![flowchart symbols](https://github.com/kgisl/pythonFDP/blob/master/units/unit_i_img/flowchart_symbols.png)
 
 **_Circle - Entry/Exit Point_**
 
@@ -469,15 +469,15 @@ The arrows simply show which symbol gets executed next. The rule is that once an
 
  ***Sum of two numbers flow chart***
  
-![sum of two nos](unit_i_img/sum_of_two_numbers.png)
+![sum of two nos](https://github.com/kgisl/pythonFDP/blob/master/units/unit_i_img/sum_of_two_numbers.png)
 
 ***Finding number is even or odd***
 
-![odd or even](unit_i_img/odd_even.png)
+![odd or even](https://github.com/kgisl/pythonFDP/blob/master/units/unit_i_img/odd_even.png)
 
 ***Program to Find a factorial of the given number***
 
-![factorial](unit_i_img/factorial.png)
+![factorial](https://github.com/kgisl/pythonFDP/blob/master/units/unit_i_img/factorial.png)
 
 
 **programming language notation**
