@@ -349,7 +349,7 @@ Repetition - Case 4
 
 ● LOOP:
 
- - Statement(s) to be executed if test condition is FALSE
+- Statement(s) to be executed if test condition is FALSE
 - UNTIL: (test condition)
 
 
@@ -360,11 +360,13 @@ Just as the selection construct can be streamlined, so too can a couple of the r
 Repetition - Case 5 (streamlined version of Case 1)
 
 ● WHILE: (test condition)
+
 - Statement(s) to be executed if test condition is TRUE
 
 Repetition - Case 6 (streamlined version of Case 3)
 
 ● >UNTIL: (test condition)
+
 - Statement(s) to be executed if test condition is FALSE
 
 Streamlining the other two is more difficult because, since the test comes at the end of the statement within the loop, it is very useful to mark the beginning of those statements in such a way that the fact that it is a loop is readily apparent to the reader. The LOOP: statement does that about as well as any other option would.
@@ -372,13 +374,19 @@ Streamlining the other two is more difficult because, since the test comes at th
 As you code loops, you will discover that it is frequently the case that there are steps that are logically associated with the loop but which must reside outside of the loop code. The most common by far is the need to initialize certain variables, especially counters, prior to entering the loop. Much less frequently, it is necessary to perform some cleanup tasks immediately after the loop is exited. A pseudocode construct that gathers all of these together so that their association is obvious is the following:
 
 Repetition - Case 7
+
 ● REP:<br>
+
 ○ PRE:<br>
+
 ■ Statement(s) to be executed prior to entering loop<br>
 ○ WHILE: (test condition)<br>
+
 ■ Statement(s) to be executed if test condition is TRUE<br>
 ○ LOOP:<br>
+
 ○ POST:<br>
+
 	■ Statement(s) to be executed prior after the loop is finished<br>
 	
 The above can be easily altered so as to cover all four of the first four cases. As shown, it implements Case 1. By switching the WHILE: and LOOP: statements it implements Case 2. Similarly, Case 3 is obtained simply by changing the WHILE: to UNTIL: and swapping the UNTIL: with the LOOP: then generated Case 4.
@@ -390,6 +398,7 @@ The above can be easily altered so as to cover all four of the first four cases.
 ***Pseudo Code for Sum of two numbers:***
 
 TASK : Sum of two numbers<br>
+```sh
 READ num1<br>
 READ num2<br>
 Compute SUM:<br>
@@ -398,10 +407,12 @@ EndSUM<br>
 DISPLAY Sum<br>
 End<br>
 End TASK<br>
+```
 
 ***Pseudocode to find given number is odd or even***
 
 TASK: Find Odd or Even:<br>
+```sh
 READ number<br>
 Compute MODULO:<br>
 Mod = number % 2;<br>
@@ -411,9 +422,11 @@ PRINT “Number is Even”<br>
 ELSE:<br>
 PRINT “Number is Odd”<br>
 End TASK<br>
+```
 
 ***Pseudocode to find factorial of given number***
 TASK: Finding Factorial of a number <br>
+```sh
 READ number<br>
 Initialize Fact to 0 and CurrentVal to number<br>
 WHILE CurrentVal is not 1:<br>
@@ -426,7 +439,7 @@ Print Fact<br>
 End WHILE<br>
 End <br>
 End TASK <br>
-
+```
 
 ## 1.6.**Flowcharts**
 
@@ -489,7 +502,7 @@ Eg : C, C++, COBAL, JAVA, Python ... etc
 Programing language consist of syntax and semantics to processed by the compiler or interpreter we must represent our logic with proper notations otherwise the program won’t work at all.
 
 **_Let’s take a python program to compute sum of two numbers,_**
-``` 
+```sh 
 num1 = input('Enter first number: ')
 num2 = input('Enter second number: ')
 # Add two numbers3
@@ -499,7 +512,7 @@ print(sum)
 ```
 **_Let’s take a C program to compute sum of two numbers,_**
 
-```
+```sh
 #include<stdio.h>
 int main(){
 int num1, int num2, sum;
@@ -514,7 +527,7 @@ return 0;
 ```
 
 **_Let’s take a Java program to compute sum of two numbers,_**
-```
+```sh
 class Main{
 public static void main(String[] args){
 int num1, num2, sum;
@@ -533,16 +546,19 @@ Above that we have 3 styles of the programming with 3 different language but ach
 The programs different only by syntax and rules
 
 **Python**<br>
+
 ●It is dynamic type no declaration of variable needed.<br>
 ●Just do and display.<br>
 ● It is based on Dynamic OOPS .<br>
 
 **C**<br><br>
+
 ● It is structure oriented we need to declare a variable before we use it.<br>
 ● Anything that represented as block of codes and do the work.<br>
 ● It is procedure oriented structured language.<br>
 
 **JAVA**<br>
+
 ● It is object oriented derived from C and C++<br>
 ● Coding style is inherited from C and C++ for easy transformation.<br>
 ● Everything is considered as objects and depends on dynamic memory allocations.<br>
@@ -557,6 +573,7 @@ In computational mathematics, an iterative method is a mathematical procedure th
 
 For Example To find power of a number<br>
 
+```sh
 Step 1: Get a base number<br>
 Step 2: Get a power<br>
 Step 3: Initialize result value with number and pow with power<br>
@@ -565,10 +582,12 @@ Step 5: Multiply result and number then increase pow by one<br>
 Step 6: Repeat Step 5 Until pow reaches value of power<br>
 Step 7: Break the loop and display the result<br>
 Step 8: End<br>
+```
 
 In pseudocode:
 
 TASK: To Find Power of a number<br>
+```sh
 READ number<br>
 READ Power<br>
 Initialize result with number and pow with Power<br>
@@ -578,6 +597,7 @@ Increase pow by 1<br>
 End Loop<br>
 PRINT result<br>
 End<br>
+```
 
 
 
@@ -603,6 +623,7 @@ Step 8: End<br>
 In pseudocode:
 
 TASK: To Find Power of a number<br>
+```sh
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;READ number<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;READ Power<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FIND_POWER number and power<br>
@@ -616,7 +637,7 @@ TASK: To Find Power of a number<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT result<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End<br>
 End TASK<br>
-
+```
 
 
 
