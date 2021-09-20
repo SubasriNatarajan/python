@@ -12,7 +12,7 @@
 ### INTRODUCTION 
 A program is a set of instructions that tells the computer how to solve a particular problem. Various program design tools like algorithms, pseudocodes and flowcharts are used to design the blueprint of the solution (or the program to be written). 
 Computer programming goes a step further in problem solving process. Programming means writing computer programs. While programming, the programmers take an algorithm and code the instructions in a particular programming language so that it can be executed by a computer. These days, there are many programming languages available in the market. The programmer can choose any language depending on his expertise and the problem domain
-### ALGORITHMS
+### 1.1.ALGORITHMS
 *In computing, we focus on the type of problems categorically known as **algorithmic problems**, where their solutions are expressible in the form of algorithms. The term ‘***algorithm***’ was derived from the name of Mohammed al-Khwarizmi, a Persian mathematician in the nineth century (Al-Khwarizmi → Algorism (in Latin) → Algorithm).*
 - The typical meaning of an algorithm *is a formally defined procedure for performing some calculation*. If a procedure is formally defined, then it must be implemented using some formal language, and such languages are known as programming languages. The algorithm gives the logic of the program, that is, a step-by-step description of how to arrive at a solution.*
 - In general terms, ***an algorithm provides a blueprint to writing a program to solve a particular problem. It is considered to be an effective procedure for solving a problem in a finite number of steps.*** That is, a well defined algorithm always provides an answer, and is guaranteed to terminate. Algorithms are mainly used to achieve software reuse. 
@@ -72,7 +72,7 @@ Three reasons for using algorithms are efficiency, abstraction and reusability.
 
 • Generality: The algorithm can be applied to various set of inputs
 
-### BUILDING BLOCKS OF ALGORITHM (INSTRUCTIONS, STATE, CONTROL FLOW, FUNCTIONS)
+### 1.2.BUILDING BLOCKS OF ALGORITHM (INSTRUCTIONS, STATE, CONTROL FLOW, FUNCTIONS)
 **Building Blocks of Algorithms are,**
 		 Computer is not smart as we humans. It requires a much more than single instruction to do any task. We can express our needs to computer using the algorithms. Algorithms includes basic building blocks, That is used to express any kind of the task to the computer
 		 
@@ -230,7 +230,7 @@ When a function is "called" the program "leaves" the current section of code and
 ● **_Non-Parameterised Function_**
 - This a functions does not receive any input while calling. It may or may not return any value to the caller.
 
-**Notation of algorithm**
+**1.3.Notation of algorithm**
 
 Algorithms are basically a set of instructions that, if correct and if followed carefully, produce some desired result. Since they are sets of instructions, they are generally presented in such a way that that the step-by-step nature of how they should be followed is readily apparent. The two most common representations are pseudocode and flowcharts.
 
