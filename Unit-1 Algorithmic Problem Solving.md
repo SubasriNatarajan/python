@@ -24,17 +24,17 @@
 
 - [Functions]()
 
-[1.3.Notation of algorithm]()
+[1.3.NOTATION OF ALGORITHM]()
 
 - [Pseudocode]()
 
 - [Flowcharts]()
  
-- [programming language]()
+- [Programming language]()
 
-[1.4.Algorithmic problem solving]()
+[1.4.ALGORITHMIC PROBLEM SOLVING]()
 
-[1.5.Simple strategies for developing algorithms]()
+[1.5.SIMPLE STRATEGIES FOR DEVELOPING ALGORITHM]()
 
 - [Iteration]()
 
@@ -265,7 +265,7 @@ When a function is "called" the program "leaves" the current section of code and
 ● **_Non-Parameterised Function_**
 - This a functions does not receive any input while calling. It may or may not return any value to the caller.
 
-### 1.3.Notation of algorithm
+### 1.3.NOTATION OF ALGORITHM
 
 *Algorithms are basically a set of instructions that, if correct and if followed carefully, produce some desired result. Since they are sets of instructions, they are generally presented in such a way that that the step-by-step nature of how they should be followed is readily apparent.* 
 The two most common representations are pseudocode and flowcharts.
@@ -610,7 +610,7 @@ The programs different only by syntax and rules
 
 Problem solving can be achieved so many ways, If you need to done with computers then you must design algorithm and then you must implement algorithm with any of your programming language choice.
 
-### 1.4.Algorithmic problem solving
+### 1.4.ALGORITHMIC PROBLEM SOLVING
 
 - Algorithms are solutions to problems. They are not solutions themselves. They just list specific instructions that need to be performed for getting the solution. In computer science, emphasis is laid on writing a good and effective algorithm and this emphasis makes computer science distinct from other disciplines. For example, computer science is distinct from theoretical mathematics because those practitioners are typically satisfied with just proving the existence of a solution to a problem but in computer science, the problem is not solved until the algorithm is used to implement the solution. 
 - We will now discuss about the sequence of steps one must typically follow for designing an effective algorithm.
@@ -651,7 +651,7 @@ Examples of algorithm design techniques include dynamic programming.
 > Analysing the performance of algorithms 
 - When an algorithm is executed, it uses the computer’s resources like the Central Processing Unit (CPU) to perform its operation and to hold the program and data respectively. An algorithm is analysed to measure its performance in terms of CPU time and memory space required to execute that algorithm. This is a challenging task and is often used to compare different algorithms for a particular problem. The result of the comparison helps us to choose the best solution from all possible solutions. Analysis of the algorithm also helps us to determine whether the algorithm will be able to meet any efficiency constraint that exits or not. 
 
-### 1.5.Simple strategies for developing algorithms
+### 1.5.SIMPLE STRATEGIES FOR DEVELOPING ALGORITHM
 
 ### Iteration
 _________________
