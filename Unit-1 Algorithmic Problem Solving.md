@@ -16,29 +16,29 @@
 
 [1.2.BUILDING BLOCKS OF ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#12building-blocks-of-algorithm-instructions-state-control-flow-functions)
 
-- [Statements]()
+- [Statements](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#instructions-statements)
 
-- [State]()
+- [State](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#state)
  
-- [control flow]()
+- [control flow](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#control-flow)
 
-- [Functions]()
+- [Functions](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#functions)
 
-[1.3.NOTATION OF ALGORITHM]()
+[1.3.NOTATION OF ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#13notation-of-algorithm)
 
-- [Pseudocode]()
+- [Pseudocode](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#pseudocode)
 
-- [Flowcharts]()
+- [Flowcharts](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#flowcharts)
  
-- [Programming language]()
+- [Programming language](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#programming-language-notation)
 
-[1.4.ALGORITHMIC PROBLEM SOLVING]()
+[1.4.ALGORITHMIC PROBLEM SOLVING](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#14algorithmic-problem-solving)
 
-[1.5.SIMPLE STRATEGIES FOR DEVELOPING ALGORITHM]()
+[1.5.SIMPLE STRATEGIES FOR DEVELOPING ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#15simple-strategies-for-developing-algorithm)
 
-- [Iteration]()
+- [Iteration](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#iteration)
 
-- [Recursion]()
+- [Recursion](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#recursion)
 
 ### INTRODUCTION 
 A program is a set of instructions that tells the computer how to solve a particular problem. Various program design tools like algorithms, pseudocodes and flowcharts are used to design the blueprint of the solution (or the program to be written). 
