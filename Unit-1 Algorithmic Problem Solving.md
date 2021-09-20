@@ -20,6 +20,7 @@ Computer programming goes a step further in problem solving process. Programming
 
 **_Real Life Example_**
 **_Procedure to cook Bread Toast_**
+
 _Step 1 : Grab a loaf of bread_
 
 _Step 2 : Get a pan and place it on the stove let it heat_
@@ -35,7 +36,9 @@ _Step 5 : Get the toasted bread from the pan and serve it on a plate with anythi
 _The above procedure that explains “how to make a bread toast” and what are all the requirements before we start the procedures. We can code this procedure or algorithm in any programming language of your choice and simulate as results on the computer display. Else we can feed this procedure to the robot with proper instructions and we make the robot to do the bread toast for us._
 
 **_Example :_**
+
 **Algorithm for adding two numbers:**
+
 _Step 1 : Get the 2 numbers from the user as input._
 
 _Step 2 : Perform addition of those 2 numbers._
@@ -54,9 +57,10 @@ Three reasons for using algorithms are efficiency, abstraction and reusability.
 **_Reusability_**: Algorithms are often reusable in many different situations. Since many well-known algorithms are the generalizations of more complicated ones, and since many complicated problems can be distilled into simpler ones, an efficient means of solving certain simpler problems potentially lets us solve many complicated problems.
 
 ### Characteristics of Algorithm
+
 • Precision: The instructions should be written in a precise manner. 
 
-•Uniqueness: The outputs of each step should be unambiguous, i.e., they should be unique and only depend on the input and the output of the preceding steps.
+• Uniqueness: The outputs of each step should be unambiguous, i.e., they should be unique and only depend on the input and the output of the preceding steps.
 
 • Finiteness: Not even a single instruction must be repeated infinitely.
 
@@ -71,9 +75,13 @@ Three reasons for using algorithms are efficiency, abstraction and reusability.
 ### BUILDING BLOCKS OF ALGORITHM (INSTRUCTIONS, STATE, CONTROL FLOW, FUNCTIONS)
 **Building Blocks of Algorithms are,**
 		 Computer is not smart as we humans. It requires a much more than single instruction to do any task. We can express our needs to computer using the algorithms. Algorithms includes basic building blocks, That is used to express any kind of the task to the computer
+		 
 		 **_1. Instructions/ Statements_**
+		 
 		 **_2. State_**
+		 
 		 **_3. Control Flow_**
+		 
 		 **_4. Functions_**
 
 **_1. Instructions/ Statements_**
@@ -81,10 +89,13 @@ Three reasons for using algorithms are efficiency, abstraction and reusability.
 In computer programming, a statement is the smallest standalone element of an imperative programming language that expresses some action to be carried out. It is an instruction written in a high-level language that commands the computer to perform a specified action.
 
 There are two types of statement,
+
 ● Simple Statement
+
 ● Compound Statement
 
 **_Simple Statements_**
+
 It is used to represent single action need to be done.
 
 ● **assertion**: assert(ptr != NULL);
@@ -139,10 +150,15 @@ In computer science, control flow (or flow of control) is the order in which ind
 Within an imperative programming language, a control flow statement is a statement which execution results in a choice being made as to which of two or more paths to follow.
 
 **Control Flow Statement Categories**
+
 ● Continuation at a different statement (*unconditional branch or jump*)
+
 ● Executing a set of statements only if some condition is met (choice - i.e., *conditional branch*)
+
 ● Executing a set of statements zero or more times, until some condition is met (i.e., loop - the same as conditional branch)
+
 ● Executing a set of distant statements, after which the flow of control usually returns (subroutines, coroutines, and continuations)
+
 ● Stopping the program, preventing any further execution (unconditional halt)
 
 **Primitive Control Statements**
