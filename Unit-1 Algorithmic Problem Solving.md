@@ -10,21 +10,21 @@
 
 #  TABLE OF CONTENTS
 
-[1.1.ALGORITHMS](#https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#11algorithms)
+[1.1.ALGORITHMS](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#11algorithms)
 
-[Characteristics of Algorithm](#https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#characteristics-of-algorithm)
+- [Characteristics of Algorithm](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#characteristics-of-algorithm)
 
-[1.2.BUILDING BLOCKS OF ALGORITHM (INSTRUCTIONS, STATE, CONTROL FLOW, FUNCTIONS)](#https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#12building-blocks-of-algorithm-instructions-state-control-flow-functions)
+[1.2.BUILDING BLOCKS OF ALGORITHM INSTRUCTIONS, STATE, CONTROL FLOW, FUNCTIONS](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#12building-blocks-of-algorithm-instructions-state-control-flow-functions)
 
-[1.3.Functions](#)
+[1.3.Functions](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#13functions)
 
-[1.4.Notation of algorithm](#)
+[1.4.Notation of algorithm](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#14notation-of-algorithm)
 
-[1.5.Pseudocode](#)
+[1.5.Pseudocode](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#15pseudocode)
 
-[1.6.Flowcharts](#https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#16flowcharts)
+[1.6.Flowcharts](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#16flowcharts)
 
-[1.7.Recursive Algorithm](#)
+[1.7.Recursive Algorithm](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#17recursive-algorithm)
 
 ### INTRODUCTION 
 A program is a set of instructions that tells the computer how to solve a particular problem. Various program design tools like algorithms, pseudocodes and flowcharts are used to design the blueprint of the solution (or the program to be written). 
@@ -211,7 +211,7 @@ In structured programming, the ordered sequencing of successive commands is cons
 - Condition-controlled loops
 - Collection-controlled loops
 
-### 1.3.Functions:
+### 1.3.Functions
 
 *Module - A small component of a computer program that may contain several routines. parameter In computer programming, a parameter is a value that is passed into a function or procedure. procedure A section of computer code that performs a specific task.*
 
