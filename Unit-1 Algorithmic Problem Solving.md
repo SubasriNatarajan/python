@@ -1,4 +1,4 @@
-![N|Solid]()
+![N|Solid](https://github.com/SubasriNatarajan/python/blob/main/Unit%20-%202%20Word%20Art.png)
 
 ## **UNIT I - ALGORITHMIC PROBLEM SOLVING**
 
@@ -6,13 +6,16 @@
 
 ***Illustrative problems:*** *find minimum in a list, insert a card in a list of sorted cards, Guess an integer number in a range, Towers of Hanoi.*
 
+[Memcode flashcards](https://www.memcode.com/courses/2283)- 20+ flashcards to review the contents of this unit. Space repetition of the flashcards will help in retaining the content and perform better in exams."
+
+
 ### INTRODUCTION 
 A program is a set of instructions that tells the computer how to solve a particular problem. Various program design tools like algorithms, pseudocodes and flowcharts are used to design the blueprint of the solution (or the program to be written). 
 Computer programming goes a step further in problem solving process. Programming means writing computer programs. While programming, the programmers take an algorithm and code the instructions in a particular programming language so that it can be executed by a computer. These days, there are many programming languages available in the market. The programmer can choose any language depending on his expertise and the problem domain
 ### ALGORITHMS
-In computing, we focus on the type of problems categorically known as **algorithmic problems**, where their solutions are expressible in the form of algorithms. The term ‘***algorithm***’ was derived from the name of Mohammed al-Khwarizmi, a Persian mathematician in the nineth century (Al-Khwarizmi → Algorism (in Latin) → Algorithm). 
-The typical meaning of an algorithm *is a formally defined procedure for performing some calculation*. If a procedure is formally defined, then it must be implemented using some formal language, and such languages are known as programming languages. The algorithm gives the logic of the program, that is, a step-by-step description of how to arrive at a solution.
-In general terms, ***an algorithm provides a blueprint to writing a program to solve a particular problem. It is considered to be an effective procedure for solving a problem in a finite number of steps.*** That is, a well defined algorithm always provides an answer, and is guaranteed to terminate. Algorithms are mainly used to achieve software reuse. 
+*In computing, we focus on the type of problems categorically known as **algorithmic problems**, where their solutions are expressible in the form of algorithms. The term ‘***algorithm***’ was derived from the name of Mohammed al-Khwarizmi, a Persian mathematician in the nineth century (Al-Khwarizmi → Algorism (in Latin) → Algorithm).*
+- The typical meaning of an algorithm *is a formally defined procedure for performing some calculation*. If a procedure is formally defined, then it must be implemented using some formal language, and such languages are known as programming languages. The algorithm gives the logic of the program, that is, a step-by-step description of how to arrive at a solution.*
+- In general terms, ***an algorithm provides a blueprint to writing a program to solve a particular problem. It is considered to be an effective procedure for solving a problem in a finite number of steps.*** That is, a well defined algorithm always provides an answer, and is guaranteed to terminate. Algorithms are mainly used to achieve software reuse. 
 <![endif]-->
 
 **_Real Life Example_**
