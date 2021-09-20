@@ -273,13 +273,13 @@ The rules of Pseudocode are reasonably straightforward. All statements showing "
 
 **_For finding the given number is odd or even:_**
 ```sh
-_Input any number_ 
-_Compute modulo for that  number_ 
-_If modulo value equals to zero_ 
-_ Print “The number is Even”_ 
-_Else_ 
-_Print “The number is Odd”_ 
-_End_ 
+Input any number
+Compute modulo for that  number 
+If modulo value equals to zero
+Print “The number is Even” 
+Else 
+Print “The number is Odd”
+End 
 ```
 
 #### **Documentation Keywords**
