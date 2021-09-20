@@ -268,46 +268,44 @@ _End_<br>
 
 #### **Documentation Keywords**
 
-Documentation keywords describe what needs to be done or provides information about why something is being done. You will quickly discover that, if you have done a decent job of writing your pseudocode, that these lines make very useful comment lines in your final code.
+*Documentation keywords describe what needs to be done or provides information about why something is being done. You will quickly discover that, if you have done a decent job of writing your pseudocode, that these lines make very useful comment lines in your final code.*
 
 ● TASK:
->A TASK statement is something that the program must perform but that is described at a level more abstract than what can be coded directly. One way to think of it is that you break a problem down into a set of TASKs. Each TASK can, in turn, be broken down into more narrowly defined TASKs. At some point, the TASK can be described in terms of steps that can be directly implemented. From one perspective, anytime a TASK: keyword is used, it means that there should (or at least could) be a subordinate level of the hierarchy which is the pseudocode for that TASK. In practice, that pseudocode need not be present if the TASK is sufficiently narrow that the person implementing it can go directly from the TASK description to the actual code without the benefit of the detailed steps.
+> A TASK statement is something that the program must perform but that is described at a level more abstract than what can be coded directly. One way to think of it is that you break a problem down into a set of TASKs. Each TASK can, in turn, be broken down into more narrowly defined TASKs. At some point, the TASK can be described in terms of steps that can be directly implemented. From one perspective, anytime a TASK: keyword is used, it means that there should (or at least could) be a subordinate level of the hierarchy which is the pseudocode for that TASK. In practice, that pseudocode need not be present if the TASK is sufficiently narrow that the person implementing it can go directly from the TASK description to the actual code without the benefit of the detailed steps.
 
 ● REM:
->A REM statement is merely a remark or comment. They are useful if the TASK statement proves to be insufficient to convey all the desired information or if the reason that something is done or why it works is not obvious..
+> A REM statement is merely a remark or comment. They are useful if the TASK statement proves to be insufficient to convey all the desired information or if the reason that something is done or why it works is not obvious..
 
 #### **Action Keywords**
 
-Action keywords are the lines that actually do the work. There are three basic actions that can be carried out: changing the value stored at some location in memory, getting input from some device, or generating output to some device. We will use the SET, GET, and PUT keywords for these actions respectively.
+*Action keywords are the lines that actually do the work. There are three basic actions that can be carried out: changing the value stored at some location in memory, getting input from some device, or generating output to some device. We will use the SET, GET, and PUT keywords for these actions respectively.*
 
 ● SET:
 
-This is an "action" keyword that denotes performing some operation that changes a value in memory. The most common example would be the evaluation of some equation.
+> This is an "action" keyword that denotes performing some operation that changes a value in memory. The most common example would be the evaluation of some equation.
 
 ● PUT:
 
-This is an "action" keyword that denotes an output operation, generally to the screen. If the destination is anything other than the screen, such as a file or the serial port, then that should be explicitly stated.
+> This is an "action" keyword that denotes an output operation, generally to the screen. If the destination is anything other than the screen, such as a file or the serial port, then that should be explicitly stated.
 
 ● GET:
 
-This is an "action" keyword that denotes in input operation, generally from the keyboard. It is generally understood that there is an implied SET action involved where the value brought in gets stored in some memory location. If the source is anything other than the keyboard, such as a file or the serial port, then that should be explicitly stated.
-
-
+> This is an "action" keyword that denotes in input operation, generally from the keyboard. It is generally understood that there is an implied SET action involved where the value brought in gets stored in some memory location. If the source is anything other than the keyboard, such as a file or the serial port, then that should be explicitly stated.
 
 #### **Flow Control Keywords**
 
-While the action keywords perform the actual work, they are insufficient in and of themselves to write all but the most trivial programs. Of the three structured programming constructs, the action keywords are only sufficient to implement the first of them, namely a sequence of instructions. A program's true power comes from the other two - selection and repetition - because they give it the ability to select whether a particular action will actually be carried out based on the information made available to it at the time that it is executed. This ability is the result of controlling the flow of the program which is the purpose of the flow control keywords.
+> While the action keywords perform the actual work, they are insufficient in and of themselves to write all but the most trivial programs. Of the three structured programming constructs, the action keywords are only sufficient to implement the first of them, namely a sequence of instructions. A program's true power comes from the other two - selection and repetition - because they give it the ability to select whether a particular action will actually be carried out based on the information made available to it at the time that it is executed. This ability is the result of controlling the flow of the program which is the purpose of the flow control keywords.
 
-Because flow control is a more complex task that merely executing a single statement, all but the simplest flow control keywords are used in groups and there are some options in how to use them depending on the specific situation.
+> Because flow control is a more complex task that merely executing a single statement, all but the simplest flow control keywords are used in groups and there are some options in how to use them depending on the specific situation.
 
-Selection - Case 1
+### Selection - Case 1
 
 ● SEL: (test condition)
 
 - TRUE : Statement(s) to be executed if test condition is TRUE
 - FALSE : Statement(s) to be executed if test condition is FALSE
 
-Selection - Case 2
+### Selection - Case 2
 
 ● IF: (test condition)
 -  Statement(s) to be executed if test condition is TRUE-
@@ -315,37 +313,38 @@ Selection - Case 2
 ● ELSE:
 - Statement(s) to be executed if test condition is FALSE
 
-The advantage of Case 1 is that it clearly identifies the block as a selection construct, but it is a bit more involved than is usually necessary. The format of Case 2 is very close to the format of the actual C code that would result and is therefore a bit more straightforward to convert in the coding process, but not enough so as to be a significant factor.
+- The advantage of Case 1 is that it clearly identifies the block as a selection construct, but it is a bit more involved than is usually necessary. The format of Case 2 is very close to the format of the actual C code that would result and is therefore a bit more straightforward to convert in the coding process, but not enough so as to be a significant factor.
 
-In a legal outline, the ELSE: statement in Case 2 would be numbered one more than the IF: statement - in other words, if the IF: statement was numbered 3.4.2.6) then the ELSE: statement would be numbered 3.4.2.7). This can be useful or confusing depending upon how you think of it. If you think of the test condition controlling a single selection construct, then it would be nice if the controlling expression was one level in the outline and everything it controls was at a lower level. So this could be a bit confusing. However, this format actually emphasizes the fact that, in C, an "else" statement truly is a separate statement and that it must immediately follow an "if" statement that is at the same level of control. Neither convention is significantly better than the other - and you should quickly get comfortable with whichever you choose to use.
+- In a legal outline, the ELSE: statement in Case 2 would be numbered one more than the IF: statement - in other words, if the IF: statement was numbered 3.4.2.6) then the ELSE: statement would be numbered 3.4.2.7). This can be useful or confusing depending upon how you think of it. If you think of the test condition controlling a single selection construct, then it would be nice if the controlling expression was one level in the outline and everything it controls was at a lower level. So this could be a bit confusing. However, this format actually emphasizes the fact that, in C, an "else" statement truly is a separate statement and that it must immediately follow an "if" statement that is at the same level of control. Neither convention is significantly better than the other - and you should quickly get comfortable with whichever you choose to use.
 
-Repetition - Case 1
+### Repetition - Case 1
 
 ● LOOP:
 
 - WHILE: (test condition)
 - Statement(s) to be executed if test condition is TRUE
 
-Repetition - Case 2
+### Repetition - Case 2
+
 ● LOOP:
 
 - Statement(s) to be executed if test condition is TRUE
 - WHILE: (test condition)
 
 
-These two cases map directly into the while() and do/while() looping constructs of the C language. In Case 1, the test condition is evaluated prior to making the first pass through the statements controlled by it and, as a result, the possibility exists that those statements won't be executed even once. The only difference in Case 2 is that the statements controlled by the test condition are executed one time and the test is evaluated after that first pass. If the test condition is TRUE then another pass is made - and the test condition evaluated at the end of that and each succeeding pass until the test finally fails.
+- These two cases map directly into the while() and do/while() looping constructs of the C language. In Case 1, the test condition is evaluated prior to making the first pass through the statements controlled by it and, as a result, the possibility exists that those statements won't be executed even once. The only difference in Case 2 is that the statements controlled by the test condition are executed one time and the test is evaluated after that first pass. If the test condition is TRUE then another pass is made - and the test condition evaluated at the end of that and each succeeding pass until the test finally fails.
 
-While the two cases above are more than adequate to represent any looping logic - in fact, either one of them by itself is sufficient, just more cumbersome in some cases - the logic is sometime clearer to the reader if it is expressed in terms of repeating the loop until some some condition is met - meaning that the loop is terminated as soon as the test condition becomes TRUE.
+- While the two cases above are more than adequate to represent any looping logic - in fact, either one of them by itself is sufficient, just more cumbersome in some cases - the logic is sometime clearer to the reader if it is expressed in terms of repeating the loop until some some condition is met - meaning that the loop is terminated as soon as the test condition becomes TRUE.
 
 
-Repetition - Case 3
+### Repetition - Case 3
 
 ● LOOP:
 
  - UNTIL: (test condition)
  - Statement(s) to be executed if test condition is FALSE
 
-Repetition - Case 4
+### Repetition - Case 4
 
 ● LOOP:
 
@@ -353,43 +352,49 @@ Repetition - Case 4
 - UNTIL: (test condition)
 
 
-Although C does not support a "loop until" construct (some languages do) converting Case 3 to an equivalent form of Case 1 is trivial - you simply invert the test condition. Similarly, Case 4 can be converted to Case 2 by the same mechanism.
+- Although C does not support a "loop until" construct (some languages do) converting Case 3 to an equivalent form of Case 1 is trivial - you simply invert the test condition. Similarly, Case 4 can be converted to Case 2 by the same mechanism.
 
 Just as the selection construct can be streamlined, so too can a couple of the repetition constructs.
 
-Repetition - Case 5 (streamlined version of Case 1)
+### Repetition - Case 5 (streamlined version of Case 1)
 
-● WHILE: (test condition)
+> WHILE: (test condition)
 
 - Statement(s) to be executed if test condition is TRUE
 
 Repetition - Case 6 (streamlined version of Case 3)
 
-● >UNTIL: (test condition)
+> UNTIL: (test condition)
 
 - Statement(s) to be executed if test condition is FALSE
 
-Streamlining the other two is more difficult because, since the test comes at the end of the statement within the loop, it is very useful to mark the beginning of those statements in such a way that the fact that it is a loop is readily apparent to the reader. The LOOP: statement does that about as well as any other option would.
+- Streamlining the other two is more difficult because, since the test comes at the end of the statement within the loop, it is very useful to mark the beginning of those statements in such a way that the fact that it is a loop is readily apparent to the reader. The LOOP: statement does that about as well as any other option would.
 
-As you code loops, you will discover that it is frequently the case that there are steps that are logically associated with the loop but which must reside outside of the loop code. The most common by far is the need to initialize certain variables, especially counters, prior to entering the loop. Much less frequently, it is necessary to perform some cleanup tasks immediately after the loop is exited. A pseudocode construct that gathers all of these together so that their association is obvious is the following:
+- As you code loops, you will discover that it is frequently the case that there are steps that are logically associated with the loop but which must reside outside of the loop code. The most common by far is the need to initialize certain variables, especially counters, prior to entering the loop. Much less frequently, it is necessary to perform some cleanup tasks immediately after the loop is exited. A pseudocode construct that gathers all of these together so that their association is obvious is the following:
 
-Repetition - Case 7
+### Repetition - Case 7
 
-● REP:<br>
+● REP:
 
-○ PRE:<br>
+○ PRE:
 
-■ Statement(s) to be executed prior to entering loop<br>
-○ WHILE: (test condition)<br>
+■ Statement(s) to be executed prior to entering loop
 
-■ Statement(s) to be executed if test condition is TRUE<br>
-○ LOOP:<br>
+○ WHILE: (test condition)
 
-○ POST:<br>
+■ Statement(s) to be executed if test condition is TRUE
 
-	■ Statement(s) to be executed prior after the loop is finished<br>
+○ LOOP:
+
+○ POST:
+
+■ Statement(s) to be executed prior after the loop is finished
 	
-The above can be easily altered so as to cover all four of the first four cases. As shown, it implements Case 1. By switching the WHILE: and LOOP: statements it implements Case 2. Similarly, Case 3 is obtained simply by changing the WHILE: to UNTIL: and swapping the UNTIL: with the LOOP: then generated Case 4.
+The above can be easily altered so as to cover all four of the first four cases. As shown, it implements 
+
+- Case 1. By switching the WHILE: and LOOP: statements it implements 
+- Case 2. Similarly, 
+- Case 3 is obtained simply by changing the WHILE: to UNTIL: and swapping the UNTIL: with the LOOP: then generated Case 4.
 
 
 
@@ -443,11 +448,11 @@ End TASK <br>
 
 ## 1.6.**Flowcharts**
 
-Flowcharts are a graphical means of representing an algorithm, as should be expected, they have advantages and disadvantages compared to pseudocode. One of their primary advantages is that they permit the structure of a program to be easily visualized - even if all the text were to be removed. The human brain is very good at picking out these patterns and keeping them "in the back of the mind" as a reference frame for viewing the code as it develops.
+*Flowcharts are a graphical means of representing an algorithm, as should be expected, they have advantages and disadvantages compared to pseudocode. One of their primary advantages is that they permit the structure of a program to be easily visualized - even if all the text were to be removed. The human brain is very good at picking out these patterns and keeping them "in the back of the mind" as a reference frame for viewing the code as it develops.*
 
-Most programmers also find it easier to sketch flowcharts on a piece of paper and to modify them by crossing out connection arrows and drawing new ones that they would working with pseudocode by hand. By the same token, most programmers do not like to develop flowcharts in an electronic format because the overhead of creating and modifying it is generally more than they want to deal with while pseudocode lends itself to such electronic development.
+- Most programmers also find it easier to sketch flowcharts on a piece of paper and to modify them by crossing out connection arrows and drawing new ones that they would working with pseudocode by hand. By the same token, most programmers do not like to develop flowcharts in an electronic format because the overhead of creating and modifying it is generally more than they want to deal with while pseudocode lends itself to such electronic development.
 
-Furthermore, if the pseudocode is already in an electronic format that has been structured to lend itself to translation to the final language - such as the one recommended in the previous section - then doing so can be a very simply matter of copying the pseudocode to a new file, overlaying the necessary syntax associated with the language, and compiling the result. This can be a powerful advantage of pseudocode over flowcharts where the entire source code still has to be typed by hand unless you are fortunate to have a tool that can take a flowchart - typically developed using that same tool - and translating it to directly to code. Such tools do exist - and they tend to be rather expensive.
+- Furthermore, if the pseudocode is already in an electronic format that has been structured to lend itself to translation to the final language - such as the one recommended in the previous section - then doing so can be a very simply matter of copying the pseudocode to a new file, overlaying the necessary syntax associated with the language, and compiling the result. This can be a powerful advantage of pseudocode over flowcharts where the entire source code still has to be typed by hand unless you are fortunate to have a tool that can take a flowchart - typically developed using that same tool - and translating it to directly to code. Such tools do exist - and they tend to be rather expensive.
 
 Now that we have looked as some of the pros and cons of flowcharts relative to pseudo code, let's delve into flowcharting itself. The idea behind a flowchart is that it links together a series of blocks each of which perform some specific task. Each of these tasks is represented by a block and has exactly one arrow leading to it and, more importantly, one arrow exiting from it. This is key to the concept of a "structured program".
 
@@ -458,25 +463,25 @@ The shape of the block may convey additional information about what is happening
 
 **_Circle - Entry/Exit Point_**
 
-The circle indicates the entry and exit point for the program - or for the current segment of the program. The entry point has exactly one arrow leaving it and the exit point has exactly one arrow entering it. Execution of the program - or of that segment of the program - always starts at the entry point and finishes at the exit point.
+> The circle indicates the entry and exit point for the program - or for the current segment of the program. The entry point has exactly one arrow leaving it and the exit point has exactly one arrow entering it. Execution of the program - or of that segment of the program - always starts at the entry point and finishes at the exit point.
 
 **_Rectangle - Task_**
 
-The rectangle represents a task that is to be performed. That task might be as simple as incrementing the value of a single variable or as complex as you can imagine. The key point is that it also has a single entry point and a single exit point.
+> The rectangle represents a task that is to be performed. That task might be as simple as incrementing the value of a single variable or as complex as you can imagine. The key point is that it also has a single entry point and a single exit point.
 
 **_Parallelogram - Input/Output_**
 
-The parallelogram is used to indicate that some form in input/output operation is occurring. They must also obey the single entry single exit point rule which makes sense given that they are a task-block except with a slightly different shape for the symbol. We could easily eliminate this symbol and use the basic rectangle but the points at which I/O occur within our programs are extremely important and being able to easily and quickly identify them is valuable enough to warrant dealing with a special symbol.
+> The parallelogram is used to indicate that some form in input/output operation is occurring. They must also obey the single entry single exit point rule which makes sense given that they are a task-block except with a slightly different shape for the symbol. We could easily eliminate this symbol and use the basic rectangle but the points at which I/O occur within our programs are extremely important and being able to easily and quickly identify them is valuable enough to warrant dealing with a special symbol.
 
-Since a Task block can be arbitrarily complex, it can also contain I/O elements. Whether to use a rectangle or a parallelogram is therefore a judgment call. One way to handle this is to decide whether a task's primary purpose is to perform I/O. Again, that is a judgment call. Another option is to use a symbol that is rectangular on one side and slanted on the other indicating that it is performing both I/O and non-I/O tasks.
+> Since a Task block can be arbitrarily complex, it can also contain I/O elements. Whether to use a rectangle or a parallelogram is therefore a judgment call. One way to handle this is to decide whether a task's primary purpose is to perform I/O. Again, that is a judgment call. Another option is to use a symbol that is rectangular on one side and slanted on the other indicating that it is performing both I/O and non-I/O tasks.
 
 **_Diamond - Decision Point_**
 
-The diamond represents a decision point within our program. A question is asked and depending on the resulting answer, different paths are taken. Therefore a diamond has a single entry point but more than one exit point. Usually, there are two exit points - one that is taken if the answer to the question is "true" and another that is taken if the answer to the question is "false". This is sufficient to represent any type of branching logic including both the typical selection statements and the typical repetition statements. However, most languages support some type of "switch" or "case" statement that allows the program to select one from among a potentially large set of possible paths. The basic two-exit-point diamond is fully capable of representing this construct, but it is generally cleaner and more useful to represent it using a as many exit points from the diamond as there are paths.
+> The diamond represents a decision point within our program. A question is asked and depending on the resulting answer, different paths are taken. Therefore a diamond has a single entry point but more than one exit point. Usually, there are two exit points - one that is taken if the answer to the question is "true" and another that is taken if the answer to the question is "false". This is sufficient to represent any type of branching logic including both the typical selection statements and the typical repetition statements. However, most languages support some type of "switch" or "case" statement that allows the program to select one from among a potentially large set of possible paths. The basic two-exit-point diamond is fully capable of representing this construct, but it is generally cleaner and more useful to represent it using a as many exit points from the diamond as there are paths.
 
 **_Arrow - Interblock Flow_**
 
-The arrows simply show which symbol gets executed next. The rule is that once an arrow leaves a symbol, it must lead directly to exactly one other symbol - arrows can never fork and diverge. They can, however, converge and join arrows coming from other blocks.
+> The arrows simply show which symbol gets executed next. The rule is that once an arrow leaves a symbol, it must lead directly to exactly one other symbol - arrows can never fork and diverge. They can, however, converge and join arrows coming from other blocks.
 
 ####  Examples ####
 
@@ -495,11 +500,11 @@ The arrows simply show which symbol gets executed next. The rule is that once an
 
 **programming language notation**
 
-A programming language is a formal language that specifies a set of instructions that can be used to produce various kinds of output. Programming languages generally consist of instructions for a computer. Programming languages can be used to create programs that implement specific algorithms.
+- A programming language is a formal language that specifies a set of instructions that can be used to produce various kinds of output. Programming languages generally consist of instructions for a computer. Programming languages can be used to create programs that implement specific algorithms.
 
 Eg : C, C++, COBAL, JAVA, Python ... etc
 
-Programing language consist of syntax and semantics to processed by the compiler or interpreter we must represent our logic with proper notations otherwise the program won’t work at all.
+- Programing language consist of syntax and semantics to processed by the compiler or interpreter we must represent our logic with proper notations otherwise the program won’t work at all.
 
 **_Let’s take a python program to compute sum of two numbers,_**
 ```sh 
@@ -545,23 +550,23 @@ Above that we have 3 styles of the programming with 3 different language but ach
 
 The programs different only by syntax and rules
 
-**Python**<br>
+**Python**
 
-●It is dynamic type no declaration of variable needed.<br>
-●Just do and display.<br>
-● It is based on Dynamic OOPS .<br>
+- It is dynamic type no declaration of variable needed.
+- Just do and display.
+- It is based on Dynamic OOPS .
 
-**C**<br><br>
+**C**
 
-● It is structure oriented we need to declare a variable before we use it.<br>
-● Anything that represented as block of codes and do the work.<br>
-● It is procedure oriented structured language.<br>
+- It is structure oriented we need to declare a variable before we use it.
+- Anything that represented as block of codes and do the work.
+- It is procedure oriented structured language.
 
-**JAVA**<br>
+**JAVA**
 
-● It is object oriented derived from C and C++<br>
-● Coding style is inherited from C and C++ for easy transformation.<br>
-● Everything is considered as objects and depends on dynamic memory allocations.<br>
+- It is object oriented derived from C and C++
+- Coding style is inherited from C and C++ for easy transformation
+- Everything is considered as objects and depends on dynamic memory allocations
 
 **_Problem solving with algorithms_**
 
@@ -571,79 +576,82 @@ Problem solving can be achieved so many ways, If you need to done with computers
 
 In computational mathematics, an iterative method is a mathematical procedure that generates a sequence of improving approximate solutions for a class of problems, in which the n-th approximation is derived from the previous ones. A specific implementation of an iterative method, including the termination criteria, is an algorithm of the iterative method. An iterative method is called convergent if the corresponding sequence converges for given initial approximations.
 
-For Example To find power of a number<br>
+### For Example
+
+### To find power of a number
 
 ```sh
-Step 1: Get a base number<br>
-Step 2: Get a power<br>
-Step 3: Initialize result value with number and pow with power<br>
-Step 4: Start with pow as 1<br>
-Step 5: Multiply result and number then increase pow by one<br>
-Step 6: Repeat Step 5 Until pow reaches value of power<br>
-Step 7: Break the loop and display the result<br>
-Step 8: End<br>
+Step 1: Get a base number
+Step 2: Get a power
+Step 3: Initialize result value with number and pow with power
+Step 4: Start with pow as 1
+Step 5: Multiply result and number then increase pow by one
+Step 6: Repeat Step 5 Until pow reaches value of power
+Step 7: Break the loop and display the result
+Step 8: End
 ```
 
-In pseudocode:
+### In pseudocode:
 
-TASK: To Find Power of a number<br>
+### TASK: To Find Power of a number
 ```sh
-READ number<br>
-READ Power<br>
-Initialize result with number and pow with Power<br>
-WHILE pow < Power:<br>
-result = result * number<br>
-Increase pow by 1<br>
-End Loop<br>
-PRINT result<br>
-End<br>
+READ number
+READ Power
+Initialize result with number and pow with Power
+WHILE pow < Power:
+result = result * number
+Increase pow by 1
+End Loop
+PRINT result
+End
 ```
 
 
 
 **1.7.Recursive Algorithm**
 
-A recursive algorithm is an algorithm which calls itself with "smaller (or simpler)" input values, and which obtains the result for the current input by applying simple operations to the returned value for the smaller (or simpler) input. More generally if a problem can be solved utilizing solutions to smaller versions of the same problem, and the smaller versions reduce to easily solvable cases, then one can use a recursive algorithm to solve that problem. For example, the elements of a recursively defined set, or the value of a recursively defined function can be obtained by a recursive algorithm.
+- A recursive algorithm is an algorithm which calls itself with "smaller (or simpler)" input values, and which obtains the result for the current input by applying simple operations to the returned value for the smaller (or simpler) input. More generally if a problem can be solved utilizing solutions to smaller versions of the same problem, and the smaller versions reduce to easily solvable cases, then one can use a recursive algorithm to solve that problem. For example, the elements of a recursively defined set, or the value of a recursively defined function can be obtained by a recursive algorithm.
 
-If a set or a function is defined recursively, then a recursive algorithm to compute its members or values mirrors the definition. Initial steps of the recursive algorithm correspond to the basis clause of the recursive definition and they identify the basis elements. They are then followed by steps corresponding to the inductive clause, which reduce the computation for an element of one generation to that of elements of the immediately preceding generation.
+- If a set or a function is defined recursively, then a recursive algorithm to compute its members or values mirrors the definition. Initial steps of the recursive algorithm correspond to the basis clause of the recursive definition and they identify the basis elements. They are then followed by steps corresponding to the inductive clause, which reduce the computation for an element of one generation to that of elements of the immediately preceding generation.
 
-In general, recursive computer programs require more memory and computation compared with iterative algorithms, but they are simpler and for many cases a natural way of thinking about the problem.
+- In general, recursive computer programs require more memory and computation compared with iterative algorithms, but they are simpler and for many cases a natural way of thinking about the problem.
 
-For Example To find power of a number
+### For Example 
 
-Step 1: Get a base number <br>
-Step 2: Get a power<br>
-Step 3: Send a number and power to routine<br>
-Step 4: In routine Compare power with 1<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 5: If it is equal to 1 then return number<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 6: Else Compute the same routine (Step 4 and 5) with a same number and  reduced power by 1<br>
-Step 7: display the result<br>
-Step 8: End<br>
+### To find power of a number
 
-In pseudocode:
+Step 1: Get a base number 
+Step 2: Get a power
+Step 3: Send a number and power to routine
+Step 4: In routine Compare power with 1
+Step 5: If it is equal to 1 then return number
+Step 6: Else Compute the same routine (Step 4 and 5) with a same number and  reduced power by 1
+Step 7: display the result
+Step 8: End
 
-TASK: To Find Power of a number<br>
+## In pseudocode:
+
+### TASK: To Find Power of a number
 ```sh
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;READ number<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;READ Power<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FIND_POWER number and power<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FIND_POWER number and power:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IF power = 1:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RETURN number<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ELSE<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result = FIND_POWER number and power -1<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RETURN result<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End FIND_POWER<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT result<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End<br>
-End TASK<br>
+READ number
+READ Power
+result = FIND_POWER number and power
+FIND_POWER number and power:
+IF power = 1:
+ELSE
+result = FIND_POWER number and power -1
+RETURN result
+End FIND_POWER
+PRINT result
+End
+End TASK
 ```
 
 
 
-An algorithm starts from an initial state with some input. The instructions/statements describe the processing that must be done on the input to produce the final output (the final state). Note that an instruction is a single operation which when executed converts one state to other. In the course of processing, data is read from an input device, stored in computer’s memory for further processing, and then the result of the processing is written to an output device. The data is stored in the computer’s memory in the form of variables or constants. 
-The state of an algorithm is defined as its condition regarding current values or contents of the stored data. An algorithm is a list of precise steps and the order of steps determines the functioning of the algorithm. 
-The flow of control (or the control flow) of an algorithm can be specified as top-down or bottom-up approach. Thus, the flow of control specifies the order in which individual instructions of an algorithm are executed.
+- An algorithm starts from an initial state with some input. The instructions/statements describe the processing that must be done on the input to produce the final output (the final state). Note that an instruction is a single operation which when executed converts one state to other. In the course of processing, data is read from an input device, stored in computer’s memory for further processing, and then the result of the processing is written to an output device. The data is stored in the computer’s memory in the form of variables or constants. 
+- The state of an algorithm is defined as its condition regarding current values or contents of the stored data. An algorithm is a list of precise steps and the order of steps determines the functioning of the algorithm. 
+- The flow of control (or the control flow) of an algorithm can be specified as top-down or bottom-up approach. Thus, the flow of control specifies the order in which individual instructions of an algorithm are executed.
 
 
 
