@@ -21,10 +21,15 @@ Computer programming goes a step further in problem solving process. Programming
 **_Real Life Example_**
 **_Procedure to cook Bread Toast_**
 _Step 1 : Grab a loaf of bread_
+
 _Step 2 : Get a pan and place it on the stove let it heat_
+
 _Step 3 : Pour some oil on the pan and wait for oil to be heated_
+
 _Step 4 : Put a slice on the pan and roast until it become brown in shade_
+
 _Step 5 : Turn the slice and roast until it become brown in shade_
+
 _Step 5 : Get the toasted bread from the pan and serve it on a plate with anything or nothing._
 
 _The above procedure that explains “how to make a bread toast” and what are all the requirements before we start the procedures. We can code this procedure or algorithm in any programming language of your choice and simulate as results on the computer display. Else we can feed this procedure to the robot with proper instructions and we make the robot to do the bread toast for us._
@@ -32,8 +37,11 @@ _The above procedure that explains “how to make a bread toast” and what are 
 **_Example :_**
 **Algorithm for adding two numbers:**
 _Step 1 : Get the 2 numbers from the user as input._
+
 _Step 2 : Perform addition of those 2 numbers._
+
 _Step 3 : Store the answer for display._
+
 _Step 4 : Display the stored value to the user._
 
 ***Why We need Algorithm***
