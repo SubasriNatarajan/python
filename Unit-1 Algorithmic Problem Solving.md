@@ -1,7 +1,6 @@
 ![N|Solid](https://github.com/SubasriNatarajan/python/blob/main/Unit%20-%202%20Word%20Art.png)
 
 ## **UNIT I - ALGORITHMIC PROBLEM SOLVING**
-_________________
 
 *Algorithms, building blocks of algorithms (statements, state, control flow, functions), notation (pseudo code, flow chart, programming language), algorithmic problem solving, simple strategies for developing algorithms (iteration, recursion).* 
 
@@ -212,7 +211,7 @@ In structured programming, the ordered sequencing of successive commands is cons
 - Condition-controlled loops
 - Collection-controlled loops
 
-**1.3.Functions:**
+### 1.3.Functions:
 
 *Module - A small component of a computer program that may contain several routines. parameter In computer programming, a parameter is a value that is passed into a function or procedure. procedure A section of computer code that performs a specific task.*
 
@@ -248,7 +247,7 @@ When a function is "called" the program "leaves" the current section of code and
 ● **_Non-Parameterised Function_**
 - This a functions does not receive any input while calling. It may or may not return any value to the caller.
 
-**1.4.Notation of algorithm**
+### 1.4.Notation of algorithm
 
 *Algorithms are basically a set of instructions that, if correct and if followed carefully, produce some desired result. Since they are sets of instructions, they are generally presented in such a way that that the step-by-step nature of how they should be followed is readily apparent.* 
 The two most common representations are pseudocode and flowcharts.
@@ -258,7 +257,7 @@ The two most common representations are pseudocode and flowcharts.
 GET: radius
 SET: area = 4 pi * radius * radius 
 
-**1.5._Pseudocode_**
+### 1.5._Pseudocode_
 
 Pseudocode is an artificial and informal language that helps programmers develop algorithms. Pseudocode is a "text-based" detail (algorithmic) design tool.
 
@@ -464,7 +463,7 @@ End <br>
 End TASK <br>
 ```
 
-## 1.6.**Flowcharts**
+### 1.6.**Flowcharts**
 
 *Flowcharts are a graphical means of representing an algorithm, as should be expected, they have advantages and disadvantages compared to pseudocode. One of their primary advantages is that they permit the structure of a program to be easily visualized - even if all the text were to be removed. The human brain is very good at picking out these patterns and keeping them "in the back of the mind" as a reference frame for viewing the code as it develops.*
 
@@ -626,7 +625,7 @@ End
 
 
 
-**1.7.Recursive Algorithm**
+### 1.7.Recursive Algorithm
 
 - A recursive algorithm is an algorithm which calls itself with "smaller (or simpler)" input values, and which obtains the result for the current input by applying simple operations to the returned value for the smaller (or simpler) input. More generally if a problem can be solved utilizing solutions to smaller versions of the same problem, and the smaller versions reduce to easily solvable cases, then one can use a recursive algorithm to solve that problem. For example, the elements of a recursively defined set, or the value of a recursively defined function can be obtained by a recursive algorithm.
 
