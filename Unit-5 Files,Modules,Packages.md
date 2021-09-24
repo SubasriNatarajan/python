@@ -20,45 +20,45 @@ Files and exception: text files, reading and writing files, format operator; com
  
  [5.1.FILES](#51files)
  
- [5.1.1 What are files?](#what-are-files)
+ [5.1.1 What are files?](https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#511-what-are-files)
  
- [5.1.2 File Extensions](#file-extensions)
+ [5.1.2 File Extensions](https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#512-file-extensions)
  
- [5.1.3 Types of Files](#types-of-files)
+ [5.1.3 Types of Files](https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#513-types-of-files)
  
-[5.1.4 Common extensions that are binary file formats](#common-extensions-that-are-binary-file)
+[5.1.4 Common extensions that are binary file formats](https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#514-common-extensions-that-are-binary-file-formats)
 
-[5.1.5 Common extensions that are text file formats](#common-extensions-that-are-text-file-formats)
+[5.1.5 Common extensions that are text file formats](https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#515-common-extensions-that-are-text-file-formats)
  
  [5.2.TEXT FILE CHARACTERISTICS](#52text-file-characteristics)
  
-[5.2.1 BINARY FILE CHARACTERISTICS](#binary-file-characteristics)
+[5.2.1 BINARY FILE CHARACTERISTICS](https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#521-binary-file-characteristics)
 
-[5.2.2 BASIC FILE OPERATIONS](#basic-file-operations)
+[5.2.2 BASIC FILE OPERATIONS](https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#522-basic-file-operations)
  
 [5.3.READING TEXT FILES](#53reading-text-files)
 
- [5.3.1 DEMO  CODE](#demo-code)
+ [5.3.1 DEMO  CODE](https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#531-demo--code)
  
  [Reading text files with size parameter](#Reading-text-files-with-size-parameter)
  
-[5.3.2 DEMO CODE](#DEMO-CODE)
+[5.3.2 DEMO CODE](https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#532-demo-code)
 
 [Reading text files (Single Line)](#reading-text-files-Single-Line)
 
-[5.3.3 DEMO CODE](#DEMO-CODE)
+[5.3.3 DEMO CODE](https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#533-demo-code)
 
 [Reading text files (List of Lines)](#Reading-text-files-List-of-Lines)
 
-  [5.3.4 DEMO CODE](#DEMO-CODE)
+  [5.3.4 DEMO CODE](https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#534-demo-code)
 
  [5.4.WRITING TEXT FILES](#54WRITING-TEXT-FILES)
  
-[5.4.1 Types of File Modes](#Types-of-File-Modes)
+[5.4.1 Types of File Modes](https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#541-types-of-file-modes)
 
- [5.4.2 Seek in File](#Seek-in-File)
+ [5.4.2 Seek in File](https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#542-seek-in-file)
  
- [5.4.3 DEMO CODE](#DEMO-CODE)
+ [5.4.3 DEMO CODE](https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#543-demo-code)
  
  [5.5.FORMAT OPERATOR](#55FORMAT-OPERATOR)
  
@@ -68,7 +68,7 @@ Files and exception: text files, reading and writing files, format operator; com
  
  [5.8.HANDLING PYTHON LOGICAL ERRORS (EXCEPTIONS)](#58HANDLING-PYTHON-LOGICAL-ERRORS-(EXCEPTIONS))
  
- [5.8.1 BUILD IN EXCEPTIONS](#BUILD-IN-EXCEPTIONS)
+ [5.8.1 BUILD IN EXCEPTIONS](https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#581-build-in-exceptions)
 
  [5.9.MODULES](#59MODULES)
  
