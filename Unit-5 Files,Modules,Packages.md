@@ -75,18 +75,18 @@ Files and exception: text files, reading and writing files, format operator; com
 ### Path
 - The path specifies the drive and/or directory (or folder) where the file is located. On PCs, the backslash character is used to separate directory names in a path. Some systems like Unix use the forward slash (/) as the directory separator.
 # 5.1.FILES
-### What are files? 
+### 5.1.1 What are files? 
 *A file is sequential stream of bytes ending with an end-of-file marker. As we know, at the time of execution, every program is executed in the main memory. Main memory is volatile and the data would be lost once the program is terminated. If we need the same data again, we have to store the data in a file on the disk. A file is sequential stream of bytes ending with an end-of-file marker*
 - Storage of data in variables and arrays is temporary—such data is lost when a program terminates. Files are used for permanent retention of data. Computers store files on secondary storage devices, such as hard drives, CDs, DVDs and flash drives. In this chapter, we explain how data files are created, updated and processed by C programs. We consider both sequential-access and random-access file processing.
-### File Extensions
+### 5.1.2 File Extensions
 - File extensions we can usually tell if a file is binary or text based on its file extension. This is because by convention the extension reflects the file format, but ultimately it is the file format that dictates whether the file data is binary or text.
-### Types of Files
+### 5.1.3 Types of Files
 - Text files
 - Data files
 - Directory files
 - Binary files
 - Graphic files
-### Common extensions that are binary file formats:
+### 5.1.4 Common extensions that are binary file formats:
 > Images: jpg, png, gif, bmp, tiff, psd, ...
 
 > Videos: mp4, mkv, avi, mov, mpg, vob, ...
@@ -101,7 +101,7 @@ Files and exception: text files, reading and writing files, format operator; com
 
 > Executable: exe, dll, so, class, ...
 
-### Common extensions that are text file formats:
+### 5.1.5 Common extensions that are text file formats:
 > Web standards: html, xml, css, svg, json, ...
 
 > Source code: c, cpp, h, cs, js, py, java, rb, pl, php, sh, ...
@@ -117,11 +117,11 @@ By convention, the data in every text file obeys a number of rules:
 - The text looks readable to a human or at least moderately sane. Even if it contains a heavy proportion of punctuation symbols (like HTML, RTF, and other markup formats), there is some visible structure and it’s not seemingly random garbage.
 - The data format is usually line-oriented. Each line could be a separate command, or a list of values could put each item on a different line, etc. The maximum number of characters in each line is usually a reasonable value like 100, not like 1000.
 - The text looks readable to a human or at least moderately sane. Even if it contains a heavy proportion of punctuation symbols (like HTML, RTF, and other markup formats), there is some visible structure and it’s not seemingly random garbage.
-###  BINARY FILE CHARACTERISTICS
+###  5.2.1 BINARY FILE CHARACTERISTICS
 -	For most software that people use in their daily lives, the software consumes and produces binary files. Examples of such software include Microsoft Office, Adobe Photoshop, and various audio/video/media players. A typical computer user works with mostly binary files and very few text files.
 -	A binary file always needs matching software to read or write it. For example, an MP3 file can be produced by a sound recorder or audio editor, and it can be played in a music player or audio editor. But an MP3 file cannot be played in an image viewer or database software.
 -	Some binary formats are popular enough that a wide variety of programs can produce or consume it. Image formats like JPEG are the best example – not only can they be used in image viewers and editors, they can be viewed in web browsers, audio players (for album art), and document software (such as adding a picture into a Word doc).
-### BASIC FILE OPERATIONS
+### 5.2.2 BASIC FILE OPERATIONS
 > Creation of a new file
 
 > Modification of data or file attributes
@@ -140,7 +140,7 @@ _________________
 o	file name (with path)
 o	mode – specified as “r” to open in read only mode
 -	And we need to call read() method then it will return file contents as string.
-### DEMO  CODE
+### 5.3.1 DEMO  CODE
 Source.txt
 
 ![N|Solid](https://github.com/SubasriNatarajan/python/blob/main/5.3%201%202.png?raw=true)
@@ -151,7 +151,7 @@ Source.txt
 o	file name (with path)
 o	mode – specified as “r” to open in read only mode
 -	And we need to call read() method and pass size as parameter then it will return file contents (no of characters specified as size)  as string.
-### DEMO CODE
+### 5.3.2 DEMO CODE
 Source.txt
 
 ![N|Solid](https://github.com/SubasriNatarajan/python/blob/main/5.3%201%202.png?raw=true)
@@ -163,7 +163,7 @@ o	file name (with path)
 o	mode – specified as “r” to open in read only mode
 -	And we need to call readline() method it will return first line as string.
 -	readline() method uses ‘\n’ default delimiter.
-### DEMO CODE
+### 5.3.3 DEMO CODE
 Source.txt
 
 ![N|Solid](https://github.com/SubasriNatarajan/python/blob/main/5.3%20single%20line.png?raw=true)
@@ -176,7 +176,7 @@ o	file name (with path)
 o	mode – specified as “r” to open in read only mode
 -	And we need to call readlines() method it will return list of strings (file contents).
 -	readlines() method uses ‘\n’ default delimiter.
-### DEMO CODE
+### 5.3.4 DEMO CODE
 Source.txt
 
 ![N|Solid](https://github.com/SubasriNatarajan/python/blob/main/5.3%20single%20line.png?raw=true)
@@ -191,7 +191,7 @@ o	mode – specified as “w” to open in write only mode.
 -	If destination it opens and overwrites new contents if not it will creates new destination file
 
 ![N|Solid](https://github.com/SubasriNatarajan/python/blob/main/5.4%20write%20demo.png?raw=true)
-### Types of File Modes
+### 5.4.1 Types of File Modes
 | File Mode  | Description  |
 |---|---|
 | r  | Opens a file for reading only. The file pointer is placed at the beginning of the file. This is the default mode.  |
@@ -230,10 +230,10 @@ Python file method tell() returns the current position of the file read/write po
 
 ![N|Solid](https://github.com/SubasriNatarajan/python/blob/main/5.4%203.png?raw=true)
 ![N|Solid](https://github.com/SubasriNatarajan/python/blob/main/5.4%204.png?raw=true)
-### Seek in File
+### 5.4.2 Seek in File
 Python file method seek() sets the file's current position at the offset. The whence argument is optional and defaults to 0, which means absolute file positioning, other values are 1 which means seek relative to the current position and 2 means seek relative to the file's end.
 There is no return value. Note that if the file is opened for appending using either 'a' or 'a+', any seek() operations will be undone at the next write. If the file is only opened for writing in append mode using 'a', this method is essentially a no-op, but it remains useful for files opened in append mode with reading enabled (mode 'a+'). If the file is opened in text mode using 't', only offsets returned by tell() are legal. Use of other offsets causes undefined behavior.
-### DEMO CODE
+### 5.4.3 DEMO CODE
 Source.txt
 
 ![N|Solid](https://github.com/SubasriNatarajan/python/blob/main/5.4%203.png?raw=true)
@@ -258,8 +258,11 @@ https://repl.it/@kiteit/GE8151-unit-programs#unit5/demo-cmd-args/main.py
 _________________
 # 5.7.ERRORS AND EXCEPTIONS
 We can make certain mistakes while writing a program that lead to errors when we try to run it. A python program terminates as soon as it encounters an unhandled error. These errors can be broadly classified into two classes:
+
 •	Syntax errors
+
 •	Logical errors (Exceptions)
+
 Error caused by not following the proper structure (syntax) of the language is called syntax error or parsing error.
 
 ![N|Solid](https://github.com/SubasriNatarajan/python/blob/main/5.7.png?raw=true)
