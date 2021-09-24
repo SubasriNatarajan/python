@@ -12,33 +12,33 @@
 
 [1.1.ALGORITHMS](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#11algorithms)
 
-[1.1.1 Characteristics of Algorithm](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#characteristics-of-algorithm)
+[1.1.1 Characteristics of Algorithm](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#111-characteristics-of-algorithm)
 
 [1.2.BUILDING BLOCKS OF ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#12building-blocks-of-algorithm-instructions-state-control-flow-functions)
 
-[1.2.1 Statements](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#instructions-statements)
+[1.2.1 Statements](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#121-instructions-statements)
 
-[1.2.3 State](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#state)
+[1.2.2 State](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#122-state)
  
-[1.2.4 control flow](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#control-flow)
+[1.2.3 control flow](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#123-control-flow)
 
-[1.2.5 Functions](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#functions)
+[1.2.4 Functions](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#124-functions)
 
 [1.3.NOTATION OF ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#13notation-of-algorithm)
 
-[1.3.1 Pseudocode](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#pseudocode)
+[1.3.1 Pseudocode](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#131-pseudocode)
 
-[1.3.2 Flowcharts](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#flowcharts)
+[1.3.2 Flowcharts](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#132-flowcharts)
  
-[1.3.3 Programming language](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#programming-language-notation)
+[1.3.3 Programming language](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#133-programming-language-notation)
 
 [1.4.ALGORITHMIC PROBLEM SOLVING](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#14algorithmic-problem-solving)
 
 [1.5.SIMPLE STRATEGIES FOR DEVELOPING ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#15simple-strategies-for-developing-algorithm)
 
-[1.5.1 Iteration](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#iteration)
+[1.5.1 Iteration](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#151-iteration)
 
-[1.5.2 Recursion](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#recursion)
+[1.5.2 Recursion](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#152-recursion)
 
 ### INTRODUCTION 
 A program is a set of instructions that tells the computer how to solve a particular problem. Various program design tools like algorithms, pseudocodes and flowcharts are used to design the blueprint of the solution (or the program to be written). 
