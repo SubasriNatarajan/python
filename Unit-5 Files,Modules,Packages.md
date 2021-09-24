@@ -19,29 +19,29 @@ Files and exception: text files, reading and writing files, format operator; com
  #  TABLE OF CONTENTS
  
  [5.1.FILES](#51files)
- - [What are files?](#what-are-files)
- - [File Extensions](#file-extensions)
- - [Types of Files](#types-of-files)
- - [Common extensions that are binary file formats](#common-extensions-that-are-binary-file)
- - [Common extensions that are text file formats](#common-extensions-that-are-text-file-formats)
+ [5.1.1 What are files?](#what-are-files)
+ [5.1.2 File Extensions](#file-extensions)
+ [5.1.3 Types of Files](#types-of-files)
+[5.1.4 Common extensions that are binary file formats](#common-extensions-that-are-binary-file)
+[5.1.5 Common extensions that are text file formats](#common-extensions-that-are-text-file-formats)
  
  [5.2.TEXT FILE CHARACTERISTICS](#52text-file-characteristics)
- - [BINARY FILE CHARACTERISTICS](#binary-file-characteristics)
- - [BASIC FILE OPERATIONS](#basic-file-operations)
+[5.2.1 BINARY FILE CHARACTERISTICS](#binary-file-characteristics)
+[5.2.2 BASIC FILE OPERATIONS](#basic-file-operations)
  
 [5.3.READING TEXT FILES](#53reading-text-files)
- - [DEMO  CODE](#demo-code)
- - [Reading text files with size parameter](#Reading-text-files-with-size-parameter)
- - [DEMO CODE](#DEMO-CODE)
- - [Reading text files (Single Line)](#reading-text-files-Single-Line)
- - [DEMO CODE](#DEMO-CODE)
- - [Reading text files (List of Lines)](#Reading-text-files-List-of-Lines)
- - [DEMO CODE](#DEMO-CODE)
+ [5.3.1 DEMO  CODE](#demo-code)
+ [Reading text files with size parameter](#Reading-text-files-with-size-parameter)
+[5.3.2 DEMO CODE](#DEMO-CODE)
+[Reading text files (Single Line)](#reading-text-files-Single-Line)
+[5.3.3 DEMO CODE](#DEMO-CODE)
+[Reading text files (List of Lines)](#Reading-text-files-List-of-Lines)
+  [5.3.4 DEMO CODE](#DEMO-CODE)
 
  [5.4.WRITING TEXT FILES](#54WRITING-TEXT-FILES)
- - [Types of File Modes](#Types-of-File-Modes)
- - [Seek in File](#Seek-in-File)
- - [DEMO CODE](#DEMO-CODE)
+[5.4.1 Types of File Modes](#Types-of-File-Modes)
+ [5.4.2 Seek in File](#Seek-in-File)
+ [5.4.3 DEMO CODE](#DEMO-CODE)
  
  [5.5.FORMAT OPERATOR](#55FORMAT-OPERATOR)
  
@@ -50,7 +50,7 @@ Files and exception: text files, reading and writing files, format operator; com
  [5.7.ERRORS AND EXCEPTIONS](#57ERRORS-AND-EXCEPTIONS)
  
  [5.8.HANDLING PYTHON LOGICAL ERRORS (EXCEPTIONS)](#58HANDLING-PYTHON-LOGICAL-ERRORS-(EXCEPTIONS))
- - [BUILD IN EXCEPTIONS](#BUILD-IN-EXCEPTIONS)
+ [5.8.1 BUILD IN EXCEPTIONS](#BUILD-IN-EXCEPTIONS)
 
  [5.9.MODULES](#59MODULES)
  - [Illustrative Problems (Copy File)](#Illustrative-Problems-Copy-File)
@@ -273,7 +273,7 @@ For instance, they occur when we try to open a file(for reading) that does not e
 Whenever these types of runtime errors occur, Python creates an exception object. If not handled properly, it prints a traceback to that error along with some details about why that error occurred.
 
 ![N|Solid](https://github.com/SubasriNatarajan/python/blob/main/5.8.png?raw=true)
-# BUILD IN EXCEPTIONS
+# 5.8.1 BUILD IN EXCEPTIONS
 | Exception  | Cause of Error  |
 |---|---|
 | AssertionError  | Raised when an assert statement fails.  |
