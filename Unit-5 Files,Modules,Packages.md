@@ -19,28 +19,45 @@ Files and exception: text files, reading and writing files, format operator; com
  #  TABLE OF CONTENTS
  
  [5.1.FILES](#51files)
+ 
  [5.1.1 What are files?](#what-are-files)
+ 
  [5.1.2 File Extensions](#file-extensions)
+ 
  [5.1.3 Types of Files](#types-of-files)
+ 
 [5.1.4 Common extensions that are binary file formats](#common-extensions-that-are-binary-file)
+
 [5.1.5 Common extensions that are text file formats](#common-extensions-that-are-text-file-formats)
  
  [5.2.TEXT FILE CHARACTERISTICS](#52text-file-characteristics)
+ 
 [5.2.1 BINARY FILE CHARACTERISTICS](#binary-file-characteristics)
+
 [5.2.2 BASIC FILE OPERATIONS](#basic-file-operations)
  
 [5.3.READING TEXT FILES](#53reading-text-files)
+
  [5.3.1 DEMO  CODE](#demo-code)
+ 
  [Reading text files with size parameter](#Reading-text-files-with-size-parameter)
+ 
 [5.3.2 DEMO CODE](#DEMO-CODE)
+
 [Reading text files (Single Line)](#reading-text-files-Single-Line)
+
 [5.3.3 DEMO CODE](#DEMO-CODE)
+
 [Reading text files (List of Lines)](#Reading-text-files-List-of-Lines)
+
   [5.3.4 DEMO CODE](#DEMO-CODE)
 
  [5.4.WRITING TEXT FILES](#54WRITING-TEXT-FILES)
+ 
 [5.4.1 Types of File Modes](#Types-of-File-Modes)
+
  [5.4.2 Seek in File](#Seek-in-File)
+ 
  [5.4.3 DEMO CODE](#DEMO-CODE)
  
  [5.5.FORMAT OPERATOR](#55FORMAT-OPERATOR)
@@ -50,11 +67,15 @@ Files and exception: text files, reading and writing files, format operator; com
  [5.7.ERRORS AND EXCEPTIONS](#57ERRORS-AND-EXCEPTIONS)
  
  [5.8.HANDLING PYTHON LOGICAL ERRORS (EXCEPTIONS)](#58HANDLING-PYTHON-LOGICAL-ERRORS-(EXCEPTIONS))
+ 
  [5.8.1 BUILD IN EXCEPTIONS](#BUILD-IN-EXCEPTIONS)
 
  [5.9.MODULES](#59MODULES)
+ 
  - [Illustrative Problems (Copy File)](#Illustrative-Problems-Copy-File)
+ 
  - [Illustrative Problems (Word Count)](#Illustrative-Problems-Word-Count)
+ 
 ### KEY TERMS
 ### File 
 - A file is a container in a computer system for storing information. Files used in computers are similar in features to that of paper documents used in library and office files. In a computer operating system, files can be stored on optical drives, hard drives or other types of storage devices.
