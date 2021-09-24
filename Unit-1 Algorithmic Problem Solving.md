@@ -12,33 +12,33 @@
 
 [1.1.ALGORITHMS](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#11algorithms)
 
-- [Characteristics of Algorithm](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#characteristics-of-algorithm)
+[1.1.1 Characteristics of Algorithm](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#characteristics-of-algorithm)
 
 [1.2.BUILDING BLOCKS OF ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#12building-blocks-of-algorithm-instructions-state-control-flow-functions)
 
-- [Statements](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#instructions-statements)
+[1.2.1 Statements](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#instructions-statements)
 
-- [State](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#state)
+[1.2.3 State](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#state)
  
-- [control flow](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#control-flow)
+[1.2.4 control flow](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#control-flow)
 
-- [Functions](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#functions)
+[1.2.5 Functions](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#functions)
 
 [1.3.NOTATION OF ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#13notation-of-algorithm)
 
-- [Pseudocode](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#pseudocode)
+[1.3.1 Pseudocode](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#pseudocode)
 
-- [Flowcharts](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#flowcharts)
+[1.3.2 Flowcharts](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#flowcharts)
  
-- [Programming language](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#programming-language-notation)
+[1.3.3 Programming language](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#programming-language-notation)
 
 [1.4.ALGORITHMIC PROBLEM SOLVING](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#14algorithmic-problem-solving)
 
 [1.5.SIMPLE STRATEGIES FOR DEVELOPING ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#15simple-strategies-for-developing-algorithm)
 
-- [Iteration](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#iteration)
+[1.5.1 Iteration](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#iteration)
 
-- [Recursion](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#recursion)
+[1.5.2 Recursion](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#recursion)
 
 ### INTRODUCTION 
 A program is a set of instructions that tells the computer how to solve a particular problem. Various program design tools like algorithms, pseudocodes and flowcharts are used to design the blueprint of the solution (or the program to be written). 
@@ -87,7 +87,7 @@ Three reasons for using algorithms are efficiency, abstraction and reusability.
 
 **_Reusability_**: Algorithms are often reusable in many different situations. Since many well-known algorithms are the generalizations of more complicated ones, and since many complicated problems can be distilled into simpler ones, an efficient means of solving certain simpler problems potentially lets us solve many complicated problems.
 
-### Characteristics of Algorithm
+### 1.1.1 Characteristics of Algorithm
 
 • Precision: The instructions should be written in a precise manner. 
 
@@ -115,7 +115,7 @@ Three reasons for using algorithms are efficiency, abstraction and reusability.
 		 
 		 **_4. Functions_**
 
-### Instructions/ Statements
+### 1.2.1 Instructions/ Statements
 _________________
 
 In computer programming, a statement is the smallest standalone element of an imperative programming language that expresses some action to be carried out. It is an instruction written in a high-level language that commands the computer to perform a specified action.
@@ -167,14 +167,14 @@ It is a set of statements, that used to perform a sequence of operations repeate
 ● **_while-loop_**: while NOT EOF DO begin READLN end
 >Looping a set of statements repeatedly until some condition is satisfied. We can’t predict when the condition become satisfiable. This is loop is entry controlled. Control will enter into the loop only if condition is satisfiable.>
 
-### State
+### 1.2.2 State
 _________________
 
 In information technology and computer science, a program is described as stateful if it is designed to remember preceding events or user interactions; the remembered information is called the state of the system.
 
 If a program gets sufficient datas processed then it moves to another state. A successful execution of program include the reaching the  final state of the program.
 
-### Control Flow
+### 1.2.3 Control Flow
 _________________
 
 In computer science, control flow (or flow of control) is the order in which individual statements, instructions or function calls of an imperative program are executed or evaluated.
@@ -228,7 +228,7 @@ In structured programming, the ordered sequencing of successive commands is cons
 - Condition-controlled loops
 - Collection-controlled loops
 
-### Functions
+### 1.2.4 Functions
 _________________
 
 *Module - A small component of a computer program that may contain several routines. parameter In computer programming, a parameter is a value that is passed into a function or procedure. procedure A section of computer code that performs a specific task.*
@@ -275,7 +275,7 @@ The two most common representations are pseudocode and flowcharts.
 GET: radius
 SET: area = 4 pi * radius * radius 
 
-### Pseudocode
+### 1.3.1 Pseudocode
 _________________
 
 Pseudocode is an artificial and informal language that helps programmers develop algorithms. Pseudocode is a "text-based" detail (algorithmic) design tool.
@@ -482,7 +482,7 @@ End
 End TASK 
 ```
 
-### Flowcharts
+### 1.3.2 Flowcharts
 _________________
 
 *Flowcharts are a graphical means of representing an algorithm, as should be expected, they have advantages and disadvantages compared to pseudocode. One of their primary advantages is that they permit the structure of a program to be easily visualized - even if all the text were to be removed. The human brain is very good at picking out these patterns and keeping them "in the back of the mind" as a reference frame for viewing the code as it develops.*
@@ -535,7 +535,7 @@ _________________
 ![factorial](https://github.com/kgisl/pythonFDP/blob/master/units/unit_i_img/factorial.png)
 
 
-### Programming language notation
+### 1.3.3 Programming language notation
 _________________
 
 - A programming language is a formal language that specifies a set of instructions that can be used to produce various kinds of output. Programming languages generally consist of instructions for a computer. Programming languages can be used to create programs that implement specific algorithms.
@@ -653,7 +653,7 @@ Examples of algorithm design techniques include dynamic programming.
 
 ### 1.5.SIMPLE STRATEGIES FOR DEVELOPING ALGORITHM
 
-### Iteration
+### 1.5.1 Iteration
 _________________
 
 In computational mathematics, an iterative method is a mathematical procedure that generates a sequence of improving approximate solutions for a class of problems, in which the n-th approximation is derived from the previous ones. A specific implementation of an iterative method, including the termination criteria, is an algorithm of the iterative method. An iterative method is called convergent if the corresponding sequence converges for given initial approximations.
@@ -688,7 +688,7 @@ PRINT result
 End
 ```
 
-### Recursion
+### 1.5.2 Recursion
 _________________
 
 - A recursive algorithm is an algorithm which calls itself with "smaller (or simpler)" input values, and which obtains the result for the current input by applying simple operations to the returned value for the smaller (or simpler) input. More generally if a problem can be solved utilizing solutions to smaller versions of the same problem, and the smaller versions reduce to easily solvable cases, then one can use a recursive algorithm to solve that problem. For example, the elements of a recursively defined set, or the value of a recursively defined function can be obtained by a recursive algorithm.
