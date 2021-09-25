@@ -614,7 +614,7 @@ Problem solving can be achieved so many ways, If you need to done with computers
 
 - Algorithms are solutions to problems. They are not solutions themselves. They just list specific instructions that need to be performed for getting the solution. In computer science, emphasis is laid on writing a good and effective algorithm and this emphasis makes computer science distinct from other disciplines. For example, computer science is distinct from theoretical mathematics because those practitioners are typically satisfied with just proving the existence of a solution to a problem but in computer science, the problem is not solved until the algorithm is used to implement the solution. 
 - We will now discuss about the sequence of steps one must typically follow for designing an effective algorithm.
-![N|Solid]()
+![N|Solid](https://github.com/SubasriNatarajan/python/blob/main/Algorithmic.jpeg?raw=true)
 
 1. Understanding the problem
 2. Determining the capabilities of the computational device
