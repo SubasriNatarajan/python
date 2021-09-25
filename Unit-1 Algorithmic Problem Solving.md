@@ -614,6 +614,8 @@ Problem solving can be achieved so many ways, If you need to done with computers
 
 - Algorithms are solutions to problems. They are not solutions themselves. They just list specific instructions that need to be performed for getting the solution. In computer science, emphasis is laid on writing a good and effective algorithm and this emphasis makes computer science distinct from other disciplines. For example, computer science is distinct from theoretical mathematics because those practitioners are typically satisfied with just proving the existence of a solution to a problem but in computer science, the problem is not solved until the algorithm is used to implement the solution. 
 - We will now discuss about the sequence of steps one must typically follow for designing an effective algorithm.
+![N|Solid]()
+
 1. Understanding the problem
 2. Determining the capabilities of the computational device
 3. Exact/approximate solution
@@ -702,12 +704,19 @@ _________________
 ### To find power of a number
 
 Step 1: Get a base number 
+
 Step 2: Get a power
+
 Step 3: Send a number and power to routine
+
 Step 4: In routine Compare power with 1
+
 Step 5: If it is equal to 1 then return number
+
 Step 6: Else Compute the same routine (Step 4 and 5) with a same number and  reduced power by 1
+
 Step 7: display the result
+
 Step 8: End
 
 ## In pseudocode:
