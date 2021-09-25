@@ -695,7 +695,7 @@ _________________
 
 [TOWER OF HANOI](https://towardsdatascience.com/tower-of-hanoi-a-recursive-approach-12592d1a7b20)
 
-[image](https://user-images.githubusercontent.com/90175058/134756538-d7b35b4a-f4d0-49d3-8d41-1132810b38c8.png)
+![image](https://user-images.githubusercontent.com/90175058/134756538-d7b35b4a-f4d0-49d3-8d41-1132810b38c8.png)
 
 - A recursive algorithm is an algorithm which calls itself with "smaller (or simpler)" input values, and which obtains the result for the current input by applying simple operations to the returned value for the smaller (or simpler) input. More generally if a problem can be solved utilizing solutions to smaller versions of the same problem, and the smaller versions reduce to easily solvable cases, then one can use a recursive algorithm to solve that problem. For example, the elements of a recursively defined set, or the value of a recursively defined function can be obtained by a recursive algorithm.
 
