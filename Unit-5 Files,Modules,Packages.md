@@ -289,6 +289,8 @@ Error caused by not following the proper structure (syntax) of the language is c
 ![N|Solid](https://github.com/SubasriNatarajan/python/blob/main/5.7.png?raw=true)
 _________________
 # 5.8. HANDLING PYTHON LOGICAL ERRORS (EXCEPTIONS)
+
+[EXCEPTIONS](https://www.tutorialspoint.com/python/python_exceptions.htm)
 Errors that occur at runtime (after passing the syntax test) are called exceptions or logical errors.
 For instance, they occur when we try to open a file(for reading) that does not exist (FileNotFoundError), try to divide a number by zero (ZeroDivisionError), or try to import a module that does not exist (ImportError).
 Whenever these types of runtime errors occur, Python creates an exception object. If not handled properly, it prints a traceback to that error along with some details about why that error occurred.
@@ -330,6 +332,8 @@ Whenever these types of runtime errors occur, Python creates an exception object
 # 5.9. MODULES
 A module allows you to logically organize your Python code. Grouping related code into a module makes the code easier to understand and use. A module is a Python object with arbitrarily named attributes that you can bind and reference.
 Simply, a module is a file consisting of Python code. A module can define functions, classes and variables. A module can also include runnable code.
+
+[MODULES](https://www.tutorialspoint.com/python/python_modules.htm)
 
 ![N|Solid](https://github.com/SubasriNatarajan/python/blob/main/5.9%201.png?raw=true)
 ### Illustrative Problems (Copy File)
