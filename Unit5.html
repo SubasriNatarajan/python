@@ -1,0 +1,624 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#unit---5-files-modules-packages">UNIT - 5 FILES, MODULES, PACKAGES</a>
+<ul>
+<li></li>
+</ul>
+</li>
+<li><a href="#table-of-contents">TABLE OF CONTENTS</a>
+<ul>
+<li></li>
+</ul>
+</li>
+<li><a href="#files">5.1.FILES</a>
+<ul>
+<li></li>
+</ul>
+</li>
+<li><a href="#text-file-characteristics">5.2.TEXT FILE CHARACTERISTICS</a>
+<ul>
+<li></li>
+</ul>
+</li>
+<li><a href="#reading-text-files">5.3.READING TEXT FILES</a>
+<ul>
+<li></li>
+</ul>
+</li>
+<li><a href="#writing-text-files">5.4.WRITING TEXT FILES</a>
+<ul>
+<li></li>
+</ul>
+</li>
+<li><a href="#format-operator">5.5.FORMAT OPERATOR</a></li>
+<li><a href="#command-line-arguments">5.6.COMMAND LINE ARGUMENTS</a></li>
+<li><a href="#errors-and-exceptions">5.7.ERRORS AND EXCEPTIONS</a></li>
+<li><a href="#handling-python-logical-errors-exceptions">5.8. HANDLING PYTHON LOGICAL ERRORS (EXCEPTIONS)</a></li>
+<li><a href="#build-in-exceptions">5.8.1 BUILD IN EXCEPTIONS</a></li>
+<li><a href="#modules">5.9. MODULES</a>
+<ul>
+<li></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <p><img src="https://github.com/SubasriNatarajan/python/blob/main/Word%20Art%20Unit%205.png?raw=true" alt="N|Solid"></p>
+<h1 id="unit---5-files-modules-packages">UNIT - 5 FILES, MODULES, PACKAGES</h1>
+<h3 id="objective">OBJECTIVE</h3>
+<p>Files and exception: text files, reading and writing files, format operator; command line arguments, errors and exceptions, handling exceptions, modules, packages; Illustrative programs: word count, copy file.</p>
+<p><a href="https://github.com/Professor-Sathish/GE_8151-unit-programs/tree/master/MD%20FILES">Illustrative Problem Solutions</a></p>
+<p><a href="https://www.memcode.com/courses/2280">Memcode flashcards</a>	- 40+ flashcards to review the contents of this unit. Space repetition of the flashcards will help in retaining the content and perform better in exams."</p>
+<p><a href="https://create.kahoot.it/share/unit-5-python-working-with-text-files/f6455c78-d279-4ed8-a10c-d04cb4df0b24">Kahoot for working with text files </a>- Working with text files Quiz</p>
+<p><a href="https://create.kahoot.it/share/unit-5-reading-and-writing-to-python-files/f56821b1-79ff-49b6-b7fd-2d8116f6b7bf">Kahoot for reading and writing files</a>- Reading and writing files Quiz</p>
+<p><a href="https://create.kahoot.it/share/unit-5-errors/b964a59e-274c-4723-9a46-67c671f866c7">Kahoot for Errors</a> - Errors Quiz</p>
+<p><a href="https://create.kahoot.it/share/unit-5-exception/5cc77531-c67e-4485-a6e1-0a8f12fbfdc7">Kahoot for Exception </a> - Exception Quiz</p>
+<p><a href="https://create.kahoot.it/share/unit-5-modules-in-python/639e31c4-0b09-4d03-a0aa-4cacaf252bed">Kahoot for Modules</a> - Modules Quiz</p>
+<h1 id="table-of-contents">TABLE OF CONTENTS</h1>
+<p><a href="#51files">5.1.FILES</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#511-what-are-files">5.1.1 What are files?</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#512-file-extensions">5.1.2 File Extensions</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#513-types-of-files">5.1.3 Types of Files</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#514-common-extensions-that-are-binary-file-formats">5.1.4 Common extensions that are binary file formats</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#515-common-extensions-that-are-text-file-formats">5.1.5 Common extensions that are text file formats</a></p>
+<p><a href="#52text-file-characteristics">5.2.TEXT FILE CHARACTERISTICS</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#521-binary-file-characteristics">5.2.1 BINARY FILE CHARACTERISTICS</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#522-basic-file-operations">5.2.2 BASIC FILE OPERATIONS</a></p>
+<p><a href="#53reading-text-files">5.3.READING TEXT FILES</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#531-demo--code">5.3.1 DEMO  CODE</a></p>
+<p><a href="#Reading-text-files-with-size-parameter">Reading text files with size parameter</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#532-demo-code">5.3.2 DEMO CODE</a></p>
+<p><a href="#reading-text-files-Single-Line">Reading text files (Single Line)</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#533-demo-code">5.3.3 DEMO CODE</a></p>
+<p><a href="#Reading-text-files-List-of-Lines">Reading text files (List of Lines)</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#534-demo-code">5.3.4 DEMO CODE</a></p>
+<p><a href="#54WRITING-TEXT-FILES">5.4.WRITING TEXT FILES</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#541-types-of-file-modes">5.4.1 Types of File Modes</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#542-seek-in-file">5.4.2 Seek in File</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#543-demo-code">5.4.3 DEMO CODE</a></p>
+<p><a href="#55FORMAT-OPERATOR">5.5.FORMAT OPERATOR</a></p>
+<p><a href="#56COMMAND-LINE-ARGUMENTS">5.6.COMMAND LINE ARGUMENTS</a></p>
+<p><a href="#57ERRORS-AND-EXCEPTIONS">5.7.ERRORS AND EXCEPTIONS</a></p>
+<p><a href="#58HANDLING-PYTHON-LOGICAL-ERRORS-(EXCEPTIONS)">5.8.HANDLING PYTHON LOGICAL ERRORS (EXCEPTIONS)</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#581-build-in-exceptions">5.8.1 BUILD IN EXCEPTIONS</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#59-modules">5.9.MODULES</a></p>
+<ul>
+<li>
+<p><a href="#Illustrative-Problems-Copy-File">Illustrative Problems (Copy File)</a></p>
+</li>
+<li>
+<p><a href="#Illustrative-Problems-Word-Count">Illustrative Problems (Word Count)</a></p>
+</li>
+</ul>
+<h3 id="key-terms">KEY TERMS</h3>
+<h3 id="file">File</h3>
+<ul>
+<li>A file is a container in a computer system for storing information. Files used in computers are similar in features to that of paper documents used in library and office files. In a computer operating system, files can be stored on optical drives, hard drives or other types of storage devices.</li>
+</ul>
+<h3 id="binary-file">Binary file</h3>
+<ul>
+<li>Binary file is a collection of bytes or a character stream. The data that is written into and read from binary file remain unchanged,+ with no separation between lines and no use of end-of-line characters and the interpretation of the files are left to the programmer.</li>
+</ul>
+<h3 id="text-file">Text file</h3>
+<ul>
+<li>A text file is a stream of characters that can be processed sequentially and logically in the forward direction. The maximum number of characters in each line is limited to 255 characters.</li>
+</ul>
+<h3 id="sequential-file-access">Sequential file access</h3>
+<ul>
+<li>In case of sequential file access, data is read from or written to a file in a sequential manner while the position indicator automatically gets adjusted by the stream I/O functions.</li>
+</ul>
+<h3 id="random-file-access">Random file access</h3>
+<ul>
+<li>Random access means reading from or writing to any position in a file without reading or writing all the preceding data by controlling the position indicator</li>
+</ul>
+<h3 id="record">Record</h3>
+<ul>
+<li>A record consists of a collection of data fields that conforms to a previously defined structure that can be stored on or retrieved from a file.</li>
+</ul>
+<h3 id="stream">Stream</h3>
+<ul>
+<li>The stream is a common, logical interface to the various devices that comprise the computer and is a logical interface to a file. Although files differ in form and capabilities, all streams are the same.</li>
+</ul>
+<h3 id="file-management">File management</h3>
+<ul>
+<li>It basically means all operations related to creating, renaming, deleting, merging, reading, writing, etc. of any type of files.</li>
+</ul>
+<h3 id="path">Path</h3>
+<ul>
+<li>The path specifies the drive and/or directory (or folder) where the file is located. On PCs, the backslash character is used to separate directory names in a path. Some systems like Unix use the forward slash (/) as the directory separator.</li>
+</ul>
+<h1 id="files">5.1.FILES</h1>
+<h3 id="what-are-files">5.1.1 What are files?</h3>
+<p><em>A file is sequential stream of bytes ending with an end-of-file marker. As we know, at the time of execution, every program is executed in the main memory. Main memory is volatile and the data would be lost once the program is terminated. If we need the same data again, we have to store the data in a file on the disk. A file is sequential stream of bytes ending with an end-of-file marker</em></p>
+<ul>
+<li>Storage of data in variables and arrays is temporary—such data is lost when a program terminates. Files are used for permanent retention of data. Computers store files on secondary storage devices, such as hard drives, CDs, DVDs and flash drives. In this chapter, we explain how data files are created, updated and processed by C programs. We consider both sequential-access and random-access file processing.</li>
+</ul>
+<h3 id="file-extensions">5.1.2 File Extensions</h3>
+<ul>
+<li>File extensions we can usually tell if a file is binary or text based on its file extension. This is because by convention the extension reflects the file format, but ultimately it is the file format that dictates whether the file data is binary or text.</li>
+</ul>
+<h3 id="types-of-files">5.1.3 Types of Files</h3>
+<ul>
+<li>Text files</li>
+<li>Data files</li>
+<li>Directory files</li>
+<li>Binary files</li>
+<li>Graphic files</li>
+</ul>
+<h3 id="common-extensions-that-are-binary-file-formats">5.1.4 Common extensions that are binary file formats:</h3>
+<blockquote>
+<p>Images: jpg, png, gif, bmp, tiff, psd, …</p>
+</blockquote>
+<blockquote>
+<p>Videos: mp4, mkv, avi, mov, mpg, vob, …</p>
+</blockquote>
+<blockquote>
+<p>Audio: mp3, aac, wav, flac, ogg, mka, wma, …</p>
+</blockquote>
+<blockquote>
+<p>Documents: pdf, doc, xls, ppt, docx, odt, …</p>
+</blockquote>
+<blockquote>
+<p>Archive: zip, rar, 7z, tar, iso, …</p>
+</blockquote>
+<blockquote>
+<p>Database: mdb, accde, frm, sqlite, …</p>
+</blockquote>
+<blockquote>
+<p>Executable: exe, dll, so, class, …</p>
+</blockquote>
+<h3 id="common-extensions-that-are-text-file-formats">5.1.5 Common extensions that are text file formats:</h3>
+<blockquote>
+<p>Web standards: html, xml, css, svg, json, …</p>
+</blockquote>
+<blockquote>
+<p>Source code: c, cpp, h, cs, js, py, java, rb, pl, php, sh, …</p>
+</blockquote>
+<blockquote>
+<p>Documents: txt, tex, markdown, asciidoc, rtf, ps, …</p>
+</blockquote>
+<blockquote>
+<p>Configuration: ini, cfg, rc, reg, …</p>
+</blockquote>
+<blockquote>
+<p>Tabular data: csv, tsv, …</p>
+</blockquote>
+<hr>
+<h1 id="text-file-characteristics">5.2.TEXT FILE CHARACTERISTICS</h1>
+<p>By convention, the data in every text file obeys a number of rules:</p>
+<ul>
+<li>The text looks readable to a human or at least moderately sane. Even if it contains a heavy proportion of punctuation symbols (like HTML, RTF, and other markup formats), there is some visible structure and it’s not seemingly random garbage.</li>
+<li>The data format is usually line-oriented. Each line could be a separate command, or a list of values could put each item on a different line, etc. The maximum number of characters in each line is usually a reasonable value like 100, not like 1000.</li>
+<li>The text looks readable to a human or at least moderately sane. Even if it contains a heavy proportion of punctuation symbols (like HTML, RTF, and other markup formats), there is some visible structure and it’s not seemingly random garbage.</li>
+</ul>
+<h3 id="binary-file-characteristics">5.2.1 BINARY FILE CHARACTERISTICS</h3>
+<ul>
+<li>For most software that people use in their daily lives, the software consumes and produces binary files. Examples of such software include Microsoft Office, Adobe Photoshop, and various audio/video/media players. A typical computer user works with mostly binary files and very few text files.</li>
+<li>A binary file always needs matching software to read or write it. For example, an MP3 file can be produced by a sound recorder or audio editor, and it can be played in a music player or audio editor. But an MP3 file cannot be played in an image viewer or database software.</li>
+<li>Some binary formats are popular enough that a wide variety of programs can produce or consume it. Image formats like JPEG are the best example – not only can they be used in image viewers and editors, they can be viewed in web browsers, audio players (for album art), and document software (such as adding a picture into a Word doc).</li>
+</ul>
+<h3 id="basic-file-operations">5.2.2 BASIC FILE OPERATIONS</h3>
+<blockquote>
+<p>Creation of a new file</p>
+</blockquote>
+<blockquote>
+<p>Modification of data or file attributes</p>
+</blockquote>
+<blockquote>
+<p>Reading of data from the file</p>
+</blockquote>
+<blockquote>
+<p>Opening the file in order to make the contents available to other programs</p>
+</blockquote>
+<blockquote>
+<p>Writing data to the file</p>
+</blockquote>
+<blockquote>
+<p>Closing or terminating a file operation</p>
+</blockquote>
+<hr>
+<h1 id="reading-text-files">5.3.READING TEXT FILES</h1>
+<ul>
+<li>To read a file in we need to open source file in read mode with a help of  open() function.</li>
+<li>Open() function requires two arguments that is<br>
+o	file name (with path)<br>
+o	mode – specified as “r” to open in read only mode</li>
+<li>And we need to call read() method then it will return file contents as string.</li>
+</ul>
+<h3 id="demo--code">5.3.1 DEMO  CODE</h3>
+<p>Source.txt</p>
+<p><img src="https://github.com/SubasriNatarajan/python/blob/main/5.3%201%202.png?raw=true" alt="N|Solid"><br>
+<img src="https://github.com/SubasriNatarajan/python/blob/main/5.3%202.png?raw=true" alt="N|Solid"></p>
+<h3 id="reading-text-files-with-size-parameter">Reading text files with size parameter</h3>
+<ul>
+<li>To read a file in we need to open source file in read mode with a help of open() function.</li>
+<li>Open() function requires two arguments that is<br>
+o	file name (with path)<br>
+o	mode – specified as “r” to open in read only mode</li>
+<li>And we need to call read() method and pass size as parameter then it will return file contents (no of characters specified as size)  as string.</li>
+</ul>
+<h3 id="demo-code">5.3.2 DEMO CODE</h3>
+<p>Source.txt</p>
+<p><img src="https://github.com/SubasriNatarajan/python/blob/main/5.3%201%202.png?raw=true" alt="N|Solid"><br>
+<img src="https://github.com/SubasriNatarajan/python/blob/main/5.3%20read%20size%20demo.png?raw=true" alt="N|Solid"></p>
+<h3 id="reading-text-files-single-line">Reading text files (Single Line)</h3>
+<ul>
+<li>To read a file in we need to open source file in read mode with a help of open() function.</li>
+<li>Open() function requires two arguments that is<br>
+o	file name (with path)<br>
+o	mode – specified as “r” to open in read only mode</li>
+<li>And we need to call readline() method it will return first line as string.</li>
+<li>readline() method uses ‘\n’ default delimiter.</li>
+</ul>
+<h3 id="demo-code-1">5.3.3 DEMO CODE</h3>
+<p>Source.txt</p>
+<p><img src="https://github.com/SubasriNatarajan/python/blob/main/5.3%20single%20line.png?raw=true" alt="N|Solid"><br>
+<img src="https://github.com/SubasriNatarajan/python/blob/main/5.3%20single%20read%20line.png?raw=true" alt="N|Solid"></p>
+<h3 id="reading-text-files-list-of-lines">Reading text files (List of Lines)</h3>
+<ul>
+<li>To read a file in we need to open source file in read mode with a help of open() function.</li>
+<li>Open() function requires two arguments that is<br>
+o	file name (with path)<br>
+o	mode – specified as “r” to open in read only mode</li>
+<li>And we need to call readlines() method it will return list of strings (file contents).</li>
+<li>readlines() method uses ‘\n’ default delimiter.</li>
+</ul>
+<h3 id="demo-code-2">5.3.4 DEMO CODE</h3>
+<p>Source.txt</p>
+<p><img src="https://github.com/SubasriNatarajan/python/blob/main/5.3%20single%20line.png?raw=true" alt="N|Solid"><br>
+<img src="https://github.com/SubasriNatarajan/python/blob/main/5.3%20list%20of%20lines.png?raw=true" alt="N|Solid"></p>
+<hr>
+<h1 id="writing-text-files">5.4.WRITING TEXT FILES</h1>
+<ul>
+<li>To write contents in a file in we need to open destination file in write mode with a help of open() function.</li>
+<li>Open() function requires two arguments that is<br>
+o	file name (with path)<br>
+o	mode – specified as “w” to open in write only mode.</li>
+<li>And we need to call write() method and pass file contents as arguments.</li>
+<li>If destination it opens and overwrites new contents if not it will creates new destination file</li>
+</ul>
+<p><img src="https://github.com/SubasriNatarajan/python/blob/main/5.4%20write%20demo.png?raw=true" alt="N|Solid"></p>
+<h3 id="types-of-file-modes">5.4.1 Types of File Modes</h3>
+
+<table>
+<thead>
+<tr>
+<th>File Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>r</td>
+<td>Opens a file for reading only. The file pointer is placed at the beginning of the file. This is the default mode.</td>
+</tr>
+<tr>
+<td>rb</td>
+<td>Opens a file for reading only in binary format. The file pointer is placed at the beginning of the file. This is the default mode.</td>
+</tr>
+<tr>
+<td>r+</td>
+<td>Opens a file for both reading and writing. The file pointer placed at the beginning of the file.</td>
+</tr>
+<tr>
+<td>rb+</td>
+<td>Opens a file for both reading and writing in binary format. The file pointer placed at the beginning of the file.</td>
+</tr>
+<tr>
+<td>w</td>
+<td>Opens a file for writing only. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing.</td>
+</tr>
+<tr>
+<td>wb</td>
+<td>Opens a file for writing only in binary format. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing.</td>
+</tr>
+<tr>
+<td>w+</td>
+<td>Opens a file for both writing and reading. Overwrites the existing file if the file exists. If the file does not exist, creates a new file for reading and writing.</td>
+</tr>
+<tr>
+<td>wb+</td>
+<td>Opens a file for both writing and reading in binary format. Overwrites the existing file if the file exists. If the file does not exist, creates a new file for reading and writing.</td>
+</tr>
+<tr>
+<td>a</td>
+<td>Opens a file for appending. The file pointer is at the end of the file if the file exists. That is, the file is in the append mode. If the file does not exist, it creates a new file for writing.</td>
+</tr>
+<tr>
+<td>ab</td>
+<td>Opens a file for appending in binary format. The file pointer is at the end of the file if the file exists. That is, the file is in the append mode. If the file does not exist, it creates a new file for writing.</td>
+</tr>
+<tr>
+<td>a+</td>
+<td>Opens a file for both appending and reading. The file pointer is at the end of the file if the file exists. The file opens in the append mode. If the file does not exist, it creates a new file for reading and writing.</td>
+</tr>
+<tr>
+<td>ab+</td>
+<td>Opens a file for both appending and reading in binary format. The file pointer is at the end of the file if the file exists. The file opens in the append mode. If the file does not exist, it creates a new file for reading and writing.</td>
+</tr>
+</tbody>
+</table><h3 id="difference-between-append-and-write-mode">Difference between Append and Write Mode</h3>
+<ul>
+<li>Write (w) mode and Append (a) mode, while opening a file are almost the same. Both are used to write in a file. In both the modes, new file is created if it doesn’t exists already.</li>
+<li>The only difference they have is, when you open a file in the write mode, the file is reset, resulting in deletion of any data already present in the file. While in append mode this will not happen. Append mode is used to append or add data to the existing data of file (if any). Hence, when you open a file in Append(a) mode, the cursor is positioned at the end of the present data in the file.</li>
+</ul>
+<h3 id="file-methods">File Methods</h3>
+
+<table>
+<thead>
+<tr>
+<th>File Methods</th>
+<th>Description</th>
+<th>Prototype</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>close()</td>
+<td>Closes the file</td>
+<td>fileobject.close()</td>
+</tr>
+<tr>
+<td>flush()</td>
+<td>Flushes the internal buffer</td>
+<td>fileobject.flush()</td>
+</tr>
+<tr>
+<td>read()</td>
+<td>Returns the file content</td>
+<td>data = fileobject.read()</td>
+</tr>
+<tr>
+<td>readable()</td>
+<td>Returns whether the file stream can be read or not</td>
+<td>boolean = fileobject.flush()</td>
+</tr>
+<tr>
+<td>readline()</td>
+<td>Returns one line from the file</td>
+<td>data = fileobject.readline()</td>
+</tr>
+<tr>
+<td>readlines()</td>
+<td>Returns a list of lines from the file</td>
+<td>filelines = fileobject.read()</td>
+</tr>
+<tr>
+<td>seek()</td>
+<td>Change the file position</td>
+<td>filelines = fileobject.seek(offset)</td>
+</tr>
+<tr>
+<td>seekable()</td>
+<td>Returns whether the file allows us to change the file position</td>
+<td>bool = fileobject.seekable()</td>
+</tr>
+<tr>
+<td>tell()</td>
+<td>Returns the current file position</td>
+<td>position = fileobject.tell()</td>
+</tr>
+<tr>
+<td>truncate()</td>
+<td>Resizes the file to a specified size</td>
+<td>fileobject.truncate(size)</td>
+</tr>
+<tr>
+<td>writeable()</td>
+<td>Returns whether the file can be written to or not</td>
+<td>bool = fileobject.writeable()</td>
+</tr>
+<tr>
+<td>write()</td>
+<td>Writes the specified string to the file</td>
+<td>fileobject.write(data)</td>
+</tr>
+<tr>
+<td>writelines()</td>
+<td>Writes a list of strings to the file</td>
+<td>fileobject.writelines(listofstrings[])</td>
+</tr>
+</tbody>
+</table><h3 id="tell-in-file">Tell in File</h3>
+<p>Python file method tell() returns the current position of the file read/write pointer within the file.</p>
+<p><img src="https://github.com/SubasriNatarajan/python/blob/main/5.4%203.png?raw=true" alt="N|Solid"><br>
+<img src="https://github.com/SubasriNatarajan/python/blob/main/5.4%204.png?raw=true" alt="N|Solid"></p>
+<h3 id="seek-in-file">5.4.2 Seek in File</h3>
+<p>Python file method seek() sets the file’s current position at the offset. The whence argument is optional and defaults to 0, which means absolute file positioning, other values are 1 which means seek relative to the current position and 2 means seek relative to the file’s end.<br>
+There is no return value. Note that if the file is opened for appending using either ‘a’ or ‘a+’, any seek() operations will be undone at the next write. If the file is only opened for writing in append mode using ‘a’, this method is essentially a no-op, but it remains useful for files opened in append mode with reading enabled (mode ‘a+’). If the file is opened in text mode using ‘t’, only offsets returned by tell() are legal. Use of other offsets causes undefined behavior.</p>
+<h3 id="demo-code-3">5.4.3 DEMO CODE</h3>
+<p>Source.txt</p>
+<p><img src="https://github.com/SubasriNatarajan/python/blob/main/5.4%203.png?raw=true" alt="N|Solid"><br>
+<img src="https://github.com/SubasriNatarajan/python/blob/main/5.4%205.png?raw=true" alt="N|Solid"></p>
+<hr>
+<h1 id="format-operator">5.5.FORMAT OPERATOR</h1>
+<p>str.format() is one of the string formatting methods in Python3, which allows multiple substitutions and value formatting. This method lets us concatenate elements within a string through positional formatting.<br>
+Types</p>
+<ul>
+<li>Single Place Holder</li>
+<li>Multiple Place Holder</li>
+<li>Type Specification</li>
+</ul>
+<p><img src="https://github.com/SubasriNatarajan/python/blob/main/5.5.png?raw=true" alt="N|Solid"></p>
+<hr>
+<h1 id="command-line-arguments">5.6.COMMAND LINE ARGUMENTS</h1>
+<p>The arguments that are given after the name of the program in the command line shell of the operating system are known as Command Line Arguments. We can use sys.argv to get and process the command line arguments<br>
+The sys module provides functions and variables used to manipulate different parts of the Python runtime environment. This module provides access to some variables used or maintained by the interpreter and to functions that interact strongly with the interpreter.</p>
+<p><img src="https://github.com/SubasriNatarajan/python/blob/main/5.6.png?raw=true" alt="N|Solid"></p>
+<p><a href="https://repl.it/@kiteit/GE8151-unit-programs#unit5/demo-cmd-args/main.py">https://repl.it/@kiteit/GE8151-unit-programs#unit5/demo-cmd-args/main.py</a></p>
+<hr>
+<h1 id="errors-and-exceptions">5.7.ERRORS AND EXCEPTIONS</h1>
+<p>We can make certain mistakes while writing a program that lead to errors when we try to run it. A python program terminates as soon as it encounters an unhandled error. These errors can be broadly classified into two classes:</p>
+<p>•	Syntax errors</p>
+<p>•	Logical errors (Exceptions)</p>
+<p>Error caused by not following the proper structure (syntax) of the language is called syntax error or parsing error.</p>
+<p><img src="https://github.com/SubasriNatarajan/python/blob/main/5.7.png?raw=true" alt="N|Solid"></p>
+<hr>
+<h1 id="handling-python-logical-errors-exceptions">5.8. HANDLING PYTHON LOGICAL ERRORS (EXCEPTIONS)</h1>
+<p><a href="https://www.tutorialspoint.com/python/python_exceptions.htm">EXCEPTIONS</a><br>
+Errors that occur at runtime (after passing the syntax test) are called exceptions or logical errors.<br>
+For instance, they occur when we try to open a file(for reading) that does not exist (FileNotFoundError), try to divide a number by zero (ZeroDivisionError), or try to import a module that does not exist (ImportError).<br>
+Whenever these types of runtime errors occur, Python creates an exception object. If not handled properly, it prints a traceback to that error along with some details about why that error occurred.</p>
+<p><img src="https://github.com/SubasriNatarajan/python/blob/main/5.8.png?raw=true" alt="N|Solid"></p>
+<h1 id="build-in-exceptions">5.8.1 BUILD IN EXCEPTIONS</h1>
+
+<table>
+<thead>
+<tr>
+<th>Exception</th>
+<th>Cause of Error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AssertionError</td>
+<td>Raised when an assert statement fails.</td>
+</tr>
+<tr>
+<td>AttributeError</td>
+<td>Raised when attribute assignment or reference fails.</td>
+</tr>
+<tr>
+<td>EOFError</td>
+<td>Raised when the input() function hits end-of-file condition.</td>
+</tr>
+<tr>
+<td>FloatingPointError</td>
+<td>Raised when a floating point operation fails.</td>
+</tr>
+<tr>
+<td>GeneratorExit</td>
+<td>Raise when a generator’s close() method is called.</td>
+</tr>
+<tr>
+<td>ImportError</td>
+<td>Raised when the imported module is not found.</td>
+</tr>
+<tr>
+<td>IndexError</td>
+<td>Raised when the index of a sequence is out of range.</td>
+</tr>
+<tr>
+<td>KeyError</td>
+<td>Raised when a key is not found in a dictionary.</td>
+</tr>
+<tr>
+<td>KeyboardInterrupt</td>
+<td>Raised when the user hits the interrupt key (Ctrl+C or Delete).</td>
+</tr>
+<tr>
+<td>MemoryError</td>
+<td>Raised when an operation runs out of memory.</td>
+</tr>
+<tr>
+<td>NameError</td>
+<td>Raised when a variable is not found in local or global scope.</td>
+</tr>
+<tr>
+<td>NotImplementedError</td>
+<td>Raised by abstract methods.</td>
+</tr>
+<tr>
+<td>OSError</td>
+<td>Raised when system operation causes system related error.</td>
+</tr>
+<tr>
+<td>OverflowError</td>
+<td>Raised when the result of an arithmetic operation is too large to be represented.</td>
+</tr>
+<tr>
+<td>ReferenceError</td>
+<td>Raised when a weak reference proxy is used to access a garbage collected referent.</td>
+</tr>
+<tr>
+<td>RuntimeError</td>
+<td>Raised when an error does not fall under any other category.</td>
+</tr>
+<tr>
+<td>StopIteration</td>
+<td>Raised by next() function to indicate that there is no further item to be returned by iterator.</td>
+</tr>
+<tr>
+<td>SyntaxError</td>
+<td>Raised by parser when syntax error is encountered.</td>
+</tr>
+<tr>
+<td>IndentationError</td>
+<td>Raised when there is incorrect indentation.</td>
+</tr>
+<tr>
+<td>TabError</td>
+<td>Raised when indentation consists of inconsistent tabs and spaces.</td>
+</tr>
+<tr>
+<td>SystemError</td>
+<td>Raised when interpreter detects internal error.</td>
+</tr>
+<tr>
+<td>SystemExit</td>
+<td>Raised by sys.exit() function.</td>
+</tr>
+<tr>
+<td>TypeError</td>
+<td>Raised when a function or operation is applied to an object of incorrect type.</td>
+</tr>
+<tr>
+<td>UnboundLocalError</td>
+<td>Raised when a reference is made to a local variable in a function or method, but no value has been bound to that variable.</td>
+</tr>
+<tr>
+<td>UnicodeError</td>
+<td>Raised when a Unicode-related encoding or decoding error occurs.</td>
+</tr>
+<tr>
+<td>UnicodeEncodeError</td>
+<td>Raised when a Unicode-related error occurs during encoding.</td>
+</tr>
+<tr>
+<td>UnicodeDecodeError</td>
+<td>Raised when a Unicode-related error occurs during decoding.</td>
+</tr>
+<tr>
+<td>UnicodeTranslateError</td>
+<td>Raised when a Unicode-related error occurs during translating.</td>
+</tr>
+<tr>
+<td>ValueError</td>
+<td>Raised when a function gets an argument of correct type but improper value.</td>
+</tr>
+<tr>
+<td>ZeroDivisionError</td>
+<td>Raised when the second operand of division or modulo operation is zero.</td>
+</tr>
+</tbody>
+</table><h1 id="modules">5.9. MODULES</h1>
+<p>A module allows you to logically organize your Python code. Grouping related code into a module makes the code easier to understand and use. A module is a Python object with arbitrarily named attributes that you can bind and reference.<br>
+Simply, a module is a file consisting of Python code. A module can define functions, classes and variables. A module can also include runnable code.</p>
+<p><a href="https://www.tutorialspoint.com/python/python_modules.htm">MODULES</a></p>
+<p><img src="https://github.com/SubasriNatarajan/python/blob/main/5.9%201.png?raw=true" alt="N|Solid"></p>
+<h3 id="illustrative-problems-copy-file">Illustrative Problems (Copy File)</h3>
+<p><img src="https://github.com/SubasriNatarajan/python/blob/main/5.9%202.png?raw=true" alt="N|Solid"></p>
+<h3 id="illustrative-problems-word-count">Illustrative Problems (Word Count)</h3>
+<p><img src="https://github.com/SubasriNatarajan/python/blob/main/5.9%203.png?raw=true" alt="N|Solid"></p>
+
+    </div>
+  </div>
+</body>
+
+</html>

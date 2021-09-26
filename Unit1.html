@@ -1,0 +1,704 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li>
+<ul>
+<li><a href="#unit-i---algorithmic-problem-solving">UNIT I - ALGORITHMIC PROBLEM SOLVING</a></li>
+</ul>
+</li>
+<li><a href="#table-of-contents">TABLE OF CONTENTS</a>
+<ul>
+<li></li>
+<li><a href="#in-pseudocode-1">In pseudocode:</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <p><img src="https://github.com/SubasriNatarajan/python/blob/main/Unit%20-%202%20Word%20Art.png" alt="N|Solid"></p>
+<h2 id="unit-i---algorithmic-problem-solving"><strong>UNIT I - ALGORITHMIC PROBLEM SOLVING</strong></h2>
+<p><em>Algorithms, building blocks of algorithms (statements, state, control flow, functions), notation (pseudo code, flow chart, programming language), algorithmic problem solving, simple strategies for developing algorithms (iteration, recursion).</em></p>
+<p><em><strong>Illustrative problems:</strong></em> <em>find minimum in a list, insert a card in a list of sorted cards, Guess an integer number in a range, Towers of Hanoi.</em></p>
+<p><a href="https://github.com/Professor-Sathish/GE_8151-unit-programs/tree/master/MD%20FILES">Illustrative Problem Solutions</a></p>
+<p><a href="https://www.memcode.com/courses/2283">Memcode flashcards</a>- 20+ flashcards to review the contents of this unit. Space repetition of the flashcards will help in retaining the content and perform better in exams."</p>
+<h1 id="table-of-contents">TABLE OF CONTENTS</h1>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#11algorithms">1.1.ALGORITHMS</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#111-characteristics-of-algorithm">1.1.1 Characteristics of Algorithm</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#12building-blocks-of-algorithm-instructions-state-control-flow-functions">1.2.BUILDING BLOCKS OF ALGORITHM</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#121-instructions-statements">1.2.1 Statements</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#122-state">1.2.2 State</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#123-control-flow">1.2.3 control flow</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#124-functions">1.2.4 Functions</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#13notation-of-algorithm">1.3.NOTATION OF ALGORITHM</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#131-pseudocode">1.3.1 Pseudocode</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#132-flowcharts">1.3.2 Flowcharts</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#133-programming-language-notation">1.3.3 Programming language</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#14algorithmic-problem-solving">1.4.ALGORITHMIC PROBLEM SOLVING</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#15simple-strategies-for-developing-algorithm">1.5.SIMPLE STRATEGIES FOR DEVELOPING ALGORITHM</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#151-iteration">1.5.1 Iteration</a></p>
+<p><a href="https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#152-recursion">1.5.2 Recursion</a></p>
+<h3 id="introduction">INTRODUCTION</h3>
+<p>A program is a set of instructions that tells the computer how to solve a particular problem. Various program design tools like algorithms, pseudocodes and flowcharts are used to design the blueprint of the solution (or the program to be written).<br>
+Computer programming goes a step further in problem solving process. Programming means writing computer programs. While programming, the programmers take an algorithm and code the instructions in a particular programming language so that it can be executed by a computer. These days, there are many programming languages available in the market. The programmer can choose any language depending on his expertise and the problem domain</p>
+<h3 id="algorithms">1.1.ALGORITHMS</h3>
+<p><em>In computing, we focus on the type of problems categorically known as <strong>algorithmic problems</strong>, where their solutions are expressible in the form of algorithms. The term ‘<em><strong>algorithm</strong></em>’ was derived from the name of Mohammed al-Khwarizmi, a Persian mathematician in the nineth century (Al-Khwarizmi → Algorism (in Latin) → Algorithm).</em></p>
+<ul>
+<li>The typical meaning of an algorithm <em>is a formally defined procedure for performing some calculation</em>. If a procedure is formally defined, then it must be implemented using some formal language, and such languages are known as programming languages. The algorithm gives the logic of the program, that is, a step-by-step description of how to arrive at a solution.*</li>
+<li>In general terms, <em><strong>an algorithm provides a blueprint to writing a program to solve a particular problem. It is considered to be an effective procedure for solving a problem in a finite number of steps.</strong></em> That is, a well defined algorithm always provides an answer, and is guaranteed to terminate. Algorithms are mainly used to achieve software reuse.<br>
+&lt;![endif]–&gt;</li>
+</ul>
+<p><strong><em>Real Life Example</em></strong><br>
+<strong><em>Procedure to cook Bread Toast</em></strong></p>
+<p><em>Step 1 : Grab a loaf of bread</em></p>
+<p><em>Step 2 : Get a pan and place it on the stove let it heat</em></p>
+<p><em>Step 3 : Pour some oil on the pan and wait for oil to be heated</em></p>
+<p><em>Step 4 : Put a slice on the pan and roast until it become brown in shade</em></p>
+<p><em>Step 5 : Turn the slice and roast until it become brown in shade</em></p>
+<p><em>Step 5 : Get the toasted bread from the pan and serve it on a plate with anything or nothing.</em></p>
+<p><em>The above procedure that explains “how to make a bread toast” and what are all the requirements before we start the procedures. We can code this procedure or algorithm in any programming language of your choice and simulate as results on the computer display. Else we can feed this procedure to the robot with proper instructions and we make the robot to do the bread toast for us.</em></p>
+<p><strong><em>Example :</em></strong></p>
+<p><strong>Algorithm for adding two numbers:</strong></p>
+<p><em>Step 1 : Get the 2 numbers from the user as input.</em></p>
+<p><em>Step 2 : Perform addition of those 2 numbers.</em></p>
+<p><em>Step 3 : Store the answer for display.</em></p>
+<p><em>Step 4 : Display the stored value to the user.</em></p>
+<p><em><strong>Why We need Algorithm</strong></em><br>
+Three reasons for using algorithms are efficiency, abstraction and reusability.</p>
+<p><strong><em>Efficiency</em></strong>: Certain types of problems, like sorting, occur often in computing. Efficient algorithms must be used to solve such problems considering the time and cost factor involved in each algorithm.</p>
+<p><strong><em>Abstraction</em></strong>: Algorithms provide a level of abstraction in solving problems because many seemingly complicated problems can be distilled into simpler ones for which well known algorithms exist. Once we see a more complicated problem in a simpler light, we can think of the simpler problem as just an abstraction of the more complicated one. For example, imagine trying to find the shortest way to route a packet between two gateways in an internet. Once we realize that this problem is just a variation of the more general shortest path problem, we can solve it using the generalised approach.</p>
+<p><strong><em>Reusability</em></strong>: Algorithms are often reusable in many different situations. Since many well-known algorithms are the generalizations of more complicated ones, and since many complicated problems can be distilled into simpler ones, an efficient means of solving certain simpler problems potentially lets us solve many complicated problems.</p>
+<h3 id="characteristics-of-algorithm">1.1.1 Characteristics of Algorithm</h3>
+<p>• Precision: The instructions should be written in a precise manner.</p>
+<p>• Uniqueness: The outputs of each step should be unambiguous, i.e., they should be unique and only depend on the input and the output of the preceding steps.</p>
+<p>• Finiteness: Not even a single instruction must be repeated infinitely.</p>
+<p>• Effectiveness: The algorithm should designed in such a way that it should be the most effective among many different ways to solve a problem.</p>
+<p>• Input: The algorithm must receive an input.</p>
+<p>• Output: After the algorithm gets terminated, the desired result must be obtained.</p>
+<p>• Generality: The algorithm can be applied to various set of inputs</p>
+<h3 id="building-blocks-of-algorithm-instructions-state-control-flow-functions">1.2.BUILDING BLOCKS OF ALGORITHM (INSTRUCTIONS, STATE, CONTROL FLOW, FUNCTIONS)</h3>
+<p><strong>Building Blocks of Algorithms are,</strong><br>
+Computer is not smart as we humans. It requires a much more than single instruction to do any task. We can express our needs to computer using the algorithms. Algorithms includes basic building blocks, That is used to express any kind of the task to the computer</p>
+<pre><code>	 **_1. Instructions/ Statements_**
+	 
+	 **_2. State_**
+	 
+	 **_3. Control Flow_**
+	 
+	 **_4. Functions_**
+</code></pre>
+<h3 id="instructions-statements">1.2.1 Instructions/ Statements</h3>
+<hr>
+<p>In computer programming, a statement is the smallest standalone element of an imperative programming language that expresses some action to be carried out. It is an instruction written in a high-level language that commands the computer to perform a specified action.</p>
+<p>There are two types of statement,</p>
+<p>● Simple Statement</p>
+<p>● Compound Statement</p>
+<p><strong><em>Simple Statements</em></strong></p>
+<p>It is used to represent single action need to be done.</p>
+<p>● <strong>assertion</strong>: assert(ptr != NULL);</p>
+<blockquote>
+<p>Comparison</p>
+</blockquote>
+<p>● <strong>assignment</strong>: A:= A + 5</p>
+<blockquote>
+<p>Assigning a value 5 to A</p>
+<blockquote></blockquote>
+</blockquote>
+<p>● <strong>goto</strong>: goto next;</p>
+<blockquote>
+<p>Sent the control to different block of same program</p>
+<blockquote></blockquote>
+</blockquote>
+<p>● <strong>return</strong>: return 5;</p>
+<blockquote>
+<p>Return a value 5 after the execution of function</p>
+</blockquote>
+<p>● <strong>call</strong>: CLEARSCREEN()</p>
+<blockquote>
+<p>Calling the Function (ClearScreen) which performs clearing previous outputs from the computer screen&gt;</p>
+</blockquote>
+<p><strong><em>Compound Statement</em></strong></p>
+<p>It is a set of statements, that used to perform a sequence of operations repeatedly or condition based executions.</p>
+<p>● &gt;<strong><em>block</em></strong>: begin integer NUMBER; WRITE('Number? '); READLN(NUMBER); A:= A*NUMBER end</p>
+<blockquote>
+<p>Set of statements</p>
+</blockquote>
+<p>● <strong><em>do-loop</em></strong>: do { computation(&amp;i); } while (i &lt; 10);</p>
+<blockquote>
+<p>Looping a set of statements repeatedly until some condition is satisfied. We can’t predict when the condition become satisfiable. At least it will do the loop sequence once.&gt;</p>
+</blockquote>
+<p>● <strong><em>for-loop</em></strong>: for A:=1 to 10 do WRITELN(A) end</p>
+<blockquote>
+<p>Looping a set of statements repeatedly until some condition is satisfied. We can run the loop for certain iterations. Prediction of loop termination is possible.&gt;</p>
+</blockquote>
+<p>● <strong><em>if-statement</em></strong>: if A &gt; 3 then WRITELN(A) else WRITELN(“NOT YET”); end</p>
+<blockquote>
+<p>Normally it contains two sets of statements. State or value is compared with a conditions if it is satisfied the “if” block will be executed otherwise else part will be executed.&gt;</p>
+</blockquote>
+<p>● <strong><em>switch-statement</em></strong>: switch © { case ‘a’: alert(); break; case ‘q’: quit(); break; }</p>
+<blockquote>
+<p>It contains more than two blocks of statement each one has the conditions. When a program reaches a state with a value.  First hit of matching conditions block will be executed. If nothing matches then default block of statements will be executed</p>
+</blockquote>
+<p>● <strong><em>while-loop</em></strong>: while NOT EOF DO begin READLN end</p>
+<blockquote>
+<p>Looping a set of statements repeatedly until some condition is satisfied. We can’t predict when the condition become satisfiable. This is loop is entry controlled. Control will enter into the loop only if condition is satisfiable.&gt;</p>
+</blockquote>
+<h3 id="state">1.2.2 State</h3>
+<hr>
+<p>In information technology and computer science, a program is described as stateful if it is designed to remember preceding events or user interactions; the remembered information is called the state of the system.</p>
+<p>If a program gets sufficient datas processed then it moves to another state. A successful execution of program include the reaching the  final state of the program.</p>
+<h3 id="control-flow">1.2.3 Control Flow</h3>
+<hr>
+<p>In computer science, control flow (or flow of control) is the order in which individual statements, instructions or function calls of an imperative program are executed or evaluated.</p>
+<p><strong>Control Flow Statement</strong></p>
+<p>Within an imperative programming language, a control flow statement is a statement which execution results in a choice being made as to which of two or more paths to follow.</p>
+<p><strong>Control Flow Statement Categories</strong></p>
+<p>● Continuation at a different statement (<em>unconditional branch or jump</em>)</p>
+<p>● Executing a set of statements only if some condition is met (choice - i.e., <em>conditional branch</em>)</p>
+<p>● Executing a set of statements zero or more times, until some condition is met (i.e., loop - the same as conditional branch)</p>
+<p>● Executing a set of distant statements, after which the flow of control usually returns (subroutines, coroutines, and continuations)</p>
+<p>● Stopping the program, preventing any further execution (unconditional halt)</p>
+<p><strong>Primitive Control Statements</strong></p>
+<p>● <strong><em>Labels</em></strong><br>
+A label is an explicit name or number assigned to a fixed position within the source code, and which may be referenced by control flow statements appearing elsewhere in the source code. A label marks a position within source code, and has no other effect.<br>
+Eg:<br>
+<strong>LET</strong> X = 3<br>
+<strong>PRINT</strong> X</p>
+<p>● <strong><em>Goto</em></strong></p>
+<p>The goto statement (a combination of the English words go and to, and pronounced accordingly) is the most basic form of unconditional transfer of control.<br>
+Eg:<br>
+<strong>goto</strong> label</p>
+<p>● <strong><em>Subroutines</em></strong></p>
+<p>A piece of code was written once and then used many times from various other places in a program. The terminology for subroutines varies; they may alternatively be known as routines, procedures, functions (especially if they return results) or methods (especially if they belong to classes or type classes).</p>
+<p>● <strong><em>Sequence</em></strong></p>
+<p>In structured programming, the ordered sequencing of successive commands is considered one of the basic control structures, which is used as a building block for programs alongside iteration, recursion and choice.</p>
+<p>● <strong><em>Other Control Flow Statements</em></strong></p>
+<p>○ <strong><em>Choice</em></strong></p>
+<ul>
+<li>If-then-(else) statements</li>
+<li>Case and switch statements</li>
+</ul>
+<p>○ <strong><em>Loops</em></strong></p>
+<ul>
+<li>Count-controlled loops</li>
+<li>Condition-controlled loops</li>
+<li>Collection-controlled loops</li>
+</ul>
+<h3 id="functions">1.2.4 Functions</h3>
+<hr>
+<p><em>Module - A small component of a computer program that may contain several routines. parameter In computer programming, a parameter is a value that is passed into a function or procedure. procedure A section of computer code that performs a specific task.</em></p>
+<ul>
+<li>Functions “Encapsulate” a task (they combine many instructions into a single line of code). Most programming languages provide many built in functions that would otherwise require many steps to accomplish, for example computing the square root of a number. In general, we don’t care how a function does what it does, only that it “does it”!</li>
+</ul>
+<p>When a function is “called” the program “leaves” the current section of code and begins to execute the first line inside the function. Thus the function “flow of control” is:</p>
+<ol>
+<li>The program comes to a line of code containing a “function call”.</li>
+<li>The program enters the function (starts at the first line in the function code).</li>
+<li>All instructions inside of the function are executed from top to bottom.</li>
+<li>The program leaves the function and goes back to where it started from.</li>
+<li>Any data computed and RETURNED by the function is used in place of the function in the original line of code.</li>
+</ol>
+<p><strong><em>Why do we Write Functions?</em></strong></p>
+<ol>
+<li>They allow us to conceive of our program as a bunch of sub-steps. (Each sub-step can be its own function. When any program seems too hard, just break the overall program into sub-steps!)</li>
+<li>They allow us to reuse code instead of rewriting it.</li>
+<li>Functions allow us to keep our variable namespace clean (local variables only “live” as long as the function does). In other words, function_1 can use a variable called i, and function_2 can also use a variable called i and there is no confusion. Each variable i only exists when the computer is executing the given function.</li>
+<li>Functions allow us to test small parts of our program in isolation from the rest. This is especially true in interpreted languages, such as Matlab, but can be useful in C, Java, ActionScript, etc.</li>
+</ol>
+<p><strong><em>Steps to Writing a Function</em></strong></p>
+<ol>
+<li>Understand the purpose of the function.</li>
+<li>Define the data that comes into the function from the caller (in the form of parameters)!</li>
+<li>Define what data variables are needed inside the function to accomplish its goal.</li>
+<li>Decide on the set of steps that the program will use to accomplish this goal. (The Algorithm)</li>
+</ol>
+<p><strong><em>Types of Functions</em></strong></p>
+<p>● <strong><em>Parameterised Functions</em></strong></p>
+<ul>
+<li>This a functions that receives input while calling. It may or may not return any value to the caller.</li>
+</ul>
+<p>● <strong><em>Non-Parameterised Function</em></strong></p>
+<ul>
+<li>This a functions does not receive any input while calling. It may or may not return any value to the caller.</li>
+</ul>
+<h3 id="notation-of-algorithm">1.3.NOTATION OF ALGORITHM</h3>
+<p><em>Algorithms are basically a set of instructions that, if correct and if followed carefully, produce some desired result. Since they are sets of instructions, they are generally presented in such a way that that the step-by-step nature of how they should be followed is readily apparent.</em><br>
+The two most common representations are pseudocode and flowcharts.</p>
+<ul>
+<li>Algorithms can be thought of as the recipe for taking the general solution for a class of problem and applying it to a specific instance of a problem covered by that class. For instance, the class of problem might be to find the surface area of a sphere given its radius. Through some problem solving means - perhaps by performing the fundamental calculus computation or perhaps simply by looking up the equation in a math book - we determine that the general solution to the problem is that the area is four times pi times the square of the radius. We can then use this general solution and create an algorithm that permits use to compute the surface area of a specific sphere:</li>
+</ul>
+<blockquote>
+<p>TASK: Compute the surface area of a sphere<br>
+GET: radius<br>
+SET: area = 4 pi * radius * radius</p>
+</blockquote>
+<h3 id="pseudocode">1.3.1 Pseudocode</h3>
+<hr>
+<p>Pseudocode is an artificial and informal language that helps programmers develop algorithms. Pseudocode is a “text-based” detail (algorithmic) design tool.</p>
+<p>The rules of Pseudocode are reasonably straightforward. All statements showing “dependency” are to be indented. These include while, do, for, if, switch. Examples below will illustrate this notion.</p>
+<p><strong><em>Rules for Pseudocode Writing</em></strong></p>
+<ol>
+<li>For looping and selection, The keywords that are to be used include Do While…EndDo; Do Until…EndDo; Case…EndCase; If…Endif; Call … with (parameters); Call; Return …; Return; When; Always use scope terminators for loops and iteration.</li>
+<li>As verbs, use the words Generate, Compute, Process, etc. Words such as set, reset, increment, compute, calculate, add, sum, multiply, … print, display, input, output, edit, test , etc. with careful indentation tend to foster desirable pseudocode.</li>
+<li>Do not include data declarations in your pseudocode.</li>
+</ol>
+<p><strong>Examples:</strong></p>
+<p><strong><em>For finding the given number is odd or even:</em></strong></p>
+<pre class=" language-sh"><code class="prism  language-sh">Input any number
+Compute modulo for that  number 
+If modulo value equals to zero
+Print “The number is Even” 
+Else 
+Print “The number is Odd”
+End 
+</code></pre>
+<h4 id="documentation-keywords"><strong>Documentation Keywords</strong></h4>
+<p><em>Documentation keywords describe what needs to be done or provides information about why something is being done. You will quickly discover that, if you have done a decent job of writing your pseudocode, that these lines make very useful comment lines in your final code.</em></p>
+<p>● TASK:</p>
+<blockquote>
+<p>A TASK statement is something that the program must perform but that is described at a level more abstract than what can be coded directly. One way to think of it is that you break a problem down into a set of TASKs. Each TASK can, in turn, be broken down into more narrowly defined TASKs. At some point, the TASK can be described in terms of steps that can be directly implemented. From one perspective, anytime a TASK: keyword is used, it means that there should (or at least could) be a subordinate level of the hierarchy which is the pseudocode for that TASK. In practice, that pseudocode need not be present if the TASK is sufficiently narrow that the person implementing it can go directly from the TASK description to the actual code without the benefit of the detailed steps.</p>
+</blockquote>
+<p>● REM:</p>
+<blockquote>
+<p>A REM statement is merely a remark or comment. They are useful if the TASK statement proves to be insufficient to convey all the desired information or if the reason that something is done or why it works is not obvious…</p>
+</blockquote>
+<h4 id="action-keywords"><strong>Action Keywords</strong></h4>
+<p><em>Action keywords are the lines that actually do the work. There are three basic actions that can be carried out: changing the value stored at some location in memory, getting input from some device, or generating output to some device. We will use the SET, GET, and PUT keywords for these actions respectively.</em></p>
+<p>● SET:</p>
+<blockquote>
+<p>This is an “action” keyword that denotes performing some operation that changes a value in memory. The most common example would be the evaluation of some equation.</p>
+</blockquote>
+<p>● PUT:</p>
+<blockquote>
+<p>This is an “action” keyword that denotes an output operation, generally to the screen. If the destination is anything other than the screen, such as a file or the serial port, then that should be explicitly stated.</p>
+</blockquote>
+<p>● GET:</p>
+<blockquote>
+<p>This is an “action” keyword that denotes in input operation, generally from the keyboard. It is generally understood that there is an implied SET action involved where the value brought in gets stored in some memory location. If the source is anything other than the keyboard, such as a file or the serial port, then that should be explicitly stated.</p>
+</blockquote>
+<h4 id="flow-control-keywords"><strong>Flow Control Keywords</strong></h4>
+<blockquote>
+<p>While the action keywords perform the actual work, they are insufficient in and of themselves to write all but the most trivial programs. Of the three structured programming constructs, the action keywords are only sufficient to implement the first of them, namely a sequence of instructions. A program’s true power comes from the other two - selection and repetition - because they give it the ability to select whether a particular action will actually be carried out based on the information made available to it at the time that it is executed. This ability is the result of controlling the flow of the program which is the purpose of the flow control keywords.</p>
+</blockquote>
+<blockquote>
+<p>Because flow control is a more complex task that merely executing a single statement, all but the simplest flow control keywords are used in groups and there are some options in how to use them depending on the specific situation.</p>
+</blockquote>
+<h3 id="selection---case-1">Selection - Case 1</h3>
+<p>● SEL: (test condition)</p>
+<ul>
+<li>TRUE : Statement(s) to be executed if test condition is TRUE</li>
+<li>FALSE : Statement(s) to be executed if test condition is FALSE</li>
+</ul>
+<h3 id="selection---case-2">Selection - Case 2</h3>
+<p>● IF: (test condition)</p>
+<ul>
+<li>Statement(s) to be executed if test condition is TRUE-</li>
+</ul>
+<p>● ELSE:</p>
+<ul>
+<li>
+<p>Statement(s) to be executed if test condition is FALSE</p>
+</li>
+<li>
+<p>The advantage of Case 1 is that it clearly identifies the block as a selection construct, but it is a bit more involved than is usually necessary. The format of Case 2 is very close to the format of the actual C code that would result and is therefore a bit more straightforward to convert in the coding process, but not enough so as to be a significant factor.</p>
+</li>
+<li>
+<p>In a legal outline, the ELSE: statement in Case 2 would be numbered one more than the IF: statement - in other words, if the IF: statement was numbered 3.4.2.6) then the ELSE: statement would be numbered 3.4.2.7). This can be useful or confusing depending upon how you think of it. If you think of the test condition controlling a single selection construct, then it would be nice if the controlling expression was one level in the outline and everything it controls was at a lower level. So this could be a bit confusing. However, this format actually emphasizes the fact that, in C, an “else” statement truly is a separate statement and that it must immediately follow an “if” statement that is at the same level of control. Neither convention is significantly better than the other - and you should quickly get comfortable with whichever you choose to use.</p>
+</li>
+</ul>
+<h3 id="repetition---case-1">Repetition - Case 1</h3>
+<p>● LOOP:</p>
+<ul>
+<li>WHILE: (test condition)</li>
+<li>Statement(s) to be executed if test condition is TRUE</li>
+</ul>
+<h3 id="repetition---case-2">Repetition - Case 2</h3>
+<p>● LOOP:</p>
+<ul>
+<li>
+<p>Statement(s) to be executed if test condition is TRUE</p>
+</li>
+<li>
+<p>WHILE: (test condition)</p>
+</li>
+<li>
+<p>These two cases map directly into the while() and do/while() looping constructs of the C language. In Case 1, the test condition is evaluated prior to making the first pass through the statements controlled by it and, as a result, the possibility exists that those statements won’t be executed even once. The only difference in Case 2 is that the statements controlled by the test condition are executed one time and the test is evaluated after that first pass. If the test condition is TRUE then another pass is made - and the test condition evaluated at the end of that and each succeeding pass until the test finally fails.</p>
+</li>
+<li>
+<p>While the two cases above are more than adequate to represent any looping logic - in fact, either one of them by itself is sufficient, just more cumbersome in some cases - the logic is sometime clearer to the reader if it is expressed in terms of repeating the loop until some some condition is met - meaning that the loop is terminated as soon as the test condition becomes TRUE.</p>
+</li>
+</ul>
+<h3 id="repetition---case-3">Repetition - Case 3</h3>
+<p>● LOOP:</p>
+<ul>
+<li>UNTIL: (test condition)</li>
+<li>Statement(s) to be executed if test condition is FALSE</li>
+</ul>
+<h3 id="repetition---case-4">Repetition - Case 4</h3>
+<p>● LOOP:</p>
+<ul>
+<li>
+<p>Statement(s) to be executed if test condition is FALSE</p>
+</li>
+<li>
+<p>UNTIL: (test condition)</p>
+</li>
+<li>
+<p>Although C does not support a “loop until” construct (some languages do) converting Case 3 to an equivalent form of Case 1 is trivial - you simply invert the test condition. Similarly, Case 4 can be converted to Case 2 by the same mechanism.</p>
+</li>
+</ul>
+<p>Just as the selection construct can be streamlined, so too can a couple of the repetition constructs.</p>
+<h3 id="repetition---case-5-streamlined-version-of-case-1">Repetition - Case 5 (streamlined version of Case 1)</h3>
+<blockquote>
+<p>WHILE: (test condition)</p>
+</blockquote>
+<ul>
+<li>Statement(s) to be executed if test condition is TRUE</li>
+</ul>
+<p>Repetition - Case 6 (streamlined version of Case 3)</p>
+<blockquote>
+<p>UNTIL: (test condition)</p>
+</blockquote>
+<ul>
+<li>
+<p>Statement(s) to be executed if test condition is FALSE</p>
+</li>
+<li>
+<p>Streamlining the other two is more difficult because, since the test comes at the end of the statement within the loop, it is very useful to mark the beginning of those statements in such a way that the fact that it is a loop is readily apparent to the reader. The LOOP: statement does that about as well as any other option would.</p>
+</li>
+<li>
+<p>As you code loops, you will discover that it is frequently the case that there are steps that are logically associated with the loop but which must reside outside of the loop code. The most common by far is the need to initialize certain variables, especially counters, prior to entering the loop. Much less frequently, it is necessary to perform some cleanup tasks immediately after the loop is exited. A pseudocode construct that gathers all of these together so that their association is obvious is the following:</p>
+</li>
+</ul>
+<h3 id="repetition---case-7">Repetition - Case 7</h3>
+<p>● REP:</p>
+<p>○ PRE:</p>
+<p>■ Statement(s) to be executed prior to entering loop</p>
+<p>○ WHILE: (test condition)</p>
+<p>■ Statement(s) to be executed if test condition is TRUE</p>
+<p>○ LOOP:</p>
+<p>○ POST:</p>
+<p>■ Statement(s) to be executed prior after the loop is finished</p>
+<p>The above can be easily altered so as to cover all four of the first four cases. As shown, it implements</p>
+<ul>
+<li>Case 1. By switching the WHILE: and LOOP: statements it implements</li>
+<li>Case 2. Similarly,</li>
+<li>Case 3 is obtained simply by changing the WHILE: to UNTIL: and swapping the UNTIL: with the LOOP: then generated Case 4.</li>
+</ul>
+<h3 id="examples"><strong>Examples</strong></h3>
+<p><em><strong>Pseudo Code for Sum of two numbers:</strong></em></p>
+<h3 id="task--sum-of-two-numbers">TASK : Sum of two numbers</h3>
+<pre class=" language-sh"><code class="prism  language-sh">READ num1
+READ num2
+Compute SUM:
+Sum = num1 + num2
+End SUM
+DISPLAY Sum
+End
+End TASK
+</code></pre>
+<p><em><strong>Pseudocode to find given number is odd or even</strong></em></p>
+<h3 id="task-find-odd-or-even">TASK: Find Odd or Even</h3>
+<pre class=" language-sh"><code class="prism  language-sh">READ number
+Compute MODULO:
+Mod = number % 2;
+End MODULO
+IF Mod = 0:
+PRINT “Number is Even”
+ELSE:
+PRINT “Number is Odd”
+End TASK
+</code></pre>
+<p><em><strong>Pseudocode to find factorial of given number</strong></em></p>
+<h3 id="task-finding-factorial-of-a-number">TASK: Finding Factorial of a number</h3>
+<pre class=" language-sh"><code class="prism  language-sh">READ number
+Initialize Fact to 0 and CurrentVal to number
+WHILE CurrentVal is not 1:
+IF CurretVal &gt;= 1:
+Fact = Fact * CurrentVal
+CurretVal = CurretVal - 1
+EndIF
+Else
+Print Fact
+End WHILE
+End 
+End TASK 
+</code></pre>
+<h3 id="flowcharts">1.3.2 Flowcharts</h3>
+<hr>
+<p><em>Flowcharts are a graphical means of representing an algorithm, as should be expected, they have advantages and disadvantages compared to pseudocode. One of their primary advantages is that they permit the structure of a program to be easily visualized - even if all the text were to be removed. The human brain is very good at picking out these patterns and keeping them “in the back of the mind” as a reference frame for viewing the code as it develops.</em></p>
+<ul>
+<li>
+<p>Most programmers also find it easier to sketch flowcharts on a piece of paper and to modify them by crossing out connection arrows and drawing new ones that they would working with pseudocode by hand. By the same token, most programmers do not like to develop flowcharts in an electronic format because the overhead of creating and modifying it is generally more than they want to deal with while pseudocode lends itself to such electronic development.</p>
+</li>
+<li>
+<p>Furthermore, if the pseudocode is already in an electronic format that has been structured to lend itself to translation to the final language - such as the one recommended in the previous section - then doing so can be a very simply matter of copying the pseudocode to a new file, overlaying the necessary syntax associated with the language, and compiling the result. This can be a powerful advantage of pseudocode over flowcharts where the entire source code still has to be typed by hand unless you are fortunate to have a tool that can take a flowchart - typically developed using that same tool - and translating it to directly to code. Such tools do exist - and they tend to be rather expensive.</p>
+</li>
+<li>
+<p>Now that we have looked as some of the pros and cons of flowcharts relative to pseudo code, let’s delve into flowcharting itself. The idea behind a flowchart is that it links together a series of blocks each of which perform some specific task. Each of these tasks is represented by a block and has exactly one arrow leading to it and, more importantly, one arrow exiting from it. This is key to the concept of a “structured program”.</p>
+</li>
+<li>
+<p>The shape of the block may convey additional information about what is happening. For instance, a rectangular block is frequently used to indicated that a computation is occurring while a slanted parallelogram is used to indicate some type of input or output operation. The diversity of shapes that can be used and what they mean is staggering - for instance a different shape can be used to indicated output to a tape drive versus to a hard disk or to indicate output in text format verses binary format. By using such highly specialized symbols, much of what is happening can be conveyed by the symbols themselves. But the power of using these distinctions is generally only useful to people that work with flowcharts continuously, professionally, and who are describing very large and complex systems. At our level, it is far better to restrict ourselves to a minimum number of shapes and explicitly indicate any information that otherwise might have been implied by using a different shape.</p>
+</li>
+</ul>
+<p><img src="https://github.com/kgisl/pythonFDP/blob/master/units/unit_i_img/flowchart_symbols.png" alt="flowchart symbols"></p>
+<p><strong><em>Circle - Entry/Exit Point</em></strong></p>
+<blockquote>
+<p>The circle indicates the entry and exit point for the program - or for the current segment of the program. The entry point has exactly one arrow leaving it and the exit point has exactly one arrow entering it. Execution of the program - or of that segment of the program - always starts at the entry point and finishes at the exit point.</p>
+</blockquote>
+<p><strong><em>Rectangle - Task</em></strong></p>
+<blockquote>
+<p>The rectangle represents a task that is to be performed. That task might be as simple as incrementing the value of a single variable or as complex as you can imagine. The key point is that it also has a single entry point and a single exit point.</p>
+</blockquote>
+<p><strong><em>Parallelogram - Input/Output</em></strong></p>
+<blockquote>
+<p>The parallelogram is used to indicate that some form in input/output operation is occurring. They must also obey the single entry single exit point rule which makes sense given that they are a task-block except with a slightly different shape for the symbol. We could easily eliminate this symbol and use the basic rectangle but the points at which I/O occur within our programs are extremely important and being able to easily and quickly identify them is valuable enough to warrant dealing with a special symbol.</p>
+</blockquote>
+<blockquote>
+<p>Since a Task block can be arbitrarily complex, it can also contain I/O elements. Whether to use a rectangle or a parallelogram is therefore a judgment call. One way to handle this is to decide whether a task’s primary purpose is to perform I/O. Again, that is a judgment call. Another option is to use a symbol that is rectangular on one side and slanted on the other indicating that it is performing both I/O and non-I/O tasks.</p>
+</blockquote>
+<p><strong><em>Diamond - Decision Point</em></strong></p>
+<blockquote>
+<p>The diamond represents a decision point within our program. A question is asked and depending on the resulting answer, different paths are taken. Therefore a diamond has a single entry point but more than one exit point. Usually, there are two exit points - one that is taken if the answer to the question is “true” and another that is taken if the answer to the question is “false”. This is sufficient to represent any type of branching logic including both the typical selection statements and the typical repetition statements. However, most languages support some type of “switch” or “case” statement that allows the program to select one from among a potentially large set of possible paths. The basic two-exit-point diamond is fully capable of representing this construct, but it is generally cleaner and more useful to represent it using a as many exit points from the diamond as there are paths.</p>
+</blockquote>
+<p><strong><em>Arrow - Interblock Flow</em></strong></p>
+<blockquote>
+<p>The arrows simply show which symbol gets executed next. The rule is that once an arrow leaves a symbol, it must lead directly to exactly one other symbol - arrows can never fork and diverge. They can, however, converge and join arrows coming from other blocks.</p>
+</blockquote>
+<h4 id="examples-1">Examples</h4>
+<p><em><strong>Sum of two numbers flow chart</strong></em></p>
+<p><img src="https://github.com/kgisl/pythonFDP/blob/master/units/unit_i_img/sum_of_two_numbers.png" alt="sum of two nos"></p>
+<p><em><strong>Finding number is even or odd</strong></em></p>
+<p><img src="https://github.com/kgisl/pythonFDP/blob/master/units/unit_i_img/odd_even.png" alt="odd or even"></p>
+<p><em><strong>Program to Find a factorial of the given number</strong></em></p>
+<p><img src="https://github.com/kgisl/pythonFDP/blob/master/units/unit_i_img/factorial.png" alt="factorial"></p>
+<h3 id="programming-language-notation">1.3.3 Programming language notation</h3>
+<hr>
+<ul>
+<li>A programming language is a formal language that specifies a set of instructions that can be used to produce various kinds of output. Programming languages generally consist of instructions for a computer. Programming languages can be used to create programs that implement specific algorithms.</li>
+</ul>
+<p>Eg : C, C++, COBAL, JAVA, Python … etc</p>
+<ul>
+<li>Programing language consist of syntax and semantics to processed by the compiler or interpreter we must represent our logic with proper notations otherwise the program won’t work at all.</li>
+</ul>
+<p><strong><em>Let’s take a python program to compute sum of two numbers,</em></strong></p>
+<pre class=" language-sh"><code class="prism  language-sh">num1 = input('Enter first number: ')
+num2 = input('Enter second number: ')
+# Add two numbers3
+sum = int(num1) + int(num2)
+# Display the sum
+print(sum)
+</code></pre>
+<p><strong><em>Let’s take a C program to compute sum of two numbers,</em></strong></p>
+<pre class=" language-sh"><code class="prism  language-sh">#include&lt;stdio.h&gt;
+int main(){
+int num1, int num2, sum;
+printf (Enter first number:”);
+scanf(“%d”,&amp;num1);
+printf (Enter second number:”);
+scanf(“%d”,&amp;num2);
+sum = num1 + num2;
+printf(“%d”, sum)
+return 0;
+}
+</code></pre>
+<p><strong><em>Let’s take a Java program to compute sum of two numbers,</em></strong></p>
+<pre class=" language-sh"><code class="prism  language-sh">class Main{
+public static void main(String[] args){
+int num1, num2, sum;
+Scanner in = new Scanner(System.in);
+System.out.println(“Enter first number:”);
+num1 = in.nextInt();
+System.out.println(“Enter second number:”);
+num2 = in.nextInt();
+sum = num1 + num2;
+System.out.println(sum);
+}
+}
+</code></pre>
+<p>Above that we have 3 styles of the programming with 3 different language but achieves the same logic.</p>
+<p>The programs different only by syntax and rules</p>
+<p><strong>Python</strong></p>
+<ul>
+<li>It is dynamic type no declaration of variable needed.</li>
+<li>Just do and display.</li>
+<li>It is based on Dynamic OOPS .</li>
+</ul>
+<p><strong>C</strong></p>
+<ul>
+<li>It is structure oriented we need to declare a variable before we use it.</li>
+<li>Anything that represented as block of codes and do the work.</li>
+<li>It is procedure oriented structured language.</li>
+</ul>
+<p><strong>JAVA</strong></p>
+<ul>
+<li>It is object oriented derived from C and C++</li>
+<li>Coding style is inherited from C and C++ for easy transformation</li>
+<li>Everything is considered as objects and depends on dynamic memory allocations</li>
+</ul>
+<p><strong><em>Problem solving with algorithms</em></strong></p>
+<p>Problem solving can be achieved so many ways, If you need to done with computers then you must design algorithm and then you must implement algorithm with any of your programming language choice.</p>
+<h3 id="algorithmic-problem-solving">1.4.ALGORITHMIC PROBLEM SOLVING</h3>
+<ul>
+<li>Algorithms are solutions to problems. They are not solutions themselves. They just list specific instructions that need to be performed for getting the solution. In computer science, emphasis is laid on writing a good and effective algorithm and this emphasis makes computer science distinct from other disciplines. For example, computer science is distinct from theoretical mathematics because those practitioners are typically satisfied with just proving the existence of a solution to a problem but in computer science, the problem is not solved until the algorithm is used to implement the solution.</li>
+<li>We will now discuss about the sequence of steps one must typically follow for designing an effective algorithm.<br>
+<img src="https://github.com/SubasriNatarajan/python/blob/main/Algorithmic.jpeg?raw=true" alt="N|Solid"></li>
+</ul>
+<ol>
+<li>Understanding the problem</li>
+<li>Determining the capabilities of the computational device</li>
+<li>Exact/approximate solution</li>
+<li>Select the appropriate data structure</li>
+<li>Algorithm design techniques</li>
+<li>Methods of specifying an algorithm</li>
+<li>Proving an algorithms correctness</li>
+<li>Analysing the performance of an algorithm</li>
+</ol>
+<blockquote>
+<p>Understanding the problem</p>
+</blockquote>
+<ul>
+<li>The problem given should be clearly and completely understood. It is compared with earlier problems that have already been solved to check if it is similar to them and a known<br>
+algorithm exists. If the algorithm is available, it is used otherwise a new one has to be developed.</li>
+</ul>
+<blockquote>
+<p>Determining the capabilities of the computational device</p>
+</blockquote>
+<ul>
+<li>After understanding the problem, the capabilities of the computing device should be known. For this, the type of the architecture, speed and<br>
+memory availability of the device are noted.</li>
+</ul>
+<blockquote>
+<p>Exact/approximate solution</p>
+</blockquote>
+<ul>
+<li>The next step is to develop the algorithm. The algorithm must compute correct output for all possible and legitimate inputs. This solution can be an exact solution or an approximate solution. For example, you can only have an approximate solution in case of finding square root of number or finding the solutions of nonlinear equations.</li>
+</ul>
+<blockquote>
+<p>Select the appropriate data structure</p>
+</blockquote>
+<ul>
+<li>A data type is a well-defined collection of data with a welldefined set of operations on it. A data structure is basically a group of data elements that are put together<br>
+under one name, and which defines a particular way of storing and organizing data in a computer so that it can be used efficiently. The elementary data structures are as follows.</li>
+</ul>
+<p>• List: Allows fast access of data.</p>
+<p>• Sets: Treats data as elements of a set. Allows application of operations such as intersection, union, and<br>
+equivalence.</p>
+<p>• Dictionaries: Allows data to be stored as a key-value pair.</p>
+<blockquote>
+<p>Algorithm design techniques</p>
+</blockquote>
+<ul>
+<li>Developing an algorithm is an art which may never be fully automated. By mastering the design techniques, it will become easier for you to develop new and useful algorithms.<br>
+Examples of algorithm design techniques include dynamic programming.</li>
+</ul>
+<blockquote>
+<p>Methods of specifying an algorithm</p>
+</blockquote>
+<ul>
+<li>An algorithm is just a sequence of steps or instructions that can be used to implement a solution. After writing the algorithm, it is specified either using a natural language or with the help of pseudocode and flowcharts. We will read about them in the next section.</li>
+</ul>
+<blockquote>
+<p>Proving algorithms correctness</p>
+</blockquote>
+<ul>
+<li>Writing an algorithm is not just enough. You need to prove that it computes solutions for all the possible valid inputs. This process is often referred to as algorithm validation. Algorithm validation ensures that the algorithm will work correctly irrespective of the programming language in which it will be implemented.</li>
+</ul>
+<blockquote>
+<p>Analysing the performance of algorithms</p>
+</blockquote>
+<ul>
+<li>When an algorithm is executed, it uses the computer’s resources like the Central Processing Unit (CPU) to perform its operation and to hold the program and data respectively. An algorithm is analysed to measure its performance in terms of CPU time and memory space required to execute that algorithm. This is a challenging task and is often used to compare different algorithms for a particular problem. The result of the comparison helps us to choose the best solution from all possible solutions. Analysis of the algorithm also helps us to determine whether the algorithm will be able to meet any efficiency constraint that exits or not.</li>
+</ul>
+<h3 id="simple-strategies-for-developing-algorithm">1.5.SIMPLE STRATEGIES FOR DEVELOPING ALGORITHM</h3>
+<h3 id="iteration">1.5.1 Iteration</h3>
+<hr>
+<p>In computational mathematics, an iterative method is a mathematical procedure that generates a sequence of improving approximate solutions for a class of problems, in which the n-th approximation is derived from the previous ones. A specific implementation of an iterative method, including the termination criteria, is an algorithm of the iterative method. An iterative method is called convergent if the corresponding sequence converges for given initial approximations.</p>
+<h3 id="for-example">For Example</h3>
+<h3 id="to-find-power-of-a-number">To find power of a number</h3>
+<pre class=" language-sh"><code class="prism  language-sh">Step 1: Get a base number
+Step 2: Get a power
+Step 3: Initialize result value with number and pow with power
+Step 4: Start with pow as 1
+Step 5: Multiply result and number then increase pow by one
+Step 6: Repeat Step 5 Until pow reaches value of power
+Step 7: Break the loop and display the result
+Step 8: End
+</code></pre>
+<h3 id="in-pseudocode">In pseudocode:</h3>
+<h3 id="task-to-find-power-of-a-number">TASK: To Find Power of a number</h3>
+<pre class=" language-sh"><code class="prism  language-sh">READ number
+READ Power
+Initialize result with number and pow with Power
+WHILE pow &lt; Power:
+result = result * number
+Increase pow by 1
+End Loop
+PRINT result
+End
+</code></pre>
+<h3 id="recursion">1.5.2 Recursion</h3>
+<hr>
+<p><a href="https://towardsdatascience.com/tower-of-hanoi-a-recursive-approach-12592d1a7b20">TOWER OF HANOI</a></p>
+<p><img src="https://user-images.githubusercontent.com/90175058/134756538-d7b35b4a-f4d0-49d3-8d41-1132810b38c8.png" alt="image"></p>
+<ul>
+<li>
+<p>A recursive algorithm is an algorithm which calls itself with “smaller (or simpler)” input values, and which obtains the result for the current input by applying simple operations to the returned value for the smaller (or simpler) input. More generally if a problem can be solved utilizing solutions to smaller versions of the same problem, and the smaller versions reduce to easily solvable cases, then one can use a recursive algorithm to solve that problem. For example, the elements of a recursively defined set, or the value of a recursively defined function can be obtained by a recursive algorithm.</p>
+</li>
+<li>
+<p>If a set or a function is defined recursively, then a recursive algorithm to compute its members or values mirrors the definition. Initial steps of the recursive algorithm correspond to the basis clause of the recursive definition and they identify the basis elements. They are then followed by steps corresponding to the inductive clause, which reduce the computation for an element of one generation to that of elements of the immediately preceding generation.</p>
+</li>
+<li>
+<p>In general, recursive computer programs require more memory and computation compared with iterative algorithms, but they are simpler and for many cases a natural way of thinking about the problem.</p>
+</li>
+</ul>
+<h3 id="for-example-1">For Example</h3>
+<h3 id="to-find-power-of-a-number-1">To find power of a number</h3>
+<p>Step 1: Get a base number</p>
+<p>Step 2: Get a power</p>
+<p>Step 3: Send a number and power to routine</p>
+<p>Step 4: In routine Compare power with 1</p>
+<p>Step 5: If it is equal to 1 then return number</p>
+<p>Step 6: Else Compute the same routine (Step 4 and 5) with a same number and  reduced power by 1</p>
+<p>Step 7: display the result</p>
+<p>Step 8: End</p>
+<h2 id="in-pseudocode-1">In pseudocode:</h2>
+<h3 id="task-to-find-power-of-a-number-1">TASK: To Find Power of a number</h3>
+<pre class=" language-sh"><code class="prism  language-sh">READ number
+READ Power
+result = FIND_POWER number and power
+FIND_POWER number and power:
+IF power = 1:
+ELSE
+result = FIND_POWER number and power -1
+RETURN result
+End FIND_POWER
+PRINT result
+End
+End TASK
+</code></pre>
+<ul>
+<li>An algorithm starts from an initial state with some input. The instructions/statements describe the processing that must be done on the input to produce the final output (the final state). Note that an instruction is a single operation which when executed converts one state to other. In the course of processing, data is read from an input device, stored in computer’s memory for further processing, and then the result of the processing is written to an output device. The data is stored in the computer’s memory in the form of variables or constants.</li>
+<li>The state of an algorithm is defined as its condition regarding current values or contents of the stored data. An algorithm is a list of precise steps and the order of steps determines the functioning of the algorithm.</li>
+<li>The flow of control (or the control flow) of an algorithm can be specified as top-down or bottom-up approach. Thus, the flow of control specifies the order in which individual instructions of an algorithm are executed.</li>
+</ul>
+
+    </div>
+  </div>
+</body>
+
+</html>
