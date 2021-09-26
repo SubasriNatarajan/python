@@ -6,7 +6,7 @@
 
 ***Illustrative problems:*** *find minimum in a list, insert a card in a list of sorted cards, Guess an integer number in a range, Towers of Hanoi.*
 
-[Illustrative Program Solutions](https://github.com/Professor-Sathish/GE_8151-unit-programs/tree/master/MD%20FILES)
+[Illustrative Problem Solutions](https://github.com/Professor-Sathish/GE_8151-unit-programs/tree/master/MD%20FILES)
 
 [Memcode flashcards](https://www.memcode.com/courses/2283)- 20+ flashcards to review the contents of this unit. Space repetition of the flashcards will help in retaining the content and perform better in exams."
 
