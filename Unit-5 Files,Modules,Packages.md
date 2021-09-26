@@ -4,6 +4,8 @@
 ### OBJECTIVE
 Files and exception: text files, reading and writing files, format operator; command line arguments, errors and exceptions, handling exceptions, modules, packages; Illustrative programs: word count, copy file.
 
+[Illustrative Problem Solutions](https://github.com/Professor-Sathish/GE_8151-unit-programs/tree/master/MD%20FILES)
+
 [Memcode flashcards](https://www.memcode.com/courses/2280)	- 40+ flashcards to review the contents of this unit. Space repetition of the flashcards will help in retaining the content and perform better in exams."
 
 [Kahoot for working with text files ](https://create.kahoot.it/share/unit-5-python-working-with-text-files/f6455c78-d279-4ed8-a10c-d04cb4df0b24)- Working with text files Quiz
