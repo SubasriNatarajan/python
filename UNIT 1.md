@@ -14,13 +14,13 @@
 
 [1.1. ALGORITHMS](https://github.com/SubasriNatarajan/python/blob/main/UNIT%201.md#11algorithms)
 
-[1.2. BUILDING BLOCKS OF ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#12building-blocks-of-algorithm-instructions-state-control-flow-functions)
+[1.2. BUILDING BLOCKS OF ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/UNIT%201.md#12building-blocks-of-algorithms)
 
-[1.3. NOTATION OF ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#13notation-of-algorithm)
+[1.3. NOTATION OF ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/UNIT%201.md#13notations)
 
-[1.4. ALGORITHMIC PROBLEM SOLVING](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#14algorithmic-problem-solving)
+[1.4. ALGORITHMIC PROBLEM SOLVING](https://github.com/SubasriNatarajan/python/blob/main/UNIT%201.md#14algorithmic-problem-solving)
 
-[1.5. SIMPLE STRATEGIES FOR DEVELOPING ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#15simple-strategies-for-developing-algorithm)
+[1.5. SIMPLE STRATEGIES FOR DEVELOPING ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/UNIT%201.md#15simple-strategies-for-developing-algorithm)
 
 ### INTRODUCTION 
 A program is a set of instructions that tells the computer how to solve a particular problem. Various program design tools like algorithms, pseudocodes and flowcharts are used to design the blueprint of the solution (or the program to be written). 
@@ -241,7 +241,7 @@ Flow chart is defined as graphical representation of the logic for problem solvi
 **Rules for drawing a flowchart**
 
 - The flowchart should be clear, neat and easy to follow.
-- 
+
 ![](https://github.com/SubasriNatarajan/python/blob/main/002.jpeg?raw=true)
 
 - The flowchart must have a logical start and finish.\Only one flow line should come out from a process symbol.
