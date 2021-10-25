@@ -165,10 +165,8 @@ The conditional control flow is explained with the example of finding greatest o
 2. Read a
 3. Read b
 4. If a>b then
-
-4.1. Print a is greater else
-
-4.2. Print b is greater
+- 4.1. Print a is greater else
+- 4.2. Print b is greater
 5. Stop
 
 **Repetition control flow**
@@ -189,10 +187,8 @@ Statements
 2. Read the value of ‘n’
 3. Initialize i as 1
 4. Repeat step 
-
-4.1 until i< n
-
-4.2. Print i
+- 4.1 until i< n
+- 4.2. Print i
 5. Stop
 
 **Function**
@@ -235,7 +231,7 @@ Step 4: Printc
 
 Step 5: Return
 
-**1.3.NOTATIONS**
+### 1.3.NOTATIONS
 
 **FLOWCHART**
 Flow chart is defined as graphical representation of the logic for problem solving. The purpose of flowchart is making the logic of the program clear in a visual representation.
