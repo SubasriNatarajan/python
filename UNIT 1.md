@@ -392,7 +392,7 @@ END
 **EXAMPLES:**         
 
 **Addition of two numbers:** 
-```sh
+```console
 BEGIN
 GET a,b
 ADD c=a+b
@@ -400,7 +400,7 @@ PRINT c
 END
 ```
 **Calculate sum and average for n numbers:**
-```sh
+```console
 BEGIN
 INITIALIZE sum=0, i=1
 READ n
@@ -413,7 +413,7 @@ PRINT sum, avg
 END
 ```
 **Calculate area of circle:**
-```sh
+```console
 BEGIN
 READ radius, r
 INITIALIZE pi=3.14
@@ -422,7 +422,7 @@ PRINT Area
 END
 ```
 **Read Number  n and print the integers counting upto n:**
-```sh
+```console
 BEGIN
 READ n
 INITIALIZE i to 1
@@ -433,7 +433,7 @@ END FOR
 END
 ```
 **To determine a student whether successful or fail.**
-```sh
+```console
 BEGIN
 READ student’s grade
 IF student's grade is greater than or equal to 50
