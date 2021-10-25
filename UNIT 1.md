@@ -12,21 +12,15 @@
 
 #  TABLE OF CONTENTS
 
-[1.1.ALGORITHMS](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#11algorithms)
+[1.1. ALGORITHMS](https://github.com/SubasriNatarajan/python/blob/main/UNIT%201.md#11algorithms)
 
-[1.1.1 Characteristics of Algorithm](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#111-characteristics-of-algorithm)
+[1.2. BUILDING BLOCKS OF ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#12building-blocks-of-algorithm-instructions-state-control-flow-functions)
 
-[1.2.BUILDING BLOCKS OF ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#12building-blocks-of-algorithm-instructions-state-control-flow-functions)
+[1.3. NOTATION OF ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#13notation-of-algorithm)
 
-[1.3.NOTATION OF ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#13notation-of-algorithm)
+[1.4. ALGORITHMIC PROBLEM SOLVING](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#14algorithmic-problem-solving)
 
-[1.4.ALGORITHMIC PROBLEM SOLVING](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#14algorithmic-problem-solving)
-
-[1.5.SIMPLE STRATEGIES FOR DEVELOPING ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#15simple-strategies-for-developing-algorithm)
-
-[1.5.1 Iteration](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#151-iteration)
-
-[1.5.2 Recursion](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#152-recursion)
+[1.5. SIMPLE STRATEGIES FOR DEVELOPING ALGORITHM](https://github.com/SubasriNatarajan/python/blob/main/Unit-1%20Algorithmic%20Problem%20Solving.md#15simple-strategies-for-developing-algorithm)
 
 ### INTRODUCTION 
 A program is a set of instructions that tells the computer how to solve a particular problem. Various program design tools like algorithms, pseudocodes and flowcharts are used to design the blueprint of the solution (or the program to be written). 
@@ -90,7 +84,7 @@ Three reasons for using algorithms are efficiency, abstraction and reusability.
 
 • Generality: The algorithm can be applied to various set of inputs
 
-**1.2.BUILDING BLOCKS OF ALGORITHMS**
+### 1.2.BUILDING BLOCKS OF ALGORITHMS
 
 As algorithm is a part of the blue-print or plan for the computer program. An algorithm is constructed using following blocks.
 
@@ -114,7 +108,7 @@ Example:
 
 • Print the value of c // This is output statement
 
-Comment statements are given after // symbol, which is used to tell the purpose of the line.
+• Comment statements are given after // symbol, which is used to tell the purpose of the line.
 
 **ii) States**
 
@@ -171,7 +165,9 @@ The conditional control flow is explained with the example of finding greatest o
 2. Read a
 3. Read b
 4. If a>b then
+
 4.1. Print a is greater else
+
 4.2. Print b is greater
 5. Stop
 
@@ -192,8 +188,11 @@ Statements
 1. Start
 2. Read the value of ‘n’
 3. Initialize i as 1
-4. Repeat step 4.1 until i< n
-4.1. Print i
+4. Repeat step 
+
+4.1 until i< n
+
+4.2. Print i
 5. Stop
 
 **Function**
@@ -219,31 +218,45 @@ Algorithm for addition of two numbers using function
 **Main function()**
 
 Step 1: Start
-Step 2:Call the function add()
+
+Step 2: Call the function add()
+
 Step 3: Stop
 
 **sub function add()**
 
-Step1:Functionstart
-Step2:Geta,bValues
+Step 1: Functionstart
+
+Step 2: Geta,bValues
+
 Step 3: add c=a+b
+
 Step 4: Printc
+
 Step 5: Return
 
 **1.3.NOTATIONS**
 
 **FLOWCHART**
 Flow chart is defined as graphical representation of the logic for problem solving. The purpose of flowchart is making the logic of the program clear in a visual representation.
+
 ![](https://github.com/SubasriNatarajan/python/blob/main/001.jpeg?raw=true)
+
 **Rules for drawing a flowchart**
 
 - The flowchart should be clear, neat and easy to follow.
+- 
 ![](https://github.com/SubasriNatarajan/python/blob/main/002.jpeg?raw=true)
+
 - The flowchart must have a logical start and finish.\Only one flow line should come out from a process symbol.
 - Only one flow line should enter a decision symbol. However, two or three flow lines may leave the decision symbol.
+
 ![](https://github.com/SubasriNatarajan/python/blob/main/003.png?raw=true)
+
 - Only one flow line is used with a terminal symbol.
+
 ![](https://github.com/SubasriNatarajan/python/blob/main/004.jpeg?raw=true)
+
 - Within standard symbols, write briefly and precisely.
 - Intersection of flow lines should be avoided.
 
