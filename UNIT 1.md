@@ -670,7 +670,7 @@ Step 8: End
 ### In pseudocode:
 
 ### TASK: To Find Power of a number
-```sh
+```python
 READ number
 READ Power
 Initialize result with number and pow with Power
@@ -707,7 +707,7 @@ Step 8: End
 ## In pseudocode:
 
 ### TASK: To Find Power of a number
-```sh
+```python
 READ number
 READ Power
 result = FIND_POWER number and power
