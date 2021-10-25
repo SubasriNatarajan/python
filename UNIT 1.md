@@ -323,7 +323,7 @@ The following gives common keywords used in pseudocodes.
 - **FOR, ENDFOR:** Another iterative incremented/decremented tested automatically.
 
 **Syntax for if else:**
-```sh
+```python
 IF (condition)THEN 
     statement
     ... 
@@ -333,7 +333,7 @@ ELSE
 ENDIF
 ```
 **Example: Greatest of two numbers**
-```sh 
+```python
 BEGIN READ a,b
 IF (a>b) THEN
 DISPLAY a is greater 
@@ -343,14 +343,14 @@ END IF
 END
 ```
 **Syntax for For:**
-```sh
+```python
 FOR( start-value to end-value) DO
 statement
 ... 
 ENDFOR
 ```
 **Example: Print n natural numbers**
-```sh 
+```python
 BEGIN GET n
 INITIALIZE i=1 
 FOR (i<=n) DO 
@@ -360,14 +360,14 @@ ENDFOR
 END
 ```
 **Syntax for While:**
-```sh
+```python
 WHILE (condition) DO 
 statement
 ...
 ENDWHILE
 ```
 **Example: Print n natural numbers**
-```sh 
+```python
 BEGIN GET n
 INITIALIZE i=1 
 WHILE(i<=n) DO
@@ -392,7 +392,7 @@ END
 **EXAMPLES:**         
 
 **Addition of two numbers:** 
-```console
+```python
 BEGIN
 GET a,b
 ADD c=a+b
@@ -400,7 +400,7 @@ PRINT c
 END
 ```
 **Calculate sum and average for n numbers:**
-```console
+```python
 BEGIN
 INITIALIZE sum=0, i=1
 READ n
@@ -413,7 +413,7 @@ PRINT sum, avg
 END
 ```
 **Calculate area of circle:**
-```console
+```python
 BEGIN
 READ radius, r
 INITIALIZE pi=3.14
@@ -422,7 +422,7 @@ PRINT Area
 END
 ```
 **Read Number  n and print the integers counting upto n:**
-```console
+```python
 BEGIN
 READ n
 INITIALIZE i to 1
@@ -433,7 +433,7 @@ END FOR
 END
 ```
 **To determine a student whether successful or fail.**
-```console
+```python
 BEGIN
 READ student’s grade
 IF student's grade is greater than or equal to 50
