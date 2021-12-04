@@ -267,6 +267,7 @@ The conversion flag characters are:
 |'-'|The converted value is left adjusted (overrides the '0' conversion if both are given).|
 |' '|(a space) A blank should be left before a positive number (or empty string) produced by a signed conversion.|
 |'+'|A sign character ('+' or '-') will precede the conversion (overrides a “space” flag).|
+
 A length modifier (h, l, or L) may be present, but is ignored as it is not necessary for Python – so e.g. %ld is identical to %d.
 
 The conversion types are:
