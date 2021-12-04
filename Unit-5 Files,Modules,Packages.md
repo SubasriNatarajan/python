@@ -14,19 +14,19 @@ Files and exception: text files, reading and writing files, format operator; com
  
  [5.2.TEXT FILE CHARACTERISTICS](#52text-file-characteristics)
  
- [5.3.READING AND WRITING FILES]()
+ [5.3.READING AND WRITING FILES](#53reading-and-writing-text-files)
 
- [5.5.FORMAT OPERATOR](#55FORMAT-OPERATOR)
+ [5.4.FORMAT OPERATOR]()
  
- [5.6.COMMAND LINE ARGUMENTS](#56COMMAND-LINE-ARGUMENTS)
+ [5.5.COMMAND LINE ARGUMENTS]()
  
- [5.7.ERRORS AND EXCEPTIONS](#57ERRORS-AND-EXCEPTIONS)
+ [5.6.ERRORS AND EXCEPTIONS]()
  
- [5.8.HANDLING EXCEPTIONS](#58HANDLING-PYTHON-LOGICAL-ERRORS-(EXCEPTIONS))
+ [5.7.HANDLING EXCEPTIONS]()
  
- [5.9.MODULES](https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#59-modules)
+ [5.8.MODULES]()
  
- [5.10.PACKAGES]()
+ [5.9.PACKAGES]()
 ### KEY TERMS
 ### File 
 - A file is a container in a computer system for storing information. Files used in computers are similar in features to that of paper documents used in library and office files. In a computer operating system, files can be stored on optical drives, hard drives or other types of storage devices.
@@ -231,7 +231,7 @@ File objects have some additional methods, such as isatty() and truncate() which
 |  write() | Writes the specified string to the file  | fileobject.write(data)  |
 | writelines()  | Writes a list of strings to the file  |  fileobject.writelines(listofstrings[]) |
 _________________
-# 5.5.FORMAT OPERATOR
+# 5.4.FORMAT OPERATOR
 str.format() is one of the string formatting methods in Python3, which allows multiple substitutions and value formatting. This method lets us concatenate elements within a string through positional formatting.
 Types
 -	Single Place Holder
@@ -298,7 +298,7 @@ The conversion types are:
 6. The precision determines the number of significant digits before and after the decimal point and defaults to 6.
 7. If precision is N, the output is truncated to N characters.
 _________________
-# 5.6.COMMAND LINE ARGUMENTS
+# 5.5.COMMAND LINE ARGUMENTS
 The arguments that are given after the name of the program in the command line shell of the operating system are known as Command Line Arguments. We can use sys.argv to get and process the command line arguments
 The sys module provides functions and variables used to manipulate different parts of the Python runtime environment. This module provides access to some variables used or maintained by the interpreter and to functions that interact strongly with the interpreter.
 Common utility scripts often need to process command line arguments. These arguments are stored in the sys module’s argv attribute as a list. For instance the following output results from running python demo.py one two three at the command line:
@@ -319,7 +319,7 @@ print(args)
 ```
 When run at the command line with python top.py --lines=5 alpha.txt beta.txt, the script sets args.lines to 5 and args.filenames to ['alpha.txt', 'beta.txt'].
 _________________
-# 5.7.ERRORS AND EXCEPTIONS
+# 5.6.ERRORS AND EXCEPTIONS
 Even if a statement or expression is syntactically correct, it may cause an error when an attempt is made to execute it. Errors detected during execution are called exceptions and are not unconditionally fatal: you will soon learn how to handle them in Python programs. Most exceptions are not handled by programs, however, and result in error messages as shown here:
 ```sh
 >>> 10 * (1/0)
@@ -376,7 +376,7 @@ The preceding part of the error message shows the context where the exception oc
 |  ValueError | Raised when a function gets an argument of correct type but improper value. |
 | ZeroDivisionError  | Raised when the second operand of division or modulo operation is zero.  |
 _________________
-# 5.8. HANDLING EXCEPTIONS
+# 5.7. HANDLING EXCEPTIONS
 It is possible to write programs that handle selected exceptions. Look at the following example, which asks the user for input until a valid integer has been entered, but allows the user to interrupt the program (using Control-C or whatever the operating system supports); note that a user-generated interruption is signalled by raising the KeyboardInterrupt exception.
 ```sh
 >>> while True:
@@ -487,7 +487,7 @@ Exception handlers don’t just handle exceptions if they occur immediately in t
 ...
 Handling run-time error: division by zero
 ```
-# 5.9. MODULES
+# 5.8. MODULES
 A module allows you to logically organize your Python code. Grouping related code into a module makes the code easier to understand and use. A module is a Python object with arbitrarily named attributes that you can bind and reference.
 If you quit from the Python interpreter and enter it again, the definitions you have made (functions and variables) are lost. Therefore, if you want to write a somewhat longer program, you are better off using a text editor to prepare the input for the interpreter and running it with that file as input instead. This is known as creating a script. As your program gets longer, you may want to split it into several files for easier maintenance. You may also want to use a handy function that you’ve written in several programs without copying its definition into each program.
 
@@ -550,7 +550,7 @@ The variable sys.path is a list of strings that determines the interpreter’s s
 >>> import sys
 >>> sys.path.append('/ufs/guido/lib/python')
 ```
-# 5.10 PACKAGES
+# 5.9. PACKAGES
 Packages are a way of structuring Python’s module namespace by using “dotted module names”. For example, the module name A.B designates a submodule named B in a package named A. Just like the use of modules saves the authors of different modules from having to worry about each other’s global variable names, the use of dotted module names saves the authors of multi-module packages like NumPy or Pillow from having to worry about each other’s module names.
 
 Suppose you want to design a collection of modules (a “package”) for the uniform handling of sound files and sound data. There are many different sound file formats (usually recognized by their extension, for example: .wav, .aiff, .au), so you may need to create and maintain a growing collection of modules for the conversion between the various file formats. There are also many different operations you might want to perform on sound data (such as mixing, adding echo, applying an equalizer function, creating an artificial stereo effect), so in addition you will be writing a never-ending stream of modules to perform these operations. Here’s a possible structure for your package (expressed in terms of a hierarchical filesystem):
