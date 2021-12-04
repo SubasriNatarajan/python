@@ -157,7 +157,7 @@ f.readline() reads a single line from the file; a newline character (\n) is left
 ''
 ```
 For reading lines from a file, you can loop over the file object. This is memory efficient, fast, and leads to simple code:
-```sh
+```py
 >>> for line in f:
 ...     print(line, end='')
 ...
@@ -166,12 +166,12 @@ Second line of the file
 ```
 If you want to read all the lines of a file in a list you can also use list(f) or f.readlines().
 f.write(string) writes the contents of string to the file, returning the number of characters written.
-```sh
+```py
 >>> f.write('This is a test\n')
 15
 ```
 Other types of objects need to be converted – either to a string (in text mode) or a bytes object (in binary mode) – before writing them:
-```sh
+```py
 >>> value = ('the answer', 42)
 >>> s = str(value)  # convert the tuple to string
 >>> f.write(s)
@@ -180,7 +180,7 @@ Other types of objects need to be converted – either to a string (in text mode
 f.tell() returns an integer giving the file object’s current position in the file represented as number of bytes from the beginning of the file when in binary mode and an opaque number when in text mode.
 
 To change the file object’s position, use f.seek(offset, whence). The position is computed from adding offset to a reference point; the reference point is selected by the whence argument. A whence value of 0 measures from the beginning of the file, 1 uses the current file position, and 2 uses the end of the file as the reference point. whence can be omitted and defaults to 0, using the beginning of the file as the reference point.
-```sh
+```py
 >>> f = open('workfile', 'rb+')
 >>> f.write(b'0123456789abcdef')
 16
@@ -253,7 +253,7 @@ A conversion specifier contains two or more characters and has the following com
 7. Conversion type.
 
 When the right argument is a dictionary (or other mapping type), then the formats in the string must include a parenthesised mapping key into that dictionary inserted immediately after the '%' character. The mapping key selects the value to be formatted from the mapping. For example:
-```sh
+```py
 >>> print('%(language)s has %(number)03d quote types.' %
       {'language': "Python", "number": 2})
 ```
@@ -302,13 +302,13 @@ _________________
 The arguments that are given after the name of the program in the command line shell of the operating system are known as Command Line Arguments. We can use sys.argv to get and process the command line arguments
 The sys module provides functions and variables used to manipulate different parts of the Python runtime environment. This module provides access to some variables used or maintained by the interpreter and to functions that interact strongly with the interpreter.
 Common utility scripts often need to process command line arguments. These arguments are stored in the sys module’s argv attribute as a list. For instance the following output results from running python demo.py one two three at the command line:
-```sh
+```py
 >>> import sys
 >>> print(sys.argv)
 ['demo.py', 'one', 'two', 'three']
 ```
 The argparse module provides a more sophisticated mechanism to process command line arguments. The following script extracts one or more filenames and an optional number of lines to be displayed:
-```sh
+```py
 import argparse
 parser = argparse.ArgumentParser(prog = 'top',
     description = 'Show top lines from each file')
@@ -321,7 +321,7 @@ When run at the command line with python top.py --lines=5 alpha.txt beta.txt, th
 _________________
 # 5.6.ERRORS AND EXCEPTIONS
 Even if a statement or expression is syntactically correct, it may cause an error when an attempt is made to execute it. Errors detected during execution are called exceptions and are not unconditionally fatal: you will soon learn how to handle them in Python programs. Most exceptions are not handled by programs, however, and result in error messages as shown here:
-```sh
+```py
 >>> 10 * (1/0)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -378,7 +378,7 @@ The preceding part of the error message shows the context where the exception oc
 _________________
 # 5.7. HANDLING EXCEPTIONS
 It is possible to write programs that handle selected exceptions. Look at the following example, which asks the user for input until a valid integer has been entered, but allows the user to interrupt the program (using Control-C or whatever the operating system supports); note that a user-generated interruption is signalled by raising the KeyboardInterrupt exception.
-```sh
+```py
 >>> while True:
 ...     try:
 ...         x = int(input("Please enter a number: "))
@@ -394,12 +394,12 @@ The try statement works as follows.
 4. If an exception occurs which does not match the exception named in the except clause, it is passed on to outer try statements; if no handler is found, it is an unhandled exception and execution stops with a message as shown above.
 
 A try statement may have more than one except clause, to specify handlers for different exceptions. At most one handler will be executed. Handlers only handle exceptions that occur in the corresponding try clause, not in other handlers of the same try statement. An except clause may name multiple exceptions as a parenthesized tuple, for example:
-```sh
+```py
 ... except (RuntimeError, TypeError, NameError):
 ...     pass
 ```
 A class in an except clause is compatible with an exception if it is the same class or a base class thereof (but not the other way around — an except clause listing a derived class is not compatible with a base class). For example, the following code will print B, C, D in that order:
-```sh
+```py
 class B(Exception):
     pass
 
@@ -422,7 +422,7 @@ for cls in [B, C, D]:
 Note that if the except clauses were reversed (with except B first), it would have printed B, B, B — the first matching except clause is triggered.
 
 All exceptions inherit from BaseException, and so it can be used to serve as a wildcard. Use this with extreme caution, since it is easy to mask a real programming error in this way! It can also be used to print an error message and then re-raise the exception (allowing a caller to handle the exception as well):
-```sh
+```py
 import sys
 
 try:
@@ -440,7 +440,7 @@ except BaseException as err:
 Alternatively the last except clause may omit the exception name(s), however the exception value must then be retrieved from sys.exc_info()[1].
 
 The try … except statement has an optional else clause, which, when present, must follow all except clauses. It is useful for code that must be executed if the try clause does not raise an exception. For example:
-```sh
+```py
 for arg in sys.argv[1:]:
     try:
         f = open(arg, 'r')
@@ -455,7 +455,7 @@ The use of the else clause is better than adding additional code to the try clau
 When an exception occurs, it may have an associated value, also known as the exception’s argument. The presence and type of the argument depend on the exception type.
 
 The except clause may specify a variable after the exception name. The variable is bound to an exception instance with the arguments stored in instance.args. For convenience, the exception instance defines __str__() so the arguments can be printed directly without having to reference .args. One may also instantiate an exception first before raising it and add any attributes to it as desired.
-```sh
+```py
 >>> try:
 ...     raise Exception('spam', 'eggs')
 ... except Exception as inst:
@@ -476,7 +476,7 @@ y = eggs
 If an exception has arguments, they are printed as the last part (‘detail’) of the message for unhandled exceptions.
 
 Exception handlers don’t just handle exceptions if they occur immediately in the try clause, but also if they occur inside functions that are called (even indirectly) in the try clause. For example:
-```sh
+```py
 >>> def this_fails():
 ...     x = 1/0
 ...
@@ -495,7 +495,7 @@ To support this, Python has a way to put definitions in a file and use them in a
 
 A module is a file containing Python definitions and statements. The file name is the module name with the suffix .py appended. Within a module, the module’s name (as a string) is available as the value of the global variable __name__. For instance, use your favorite text editor to create a file called fibo.py in the current directory with the following contents:
 # Fibonacci numbers module
-```sh
+```py
 def fib(n):    # write Fibonacci series up to n
     a, b = 0, 1
     while a < n:
@@ -512,11 +512,11 @@ def fib2(n):   # return Fibonacci series up to n
     return result
 ```
 Now enter the Python interpreter and import this module with the following command:
-```sh
+```py
 >>> import fibo
 ```
 This does not enter the names of the functions defined in fibo directly in the current symbol table; it only enters the module name fibo there. Using the module name you can access the functions:
-```sh
+```py
 >>> fibo.fib(1000)
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987
 >>> fibo.fib2(100)
@@ -525,14 +525,14 @@ This does not enter the names of the functions defined in fibo directly in the c
 'fibo'
 ```
 If you intend to use a function often you can assign it to a local name:
-```sh
+```py
 >>> fib = fibo.fib
 >>> fib(500)
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
 ```
 # Standard Modules
 Python comes with a library of standard modules, described in a separate document, the Python Library Reference (“Library Reference” hereafter). Some modules are built into the interpreter; these provide access to operations that are not part of the core of the language but are nevertheless built in, either for efficiency or to provide access to operating system primitives such as system calls. The set of such modules is a configuration option which also depends on the underlying platform. For example, the winreg module is only provided on Windows systems. One particular module deserves some attention: sys, which is built into every Python interpreter. The variables sys.ps1 and sys.ps2 define the strings used as primary and secondary prompts:
-```sh
+```py
 >>> import sys
 >>> sys.ps1
 '>>> '
@@ -546,7 +546,7 @@ C>
 These two variables are only defined if the interpreter is in interactive mode.
 
 The variable sys.path is a list of strings that determines the interpreter’s search path for modules. It is initialized to a default path taken from the environment variable PYTHONPATH, or from a built-in default if PYTHONPATH is not set. You can modify it using standard list operations:
-```sh
+```py
 >>> import sys
 >>> sys.path.append('/ufs/guido/lib/python')
 ```
@@ -554,7 +554,7 @@ The variable sys.path is a list of strings that determines the interpreter’s s
 Packages are a way of structuring Python’s module namespace by using “dotted module names”. For example, the module name A.B designates a submodule named B in a package named A. Just like the use of modules saves the authors of different modules from having to worry about each other’s global variable names, the use of dotted module names saves the authors of multi-module packages like NumPy or Pillow from having to worry about each other’s module names.
 
 Suppose you want to design a collection of modules (a “package”) for the uniform handling of sound files and sound data. There are many different sound file formats (usually recognized by their extension, for example: .wav, .aiff, .au), so you may need to create and maintain a growing collection of modules for the conversion between the various file formats. There are also many different operations you might want to perform on sound data (such as mixing, adding echo, applying an equalizer function, creating an artificial stereo effect), so in addition you will be writing a never-ending stream of modules to perform these operations. Here’s a possible structure for your package (expressed in terms of a hierarchical filesystem):
-```sh
+```
 sound/                          Top-level package
       __init__.py               Initialize the sound package
       formats/                  Subpackage for file format conversions
@@ -584,27 +584,27 @@ When importing the package, Python searches through the directories on sys.path 
 The __init__.py files are required to make Python treat directories containing the file as packages. This prevents directories with a common name, such as string, unintentionally hiding valid modules that occur later on the module search path. In the simplest case, __init__.py can just be an empty file, but it can also execute initialization code for the package or set the __all__ variable, described later.
 
 Users of the package can import individual modules from the package, for example:
-```sh
+```py
 import sound.effects.echo
 ```
 This loads the submodule sound.effects.echo. It must be referenced with its full name.
-```sh
+```py
 sound.effects.echo.echofilter(input, output, delay=0.7, atten=4)
 ```
 An alternative way of importing the submodule is:
-```sh
+```py
 from sound.effects import echo
 ```
 This also loads the submodule echo, and makes it available without its package prefix, so it can be used as follows:
-```sh
+```py
 echo.echofilter(input, output, delay=0.7, atten=4)
 ```
 Yet another variation is to import the desired function or variable directly:
-```sh
+```py
 from sound.effects.echo import echofilter
 ```
 Again, this loads the submodule echo, but this makes its function echofilter() directly available:
-```sh
+```py
 echofilter(input, output, delay=0.7, atten=4)
 ```
 Note that when using from package import item, the item can be either a submodule (or subpackage) of the package, or some other name defined in the package, like a function, class or variable. The import statement first tests whether the item is defined in the package; if not, it assumes it is a module and attempts to load it. If it fails to find it, an ImportError exception is raised.
