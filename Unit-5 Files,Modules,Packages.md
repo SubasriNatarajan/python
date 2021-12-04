@@ -12,8 +12,6 @@ Files and exception: text files, reading and writing files, format operator; com
  
  [5.1.FILES](#51files)
  
- [5.1.1 What are files?](https://github.com/SubasriNatarajan/python/blob/main/Unit-5%20Files,Modules,Packages.md#511-what-are-files)
- 
  [5.2.TEXT FILE CHARACTERISTICS](#52text-file-characteristics)
  
  [5.3.READING AND WRITING FILES]()
