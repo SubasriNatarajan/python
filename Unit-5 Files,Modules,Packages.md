@@ -16,17 +16,17 @@ Files and exception: text files, reading and writing files, format operator; com
  
  [5.3.READING AND WRITING FILES](#53reading-and-writing-text-files)
 
- [5.4.FORMAT OPERATOR]()
+ [5.4.FORMAT OPERATOR](#54format-operator)
  
- [5.5.COMMAND LINE ARGUMENTS]()
+ [5.5.COMMAND LINE ARGUMENTS](#55command-line-arguments)
  
- [5.6.ERRORS AND EXCEPTIONS]()
+ [5.6.ERRORS AND EXCEPTIONS](#56errors-and-exceptions)
  
- [5.7.HANDLING EXCEPTIONS]()
+ [5.7.HANDLING EXCEPTIONS](#57-handling-exceptions)
  
- [5.8.MODULES]()
+ [5.8.MODULES](#58-modules)
  
- [5.9.PACKAGES]()
+ [5.9.PACKAGES](#59-packages)
 ### KEY TERMS
 ### File 
 - A file is a container in a computer system for storing information. Files used in computers are similar in features to that of paper documents used in library and office files. In a computer operating system, files can be stored on optical drives, hard drives or other types of storage devices.
@@ -108,7 +108,7 @@ By convention, the data in every text file obeys a number of rules:
 _________________
 # 5.3.READING AND WRITING TEXT FILES
 open() returns a file object, and is most commonly used with two arguments: open(filename, mode).
-```sh
+```py
 >>> f = open('workfile', 'w')
 ```
 The first argument is a string containing the filename. The second argument is another string containing a few characters describing the way in which the file will be used. mode can be 'r' when the file will only be read, 'w' for only writing (an existing file with the same name will be erased), and 'a' opens the file for appending; any data written to the file is automatically added to the end. 'r+' opens the file for both reading and writing. The mode argument is optional; 'r' will be assumed if it’s omitted.
@@ -117,7 +117,7 @@ Normally, files are opened in text mode, that means, you read and write strings 
 
 In text mode, the default when reading is to convert platform-specific line endings (\n on Unix, \r\n on Windows) to just \n. When writing in text mode, the default is to convert occurrences of \n back to platform-specific line endings. This behind-the-scenes modification to file data is fine for text files, but will corrupt binary data like that in JPEG or EXE files. Be very careful to use binary mode when reading and writing such files.
 It is good practice to use the with keyword when dealing with file objects. The advantage is that the file is properly closed after its suite finishes, even if an exception is raised at some point. Using with is also much shorter than writing equivalent try-finally blocks:
-```sh
+```py
 >>> with open('workfile') as f:
 ...     read_data = f.read()
 
@@ -130,7 +130,7 @@ If you’re not using the with keyword, then you should call f.close() to close 
 >Warning: Calling f.write() without using the with keyword or calling f.close() might result in the arguments of f.write() not being completely written to the disk, even if the program exits successfully. 
 
 After a file object is closed, either by a with statement or by calling f.close(), attempts to use the file object will automatically fail.
-```sh
+```py
 >>> f.close()
 >>> f.read()
 Traceback (most recent call last):
@@ -141,14 +141,14 @@ ValueError: I/O operation on closed file.
 The rest of the examples in this section will assume that a file object called f has already been created.
 
 To read a file’s contents, call f.read(size), which reads some quantity of data and returns it as a string (in text mode) or bytes object (in binary mode). size is an optional numeric argument. When size is omitted or negative, the entire contents of the file will be read and returned; it’s your problem if the file is twice as large as your machine’s memory. Otherwise, at most size characters (in text mode) or size bytes (in binary mode) are read and returned. If the end of the file has been reached, f.read() will return an empty string ('').
-```sh
+```py
 >>> f.read()
 'This is the entire file.\n'
 >>> f.read()
 ''
 ```
 f.readline() reads a single line from the file; a newline character (\n) is left at the end of the string, and is only omitted on the last line of the file if the file doesn’t end in a newline. This makes the return value unambiguous; if f.readline() returns an empty string, the end of the file has been reached, while a blank line is represented by '\n', a string containing only a single newline.
-```sh
+```py
 >>> f.readline()
 'This is the first line of the file.\n'
 >>> f.readline()
