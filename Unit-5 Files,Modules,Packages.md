@@ -372,6 +372,7 @@ The preceding part of the error message shows the context where the exception oc
 | UnicodeTranslateError  |  Raised when a Unicode-related error occurs during translating. |
 |  ValueError | Raised when a function gets an argument of correct type but improper value. |
 | ZeroDivisionError  | Raised when the second operand of division or modulo operation is zero.  |
+
 _________________
 # 5.7. HANDLING EXCEPTIONS
 It is possible to write programs that handle selected exceptions. Look at the following example, which asks the user for input until a valid integer has been entered, but allows the user to interrupt the program (using Control-C or whatever the operating system supports); note that a user-generated interruption is signalled by raising the KeyboardInterrupt exception.
