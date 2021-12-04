@@ -4,10 +4,6 @@
 ### OBJECTIVE
 Files and exception: text files, reading and writing files, format operator; command line arguments, errors and exceptions, handling exceptions, modules, packages; Illustrative programs: word count, copy file.
 
-[Illustrative Problem Solutions](https://github.com/kgashok/GE_8151-unit-programs/tree/master/mdfiles)
-
-[Memcode flashcards](https://www.memcode.com/courses/2280)	- 40+ flashcards to review the contents of this unit. Space repetition of the flashcards will help in retaining the content and perform better in exams."
-
  #  TABLE OF CONTENTS
  
  [5.1.FILES](#51files)
